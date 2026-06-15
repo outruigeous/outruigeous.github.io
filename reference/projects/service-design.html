@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blueprinting a Product Delivery Journey — Mingz</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #FFFCF4;
+      --ink: #1E1E1C;
+      --ink-muted: #6B6B68;
+      --vermillion: #CF3B1A;
+      --border: #EDE8DC;
+      --card-bg: #F5F0E8;
+      --pill-peach-bg: #FFD4A0;   --pill-peach-text: #7A3D00;
+      --pill-teal-bg: #A8E8D8;    --pill-teal-text: #0F4F3C;
+      --pill-blue-bg: #B8DFFE;    --pill-blue-text: #0C447C;
+      --pill-purple-bg: #E0C8F8;  --pill-purple-text: #4A1F7A;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--ink-muted);
+      text-decoration: none;
+      font-size: 14px;
+      padding: 32px 0 0;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: var(--vermillion); }
+    .back-link::before { content: "←"; font-size: 16px; }
+
+    .case-header { padding: 48px 0 40px; border-bottom: 1px solid var(--border); }
+
+    .pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+
+    .pill { border-radius: 999px; padding: 4px 12px; font-size: 11px; font-weight: 500; }
+    .pill-peach { background: var(--pill-peach-bg); color: var(--pill-peach-text); }
+    .pill-teal  { background: var(--pill-teal-bg);  color: var(--pill-teal-text); }
+    .pill-blue   { background: var(--pill-blue-bg);   color: var(--pill-blue-text); }
+    .pill-purple { background: var(--pill-purple-bg); color: var(--pill-purple-text); }
+
+    .case-title {
+      font-size: clamp(28px, 4.5vw, 48px);
+      font-weight: 600;
+      line-height: 1.15;
+      margin-bottom: 28px;
+    }
+
+    .case-meta {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--ink-muted);
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .case-meta-item { display: flex; flex-direction: column; gap: 3px; }
+
+    .case-meta-label {
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+
+    .case-meta-value { font-size: 14px; color: var(--ink); }
+
+    .cover-placeholder {
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin: 40px 0;
+    }
+
+    .case-body { padding-bottom: 80px; }
+
+    .case-section { margin-bottom: 56px; }
+
+    .case-section h2 {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .case-section h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 28px 0 10px;
+    }
+
+    .case-section p {
+      font-size: 15px;
+      color: var(--ink-muted);
+      line-height: 1.85;
+      margin-bottom: 16px;
+      max-width: 680px;
+    }
+
+    .case-section ul { list-style: none; padding: 0; margin-bottom: 16px; }
+
+    .case-section ul li {
+      font-size: 15px;
+      color: var(--ink-muted);
+      line-height: 1.85;
+      padding: 6px 0 6px 20px;
+      max-width: 680px;
+      position: relative;
+    }
+
+    .case-section ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--vermillion);
+    }
+
+    .callout-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .callout {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .callout h4 {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .callout ul { list-style: none; padding: 0; margin: 0; }
+
+    .callout ul li {
+      font-size: 13px;
+      color: var(--ink-muted);
+      line-height: 1.7;
+      padding: 4px 0 4px 16px;
+      position: relative;
+      max-width: none;
+    }
+
+    .callout ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--vermillion);
+      font-size: 12px;
+    }
+
+    .img-placeholder {
+      width: 100%;
+      background: var(--card-bg);
+      border-radius: 10px;
+      border: 1px dashed #CCC8BC;
+      padding: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin: 20px 0;
+    }
+
+    .img-placeholder span {
+      display: block;
+      font-size: 11px;
+      font-family: monospace;
+      margin-top: 4px;
+      color: #aaa;
+    }
+
+    .stat-pill {
+      display: inline-block;
+      background: var(--pill-peach-bg);
+      color: var(--pill-peach-text);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 3px 12px;
+      border-radius: 999px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      font-size: 13px;
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a { color: var(--vermillion); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <a href="../index.html" class="back-link">Back to projects</a>
+
+    <header class="case-header">
+      <div class="pill-row">
+        <span class="pill pill-peach">UX Research</span>
+        <span class="pill pill-teal">Service Design</span>
+        <span class="pill pill-blue">Design Thinking</span>
+        <span class="pill pill-purple">Workshop Facilitation</span>
+      </div>
+      <h1 class="case-title">Blueprinting a Product Delivery Journey through Service Design</h1>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <span class="case-meta-label">Role</span>
+          <span class="case-meta-value">Service Designer</span>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Skills</span>
+          <span class="case-meta-value">Design Thinking, Service Design, UX Research</span>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Team size</span>
+          <span class="case-meta-value">Solo</span>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Tools</span>
+          <span class="case-meta-value">Miro</span>
+        </div>
+      </div>
+    </header>
+
+    <img src="images/cover-service-design.jpeg" alt="Blueprinting a Product Delivery Journey through Service Design" style="width:100%; aspect-ratio:16/7; object-fit:cover; border-radius:12px; margin:40px 0; border:1px solid var(--border); display:block;" />
+
+    <div class="case-body">
+
+      <section class="case-section">
+        <h2>Overview</h2>
+        <p>
+          Historically, there has been a constant stream of complaints on the ground about the <strong>long</strong> and <strong>painful project delivery journey</strong> in the IT department of a financial services organization, where <strong>stringent compliance requirements</strong> and <strong>legacy systems</strong> made every delivery checkpoint difficult for project teams to clear. There was also <strong>no official process defined</strong> and documented for project teams to follow, other than a RACI matrix to map out roles and responsibilities for tasks.
+        </p>
+        <p>
+          Seizing the opportunity of an ongoing IT Transformation initiative, I investigated the current delivery journey by conducting <strong>12 role-specific Service Design Blueprinting workshops</strong> with developers, business analysts, project managers, scrum masters, tech leads and testers from the <strong>Singapore and Chennai offices</strong>, to <strong>improve the project teams' experience of delivering a project</strong>.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <h2>Outcomes</h2>
+        <p>
+          I merged the role-specific blueprints to form the organization's <strong>first official delivery journey map</strong>, which greatly helped the project governance team and management to <strong>visualize the end-to-end journey</strong> across all six project team roles, and the supporting teams <em>(e.g. Security, Compliance, Strategy &amp; Architecture)</em> that owned different parts of the process. It also allowed them to <strong>pinpoint exactly where pain points and bottlenecks occurred</strong> in the process, and which teams were involved at those points.
+        </p>
+        <p>From there, I also utilized the delivery journey map to:</p>
+        <ul>
+          <li>Identify gaps between the roles and responsibilities documented on the RACI matrix, and what was being done on the ground</li>
+          <li>Guide the project governance team to <strong>update our official process documentation</strong> and <strong>remove obsolete tasks</strong> on the RACI matrix — both of which were actioned</li>
+          <li>Surface <strong>pain points</strong> that project teams were experiencing in the delivery journey to management, where we evaluated and prioritized these pain points together</li>
+        </ul>
+        <p>These findings also kicked off a ground-up problem solving initiative known as "Change Angels", which will be covered in a later section.</p>
+      </section>
+
+      <section class="case-section">
+        <h2>Challenges</h2>
+
+        <img src="images/challenges-diagram.png" alt="Diagram showing the relationship between Management, Project Governance Team, Project Teams, and Process Owners" style="width:100%; border-radius:10px; margin:20px 0; border:1px solid var(--border);" />
+
+        <ul>
+          <li><strong>No end-to-end visualization</strong> of the project delivery journey that the Project Governance Team could use to align expectations of Project Teams and Process Owners with</li>
+          <li>RACI Matrix documented responsibilities of each project team role sequentially, but <strong>not dependencies</strong> or <strong>which Process Owners</strong> they had to liaise with at different points of the delivery journey</li>
+          <li>Management was receiving complaints from both Project Teams and Process Owner, but <strong>no way to verify either accounts</strong> and <strong>identify specifically where the process breakdowns were actually happening</strong></li>
+          <li><strong>Informal workarounds had accumulated</strong> over time to the point where there was <strong>no consistent delivery process followed</strong> across teams</li>
+        </ul>
+      </section>
+
+      <section class="case-section">
+        <h2>Approach</h2>
+
+        <h3>Adapting the blueprint to our organization's context</h3>
+        <p>
+          A mixed method study consisting of surveys, focus group discussions, contextual inquiry and service design blueprinting was initially proposed to management. After considering the budget and timeline allocated for this study, I decided to proceed with a <strong>Service Design Blueprinting</strong> Workshop done in the form of a focus group discussion.
+        </p>
+        <p>Service Design Blueprinting was chosen because it was the only method that could simultaneously capture the following:</p>
+        <ul>
+          <li><strong>Sequence</strong> of the delivery journey</li>
+          <li><strong>Dependencies</strong> between the project team and process owners at each step</li>
+          <li><strong>Jobs to be done</strong> by project teams</li>
+          <li><strong>Pain points</strong> experienced by project teams</li>
+        </ul>
+
+        <img src="images/blueprint-screenshot.png" alt="Annotated service design blueprint showing Process, User's Actions, Frontstage Contact Person's Actions, Pain Points and Key Problem Areas" style="width:100%; border-radius:10px; margin:20px 0; border:1px solid var(--border);" />
+
+        <p>I <strong>adapted</strong> the standard service design blueprint format in two ways:</p>
+        <ul>
+          <li>I <strong>pre-populated the User's Actions row</strong> [Green color] with each role's <strong>responsibilities taken from the RACI matrix</strong> instead of getting the participants to list it down. Participants could remove tasks they no longer did, reorder them, or add tasks that weren't in the RACI at all.</li>
+          <li>I expanded the Frontstage Actors section [Blue color] to include all 21 process owners, so participants could map exactly which <strong>owners</strong> they <strong>interact with</strong> at each step, and the nature and duration of those interactions <em>(e.g. meetings, tasks)</em></li>
+          <li>Small pink post-its are used to capture <strong>pain points</strong> tied to specific tasks or interactions</li>
+        </ul>
+
+        <h3>Executing the workshops</h3>
+        <p>
+          The blueprinting workshops were first piloted in the <strong>Singapore and Chennai offices</strong> across 7 sessions for each of the roles in the project teams: Developers, Technical Leads, Scrum Masters <em>(for Agile Projects)</em>, Project Managers <em>(for Waterfall Projects)</em>, Business Analysts, Testers, Division Heads
+        </p>
+        <p>
+          <strong>As the management saw immense value in these blueprinting workshops from the Singapore office pilot's findings</strong>, I was then sent to the Chennai office to continue with conducting 6 more blueprinting sessions as there were many project team members based there too.
+        </p>
+
+        <h3>Synthesis</h3>
+        <p>The blueprint was then evaluated from three key areas:</p>
+        <div class="callout-grid">
+          <div class="callout">
+            <h4>Process</h4>
+            <ul>
+              <li>I identified any <strong>inconsistencies</strong>, <strong>obsolete tasks</strong>, and <strong>steps</strong> being done in a <strong>different order</strong> from what was documented in the RACI</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <h4>Workload</h4>
+            <ul>
+              <li>I documented the <strong>full scope of responsibilities</strong> carried by <strong>each role</strong>, including <strong>work not captured in the RACI</strong></li>
+              <li>I identified if there were any <strong>capacity issues</strong>, and where in the process was that most likely to occur, as that has been a recurring complaint to management</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <h4>Interactions</h4>
+            <ul>
+              <li>I analysed the <strong>nature</strong> of the <strong>interactions</strong> between project teams and process owners <em>(type of interaction, what was expected from each party, length of interaction, pain points if any)</em></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2>Impact</h2>
+        <p>Besides what we sought out to identify in the synthesis process, the blueprint also surfaced findings that we were not expecting to discover:</p>
+        <div class="callout-grid">
+          <div class="callout">
+            <h4>Process</h4>
+            <ul>
+              <li>Many <strong>tasks were happening simultaneously across roles</strong> within the <strong>same project phase</strong>, which was not reflected in the RACI</li>
+              <li>Led to team members taking on responsibilities that weren't formally theirs, <strong>increased workload</strong>, and <strong>bottlenecks</strong> in the process</li>
+              <li>Some tasks were being <strong>executed in a different sequence</strong> from what was documented, suggesting process changes had been made over time without the RACI being updated</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <h4>Workload</h4>
+            <ul>
+              <li>Project teams were <strong>simultaneously managing multiple project milestones across different phases</strong>, each with its own process owner requirements, while also maintaining BAU responsibilities</li>
+              <li>Process Owner teams were also experiencing <strong>bandwidth issues</strong> as they were very lean, with as few as <strong>two to five people</strong> responsible for validating submissions from all active project teams in the organisation</li>
+            </ul>
+          </div>
+          <div class="callout">
+            <h4>Interactions</h4>
+            <ul>
+              <li><strong>Turnaround times</strong> from process owners were <strong>highly inconsistent</strong>, ranging from days to as long as four months</li>
+              <li>Once project teams handed off deliverables to process owners, there was <strong>no visibility into progress, nor Service Level Agreements</strong> governing how quickly process owners were expected to resolve blockers, making it impossible to anticipate delays or follow up effectively</li>
+              <li>Process owners were also <strong>slow to respond to requests</strong>, with some taking more than a month to get back to project teams</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <h2>Next steps</h2>
+
+        <h3>Prioritization with managers</h3>
+        <p>
+          As the blueprinting workshops surfaced a large number of pain points <em>(293 of them)</em>, I held a <strong>prioritization session with management</strong> and the project governance team where we sorted pain points based on its level of impact <em>(on the delivery journey and organization)</em> and level of difficulty <em>(to resolve it)</em>.
+        </p>
+        <p>
+          <strong>Pain points</strong> that emerged as high impact and low to mid level of difficulty to resolve were shortlisted to be <strong>transformed into problem statements</strong> for the organization's new <strong>Change Angels</strong> initiative, while the other pain points were stored in the Project Governance team's backlog to be tackled in the future.
+        </p>
+
+        <h3>Change Angels</h3>
+        <p>
+          Change Angels is a <strong>ground-up initiative</strong> that involves volunteers from various departments <strong>collaborating cross-functionally to solve company wide issues</strong> using the design thinking process. I was involved in this initiative as part of the organizing team, and I also facilitated one of the volunteer teams' weekly meetings.
+        </p>
+        <p>
+          In the first season of Change Angels, 3 of the pain points filtered from the blueprinting workshops were made into problem statements for 3 volunteer teams to resolve over the span of 2 months. One of the biggest pain points was the lengthy time taken for project teams to complete tasks listed in the Go-Live Checklist for teams to push their project into production because the requirements were not specific and it was difficult to locate the checklist in the company's internal drive.
+        </p>
+        <p>
+          The team that I facilitated <strong>successfully managed to create and launch</strong> a Sharepoint page titled MAPLE <em>(Make A Project Life Easier)</em> that <strong>centralizes the location</strong> of all the checklists <em>(including the Go-Live Checklist)</em> that project teams have to fill up in their project delivery journey, and also <strong>provides explanations for requirements that were previously unclear</strong>. MAPLE has evolved into one of the beloved products owned by the project governance team, and it is <strong>still being used by the organization today, more than 5 years later</strong>.
+        </p>
+        <p>
+          There were many who were skeptical about ground-up initiatives in the organization, as Change Angels was not the management's first attempt at it. However, the success of my team and the support they got from management to launch the solution <strong>gave everyone in the organization confidence</strong> that ground-up initiatives are actually <strong>possible</strong> and <strong>effective</strong>.
+        </p>
+      </section>
+
+      <section class="case-section">
+        <h2>Reflections</h2>
+        <p>
+          This was a very meaningful project to me as it was the first time the organization tried a bottom up approach to problem-solving, and also my first time experimenting with the use of Service Design Blueprints as a user research method. I received a lot of positive feedback from the workshop participants that this is a rare opportunity for many of them to highlight the critical pains that they face in their daily work to the management.
+        </p>
+        <p>
+          In organizations that are new to user experience design, it is common for us UX designers to have to make customizations to the theoretical user research methodologies in order to achieve the objectives we would like to get from our engagements with the users. This taught me the importance of being adaptive and flexible with my UX Research knowledge to fit it to the context of the organization I'm in.
+        </p>
+      </section>
+
+    </div>
+
+    <footer>
+      <span>Mingz &copy; 2026</span>
+      <a href="mailto:mingrui.lee@gmail.com">mingrui.lee@gmail.com</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>

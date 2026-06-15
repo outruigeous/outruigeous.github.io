@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFFCF4;
+  --color-ink: #1E1E1C;
+  --color-ink-muted: #6B6B68;
+  --color-vermillion: #CF3B1A;
+  --color-border-custom: #EDE8DC;
+  --color-card-bg: #F5F0E8;
+
+  --color-pill-green-bg: #C8E8C0;
+  --color-pill-green-text: #2A5C22;
+  --color-pill-pink-bg: #F5C0CF;
+  --color-pill-pink-text: #7A1F38;
+  --color-pill-blue-bg: #B8DFFE;
+  --color-pill-blue-text: #0C447C;
+  --color-pill-peach-bg: #FFD4A0;
+  --color-pill-peach-text: #7A3D00;
+  --color-pill-purple-bg: #E0C8F8;
+  --color-pill-purple-text: #4A1F7A;
+  --color-pill-teal-bg: #A8E8D8;
+  --color-pill-teal-text: #0F4F3C;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Custom Notion-like button and link styling */
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}

@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="My Process — Mingz" showBackLink={true}>
+  <header class="py-12 border-b border-border-custom">
+    <p class="text-[11px] tracking-wider uppercase text-ink-muted mb-3">My process</p>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-ink leading-[1.1]">
+      How I approach <span class="text-vermillion">design</span> problems.
+    </h1>
+  </header>
+
+  <div class="my-10 border border-border-custom rounded-xl p-4 bg-card-bg flex justify-center items-center">
+    <img src="/process-diagram.png" alt="My design process diagram" class="max-w-full h-auto rounded-lg shadow-sm" />
+  </div>
+
+  <section class="py-10">
+    <!-- Step 1 -->
+    <div class="grid grid-cols-[40px_1fr] gap-6 mb-12">
+      <span class="text-sm font-semibold text-vermillion pt-1">01</span>
+      <div>
+        <h2 class="text-xl font-medium text-ink mb-2">Understand the problem</h2>
+        <p class="text-sm sm:text-base text-ink-muted leading-[1.8] max-w-[560px] mb-3">
+          Before jumping to solutions, I spend time understanding what's actually going on. That means talking to stakeholders, reviewing existing research, and forming a clear point of view on what problem is worth solving and why it matters.
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-peach-bg text-pill-peach-text">Stakeholder interviews</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-peach-bg text-pill-peach-text">Desk research</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-peach-bg text-pill-peach-text">Problem framing</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-t border-border-custom my-12" />
+
+    <!-- Step 2 -->
+    <div class="grid grid-cols-[40px_1fr] gap-6 mb-12">
+      <span class="text-sm font-semibold text-vermillion pt-1">02</span>
+      <div>
+        <h2 class="text-xl font-medium text-ink mb-2">Research with the people who matter</h2>
+        <p class="text-sm sm:text-base text-ink-muted leading-[1.8] max-w-[560px] mb-3">
+          I design with users, not just for them. I use a mix of qualitative and quantitative methods depending on the questions we need to answer — interviews, usability testing, surveys, diary studies, and contextual inquiry.
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-blue-bg text-pill-blue-text">User interviews</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-blue-bg text-pill-blue-text">Usability testing</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-blue-bg text-pill-blue-text">Surveys</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-blue-bg text-pill-blue-text">Contextual inquiry</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-t border-border-custom my-12" />
+
+    <!-- Step 3 -->
+    <div class="grid grid-cols-[40px_1fr] gap-6 mb-12">
+      <span class="text-sm font-semibold text-vermillion pt-1">03</span>
+      <div>
+        <h2 class="text-xl font-medium text-ink mb-2">Synthesise and make sense of it</h2>
+        <p class="text-sm sm:text-base text-ink-muted leading-[1.8] max-w-[560px] mb-3">
+          I turn raw research into something the team can act on. That might be affinity maps, journey maps, service blueprints, or a clear set of insights that challenge the assumptions we started with.
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-teal-bg text-pill-teal-text">Synthesis workshops</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-teal-bg text-pill-teal-text">Journey mapping</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-teal-bg text-pill-teal-text">Service blueprinting</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-t border-border-custom my-12" />
+
+    <!-- Step 4 -->
+    <div class="grid grid-cols-[40px_1fr] gap-6 mb-12">
+      <span class="text-sm font-semibold text-vermillion pt-1">04</span>
+      <div>
+        <h2 class="text-xl font-medium text-ink mb-2">Design, test, iterate</h2>
+        <p class="text-sm sm:text-base text-ink-muted leading-[1.8] max-w-[560px] mb-3">
+          I move from concept to prototype quickly so we can test ideas before investing in them. I prefer low-fidelity first, high-fidelity once the structure is solid. I test early and often, and I'm comfortable killing ideas that don't hold up.
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-green-bg text-pill-green-text">Wireframing</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-green-bg text-pill-green-text">Prototyping</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-green-bg text-pill-green-text">Usability testing</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-green-bg text-pill-green-text">Iteration</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-t border-border-custom my-12" />
+
+    <!-- Step 5 -->
+    <div class="grid grid-cols-[40px_1fr] gap-6 mb-16">
+      <span class="text-sm font-semibold text-vermillion pt-1">05</span>
+      <div>
+        <h2 class="text-xl font-medium text-ink mb-2">Ship and learn</h2>
+        <p class="text-sm sm:text-base text-ink-muted leading-[1.8] max-w-[560px] mb-3">
+          Design doesn't end at handoff. I stay close to implementation, track outcomes after launch, and bring what I learn back into the next cycle.
+        </p>
+        <div class="flex flex-wrap gap-1.5 mt-3">
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-teal-bg text-pill-teal-text">Design handoff</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-teal-bg text-pill-teal-text">Post-launch review</span>
+          <span class="rounded-full px-3 py-1 text-[11px] font-medium bg-pill-teal-bg text-pill-teal-text">Metrics tracking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

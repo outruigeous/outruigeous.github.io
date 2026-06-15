@@ -1,0 +1,140 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    tags: string[];
+    role: string;
+    timeline: string;
+    client: string;
+    coverPlaceholder?: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+
+const getTagClass = (tag: string) => {
+  const normalized = tag.toLowerCase().trim();
+  if (normalized.includes('research') && !normalized.includes('ops')) return 'bg-pill-peach-bg text-pill-peach-text';
+  if (normalized.includes('service design')) return 'bg-pill-teal-bg text-pill-teal-text';
+  if (normalized.includes('design thinking')) return 'bg-pill-blue-bg text-pill-blue-text';
+  if (normalized.includes('ui design') || normalized.includes('visual')) return 'bg-pill-green-bg text-pill-green-text';
+  if (normalized.includes('workshop') || normalized.includes('facilitation')) return 'bg-pill-purple-bg text-pill-purple-text';
+  if (normalized.includes('research ops')) return 'bg-pill-teal-bg text-pill-teal-text';
+  if (normalized.includes('design ops')) return 'bg-pill-blue-bg text-pill-blue-text';
+  if (normalized.includes('pink') || normalized.includes('start')) return 'bg-pill-pink-bg text-pill-pink-text';
+  return 'bg-pill-peach-bg text-pill-peach-text'; // fallback
+};
+---
+
+<Layout title={`${frontmatter.title} — Mingz`} showBackLink={true}>
+  <article class="py-12">
+    <header class="pb-10 border-b border-border-custom">
+      <div class="flex flex-wrap gap-1.5 mb-5">
+        {frontmatter.tags.map((tag) => (
+          <span class={`rounded-full px-3 py-1 text-[11px] font-medium whitespace-nowrap ${getTagClass(tag)}`}>
+            {tag}
+          </span>
+        ))}
+      </div>
+      
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-ink leading-[1.15] mb-7">
+        {frontmatter.title}
+      </h1>
+
+      <div class="flex gap-10 flex-wrap text-xs text-ink-muted pt-6 border-t border-border-custom">
+        <div class="flex flex-col gap-0.5">
+          <span class="text-[10px] tracking-wider uppercase text-ink-muted">Role</span>
+          <span class="text-sm text-ink">{frontmatter.role}</span>
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <span class="text-[10px] tracking-wider uppercase text-ink-muted">Timeline</span>
+          <span class="text-sm text-ink">{frontmatter.timeline}</span>
+        </div>
+        <div class="flex flex-col gap-0.5">
+          <span class="text-[10px] tracking-wider uppercase text-ink-muted">For</span>
+          <span class="text-sm text-ink">{frontmatter.client}</span>
+        </div>
+      </div>
+    </header>
+
+    {frontmatter.coverPlaceholder && (
+      <div class="w-full aspect-[16/7] bg-card-bg rounded-xl border border-border-custom flex items-center justify-center text-sm text-ink-muted my-10 select-none">
+        {frontmatter.coverPlaceholder}
+      </div>
+    )}
+
+    <div class="prose max-w-none pb-20 text-base text-ink-muted leading-[1.85] 
+      prose-headings:text-ink prose-headings:font-medium
+      prose-h2:text-xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-border-custom
+      prose-h3:text-base prose-h3:font-semibold prose-h3:mt-7 prose-h3:mb-2
+      prose-p:mb-4 prose-p:max-w-[680px]
+      prose-ul:list-none prose-ul:pl-0 prose-ul:mb-4
+      prose-li:relative prose-li:pl-5 prose-li:py-1.5 prose-li:max-w-[680px]
+      prose-li:before:content-['—'] prose-li:before:absolute prose-li:before:left-0 prose-li:before:color-vermillion">
+      <slot />
+    </div>
+  </article>
+</Layout>
+
+<style is:global>
+  /* Extra styling for callouts and placeholders in markdown */
+  .prose .callout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .prose .callout {
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border-custom);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .prose .callout h4 {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-ink);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .prose .callout ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .prose .callout ul li {
+    font-size: 13px;
+    color: var(--color-ink-muted);
+    line-height: 1.7;
+    padding: 4px 0 4px 16px;
+    position: relative;
+    max-width: none;
+  }
+  .prose .callout ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-vermillion);
+    font-size: 12px;
+  }
+  .prose .img-placeholder {
+    width: 100%;
+    background: var(--color-card-bg);
+    border-radius: 10px;
+    border: 1px dashed #CCC8BC;
+    padding: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--color-ink-muted);
+    margin: 20px 0;
+  }
+  .prose .img-placeholder span {
+    display: block;
+    font-size: 11px;
+    color: var(--color-ink-muted);
+    margin-top: 4px;
+  }
+</style>

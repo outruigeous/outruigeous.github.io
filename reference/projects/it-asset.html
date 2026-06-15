@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Asset Management Input/Output Tooling — Mingz</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #FFFCF4;
+      --ink: #1E1E1C;
+      --ink-muted: #6B6B68;
+      --vermillion: #CF3B1A;
+      --border: #EDE8DC;
+      --card-bg: #F5F0E8;
+      --pill-green-bg: #C8E8C0;   --pill-green-text: #2A5C22;
+      --pill-pink-bg: #F5C0CF;    --pill-pink-text: #7A1F38;
+      --pill-blue-bg: #B8DFFE;    --pill-blue-text: #0C447C;
+      --pill-peach-bg: #FFD4A0;   --pill-peach-text: #7A3D00;
+      --pill-purple-bg: #E0C8F8;  --pill-purple-text: #4A1F7A;
+      --pill-teal-bg: #A8E8D8;    --pill-teal-text: #0F4F3C;
+    }
+    body { background: var(--cream); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; min-height: 100vh; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-muted); text-decoration: none; font-size: 14px; padding: 32px 0 0; transition: color 0.15s; }
+    .back-link:hover { color: var(--vermillion); }
+    .back-link::before { content: "←"; font-size: 16px; }
+    .case-header { padding: 48px 0 40px; border-bottom: 1px solid var(--border); }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+    .pill { border-radius: 999px; padding: 4px 12px; font-size: 11px; font-weight: 500; }
+    .pill-green  { background: var(--pill-green-bg);  color: var(--pill-green-text); }
+    .pill-pink   { background: var(--pill-pink-bg);   color: var(--pill-pink-text); }
+    .pill-blue   { background: var(--pill-blue-bg);   color: var(--pill-blue-text); }
+    .pill-peach  { background: var(--pill-peach-bg);  color: var(--pill-peach-text); }
+    .pill-purple { background: var(--pill-purple-bg); color: var(--pill-purple-text); }
+    .pill-teal   { background: var(--pill-teal-bg);   color: var(--pill-teal-text); }
+    .case-title { font-size: clamp(28px, 4.5vw, 48px); font-weight: 600; line-height: 1.15; margin-bottom: 16px; }
+    .case-meta { display: flex; gap: 32px; flex-wrap: wrap; font-size: 13px; color: var(--ink-muted); }
+    .case-meta span { display: flex; flex-direction: column; gap: 2px; }
+    .case-meta strong { color: var(--ink); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .cover-image { width: 100%; aspect-ratio: 16 / 7; object-fit: cover; background: var(--card-bg); border-radius: 12px; display: block; margin: 40px 0; border: 1px solid var(--border); }
+    .cover-placeholder { width: 100%; aspect-ratio: 16 / 7; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--ink-muted); margin: 40px 0; }
+    .case-body { padding-bottom: 80px; }
+    .case-body section { margin-bottom: 52px; }
+    .case-body h2 { font-size: 20px; font-weight: 500; color: var(--ink); margin-bottom: 14px; }
+    .case-body p { font-size: 15px; color: var(--ink-muted); line-height: 1.85; margin-bottom: 16px; max-width: 660px; }
+    .case-body img { width: 100%; border-radius: 10px; margin: 16px 0; border: 1px solid var(--border); display: block; }
+    .placeholder-block { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 32px; text-align: center; font-size: 13px; color: var(--ink-muted); margin: 16px 0; }
+    footer { border-top: 1px solid var(--border); padding: 28px 0; font-size: 13px; color: var(--ink-muted); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    footer a { color: var(--vermillion); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">Back to projects</a>
+    <header class="case-header">
+      <div class="pill-row"><span class="pill pill-peach">UX Research</span><span class="pill pill-green">UI Design</span></div>
+      <h1 class="case-title">IT Asset Management Input/Output Tooling</h1>
+      <div class="case-meta">
+        <span><strong>Role</strong>UX Designer</span>
+        <span><strong>Year</strong>2023</span>
+        <span><strong>Organisation</strong>[Organisation]</span>
+      </div>
+    </header>
+    <div class="cover-placeholder">Add cover image here</div>
+    <div class="case-body">
+      <section>
+        <h2>Overview</h2>
+        <p>[Add project overview here — what was the problem, why did it matter, what was at stake?]</p>
+      </section>
+      <section>
+        <h2>My role</h2>
+        <p>[Describe specifically what you did, not just your title. What decisions did you own? What did you influence?]</p>
+      </section>
+      <section>
+        <h2>The problem</h2>
+        <p>[Add problem framing — be specific about scope, constraints, and what was deprioritised and why.]</p>
+        <div class="placeholder-block">Add image, diagram, or research artefact here</div>
+      </section>
+      <section>
+        <h2>Process</h2>
+        <p>[Walk through your approach. What methods did you use and why those methods specifically?]</p>
+        <div class="placeholder-block">Add process image or artefact here</div>
+      </section>
+      <section>
+        <h2>Outcome</h2>
+        <p>[What changed as a result of this work? Be specific — avoid vague impact claims.]</p>
+        <div class="placeholder-block">Add outcome image or data here</div>
+      </section>
+      <section>
+        <h2>What I would do differently</h2>
+        <p>[Honest reflection — what would you scope differently, argue harder for, or approach another way?]</p>
+      </section>
+    </div>
+    <footer>
+      <span>Mingz &copy; 2026</span>
+      <a href="mailto:mingrui.lee@gmail.com">mingrui.lee@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>

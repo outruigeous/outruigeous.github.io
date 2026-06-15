@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Process — Mingz</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #FFFCF4;
+      --ink: #1E1E1C;
+      --ink-muted: #6B6B68;
+      --vermillion: #CF3B1A;
+      --border: #EDE8DC;
+      --card-bg: #F5F0E8;
+
+      --pill-green-bg: #C8E8C0;   --pill-green-text: #2A5C22;
+      --pill-peach-bg: #FFD4A0;   --pill-peach-text: #7A3D00;
+      --pill-blue-bg: #B8DFFE;    --pill-blue-text: #0C447C;
+      --pill-teal-bg: #A8E8D8;    --pill-teal-text: #0F4F3C;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--ink-muted);
+      text-decoration: none;
+      font-size: 14px;
+      padding: 32px 0 0;
+      transition: color 0.15s;
+    }
+
+    .back-link:hover { color: var(--vermillion); }
+    .back-link::before { content: "←"; font-size: 16px; }
+
+    .page-header {
+      padding: 48px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-label {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 12px;
+    }
+
+    .page-title {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 600;
+      line-height: 1.1;
+    }
+
+    .page-title span { color: var(--vermillion); }
+
+    .content {
+      padding: 56px 0 80px;
+    }
+
+    .process-step {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 24px;
+      margin-bottom: 52px;
+    }
+
+    .step-number {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--vermillion);
+      padding-top: 3px;
+    }
+
+    .step-body h2 {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .step-body p {
+      font-size: 15px;
+      color: var(--ink-muted);
+      line-height: 1.8;
+      max-width: 560px;
+      margin-bottom: 14px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .pill-green  { background: var(--pill-green-bg);  color: var(--pill-green-text); }
+    .pill-peach  { background: var(--pill-peach-bg);  color: var(--pill-peach-text); }
+    .pill-blue   { background: var(--pill-blue-bg);   color: var(--pill-blue-text); }
+    .pill-teal   { background: var(--pill-teal-bg);   color: var(--pill-teal-text); }
+
+    .step-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin-bottom: 52px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      font-size: 13px;
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a { color: var(--vermillion); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <a href="index.html" class="back-link">Back to home</a>
+
+    <header class="page-header">
+      <p class="page-label">My process</p>
+      <h1 class="page-title">How I approach <span>design</span> problems.</h1>
+    </header>
+
+    <section class="content">
+
+      <div class="process-step">
+        <span class="step-number">01</span>
+        <div class="step-body">
+          <h2>Understand the problem</h2>
+          <p>Before jumping to solutions, I spend time understanding what's actually going on. That means talking to stakeholders, reviewing existing research, and forming a clear point of view on what problem is worth solving and why it matters.</p>
+          <div class="pill-row">
+            <span class="pill pill-peach">Stakeholder interviews</span>
+            <span class="pill pill-peach">Desk research</span>
+            <span class="pill pill-peach">Problem framing</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="step-divider" />
+
+      <div class="process-step">
+        <span class="step-number">02</span>
+        <div class="step-body">
+          <h2>Research with the people who matter</h2>
+          <p>I design with users, not just for them. I use a mix of qualitative and quantitative methods depending on the questions we need to answer — interviews, usability testing, surveys, diary studies, and contextual inquiry.</p>
+          <div class="pill-row">
+            <span class="pill pill-blue">User interviews</span>
+            <span class="pill pill-blue">Usability testing</span>
+            <span class="pill pill-blue">Surveys</span>
+            <span class="pill pill-blue">Contextual inquiry</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="step-divider" />
+
+      <div class="process-step">
+        <span class="step-number">03</span>
+        <div class="step-body">
+          <h2>Synthesise and make sense of it</h2>
+          <p>I turn raw research into something the team can act on. That might be affinity maps, journey maps, service blueprints, or a clear set of insights that challenge the assumptions we started with.</p>
+          <div class="pill-row">
+            <span class="pill pill-teal">Synthesis workshops</span>
+            <span class="pill pill-teal">Journey mapping</span>
+            <span class="pill pill-teal">Service blueprinting</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="step-divider" />
+
+      <div class="process-step">
+        <span class="step-number">04</span>
+        <div class="step-body">
+          <h2>Design, test, iterate</h2>
+          <p>I move from concept to prototype quickly so we can test ideas before investing in them. I prefer low-fidelity first, high-fidelity once the structure is solid. I test early and often, and I'm comfortable killing ideas that don't hold up.</p>
+          <div class="pill-row">
+            <span class="pill pill-green">Wireframing</span>
+            <span class="pill pill-green">Prototyping</span>
+            <span class="pill pill-green">Usability testing</span>
+            <span class="pill pill-green">Iteration</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="step-divider" />
+
+      <div class="process-step">
+        <span class="step-number">05</span>
+        <div class="step-body">
+          <h2>Ship and learn</h2>
+          <p>Design doesn't end at handoff. I stay close to implementation, track outcomes after launch, and bring what I learn back into the next cycle.</p>
+          <div class="pill-row">
+            <span class="pill pill-teal">Design handoff</span>
+            <span class="pill pill-teal">Post-launch review</span>
+            <span class="pill pill-teal">Metrics tracking</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <span>Mingz &copy; 2026</span>
+      <a href="mailto:mingrui.lee@gmail.com">mingrui.lee@gmail.com</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
