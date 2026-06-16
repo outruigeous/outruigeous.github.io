@@ -3,13 +3,14 @@ import { glob } from 'astro/loaders';
 
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string().optional(),
     tags: z.array(z.string()),
     role: z.string(),
     timeline: z.string(),
     toolsUsed: z.string(),
+    cover: image().optional(),
     coverPlaceholder: z.string().optional(),
     order: z.number().default(0),
   }),

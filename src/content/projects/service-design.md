@@ -3,8 +3,8 @@ title: "Blueprinting a Product Delivery Journey through Service Design"
 tags: ["UX Research", "Service Design", "Design Thinking", "Workshop Facilitation"]
 role: "Service Designer"
 timeline: "June 2019 – June 2020"
-toolsUsed: Confluence, JIRA, Adobe CC"
-coverPlaceholder: "./images/cover-service-design.jpeg"
+toolsUsed: "Confluence, JIRA, Adobe CC"
+cover: "./images/cover-service-design.jpeg"
 order: 1
 ---
 
@@ -120,13 +120,13 @@ Besides what we sought out to identify in the synthesis process, the blueprint a
 
 ## Next steps
 
-## Prioritization with managers
+### Prioritization with managers
 
 As the blueprinting workshops surfaced a large number of pain points *(293 of them)*, I held a **prioritization session with management** and the project governance team where we sorted pain points based on its level of impact *(on the delivery journey and organization)* and level of difficulty *(to resolve it)*.
 
 **Pain points** that emerged as high impact and low to mid level of difficulty to resolve were shortlisted to be **transformed into problem statements** for the organization's new **Change Angels** initiative, while the other pain points were stored in the Project Governance team's backlog to be tackled in the future.
 
-## Change Angels
+### Change Angels
 
 Change Angels is a **ground-up initiative** that involves volunteers from various departments **collaborating cross-functionally to solve company wide issues** using the design thinking process. I was involved in this initiative as part of the organizing team, and I also facilitated one of the volunteer teams' weekly meetings.
 

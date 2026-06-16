@@ -4,6 +4,7 @@
     data: {
       title: string;
       tags: string[];
+      cover?: string;
       coverPlaceholder?: string;
       order: number;
     };
@@ -13,19 +14,14 @@
   let { projects = [] }: { projects: Project[] } = $props();
 
   // State
-  let searchQuery = $state('');
   let selectedTag = $state('All');
 
   // Compute all unique tags
   const allTags = ['All', ...new Set(projects.flatMap(p => p.data.tags))];
 
-  // Filter projects based on search and selected tag
+  // Filter projects based on selected tag
   let filteredProjects = $derived(
-    projects.filter(project => {
-      const matchesSearch = project.data.title.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesTag = selectedTag === 'All' || project.data.tags.includes(selectedTag);
-      return matchesSearch && matchesTag;
-    })
+    projects.filter(project => selectedTag === 'All' || project.data.tags.includes(selectedTag))
   );
 
   const getTagClass = (tag: string) => {
@@ -43,40 +39,19 @@
 </script>
 
 <div class="space-y-6">
-  <!-- Search and Tag Filters -->
-  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 py-2 border-b border-border-custom/50">
-    <!-- Search Bar -->
-    <div class="relative w-full md:max-w-xs">
-      <input
-        type="text"
-        bind:value={searchQuery}
-        placeholder="Search projects..."
-        class="w-full bg-card-bg/40 border border-border-custom rounded-full px-4 py-2 text-xs focus:outline-none focus:border-vermillion focus:ring-1 focus:ring-vermillion/25 transition-all text-ink"
-      />
-      {#if searchQuery}
-        <button 
-          onclick={() => searchQuery = ''}
-          class="absolute right-3 top-1/2 -translate-y-1/2 text-ink-muted hover:text-vermillion text-xs font-bold"
-        >
-          ×
-        </button>
-      {/if}
-    </div>
-
-    <!-- Tag Filter Buttons -->
-    <div class="flex flex-wrap gap-1.5 items-center">
-      {#each allTags as tag}
-        <button
-          onclick={() => selectedTag = tag}
-          class="px-3 py-1 rounded-full text-[11px] font-medium transition-all duration-150 border cursor-pointer
-            {selectedTag === tag 
-              ? 'bg-ink border-ink text-cream shadow-sm' 
-              : 'bg-card-bg/30 border-border-custom text-ink-muted hover:border-ink hover:text-ink'}"
-        >
-          {tag}
-        </button>
-      {/each}
-    </div>
+  <!-- Tag Filters -->
+  <div class="flex flex-wrap gap-1.5 items-center py-2 border-b border-border-custom/50">
+    {#each allTags as tag}
+      <button
+        onclick={() => selectedTag = tag}
+        class="px-3 py-1 rounded-full text-[11px] font-medium transition-all duration-150 border cursor-pointer
+          {selectedTag === tag
+            ? 'bg-ink border-ink text-cream shadow-sm'
+            : 'bg-card-bg/30 border-border-custom text-ink-muted hover:border-ink hover:text-ink'}"
+      >
+        {tag}
+      </button>
+    {/each}
   </div>
 
   <!-- Projects Grid -->
@@ -86,12 +61,18 @@
         class="bg-card-bg border border-border-custom rounded-2xl overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-md transition-all duration-200 group"
       >
         <a href={`/projects/${project.id}`} class="flex flex-col h-full">
-          {#if project.data.coverPlaceholder}
+          {#if project.data.cover}
+            <img
+              src={project.data.cover}
+              alt={`${project.data.title} Cover`}
+              class="w-full aspect-[16/9] object-cover bg-border-custom group-hover:scale-[1.01] transition-transform duration-200"
+            />
+          {:else if project.data.coverPlaceholder}
             {#if project.data.coverPlaceholder.startsWith('/') || project.data.coverPlaceholder.startsWith('http')}
-              <img 
-                src={project.data.coverPlaceholder} 
+              <img
+                src={project.data.coverPlaceholder}
                 alt={`${project.data.title} Cover`}
-                class="w-full aspect-[16/9] object-cover bg-border-custom group-hover:scale-[1.01] transition-transform duration-200" 
+                class="w-full aspect-[16/9] object-cover bg-border-custom group-hover:scale-[1.01] transition-transform duration-200"
               />
             {:else}
               <div class="w-full aspect-[16/9] bg-gradient-to-br from-border-custom to-[#DDD8CC] flex items-center justify-center text-xs text-ink-muted select-none group-hover:bg-[#d6d0c2] transition-colors duration-200">
@@ -121,9 +102,9 @@
     {:else}
       <div class="col-span-full flex flex-col items-center justify-center py-20 text-ink-muted bg-card-bg/20 border border-dashed border-border-custom rounded-2xl">
         <span class="text-2xl mb-2">🔍</span>
-        <p class="text-sm">No projects match your search or filter criteria.</p>
-        <button 
-          onclick={() => { searchQuery = ''; selectedTag = 'All'; }} 
+        <p class="text-sm">No projects match your filter criteria.</p>
+        <button
+          onclick={() => { selectedTag = 'All'; }}
           class="mt-4 text-xs font-semibold text-vermillion hover:underline"
         >
           Reset Filters

@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import Layout from './Layout.astro';
 
 interface Props {
@@ -8,6 +10,7 @@ interface Props {
     role: string;
     timeline: string;
     toolsUsed: string;
+    cover?: ImageMetadata;
     coverPlaceholder?: string;
   };
 }
@@ -59,7 +62,13 @@ const getTagClass = (tag: string) => {
       </div>
     </header>
 
-    {frontmatter.coverPlaceholder && (
+    {frontmatter.cover ? (
+      <Image
+        src={frontmatter.cover}
+        alt={frontmatter.title}
+        class="w-full aspect-[16/7] object-cover rounded-xl border border-border-custom my-10"
+      />
+    ) : frontmatter.coverPlaceholder && (
       <div class="w-full aspect-[16/7] bg-card-bg rounded-xl border border-border-custom flex items-center justify-center text-sm text-ink-muted my-10 select-none">
         {frontmatter.coverPlaceholder}
       </div>

@@ -4,7 +4,7 @@ tags: ["UX Research", "UI Design", "Workshop Facilitation"]
 role: "UX Designer, UX Researcher"
 timeline: "Nov 2024 – May 2025"
 toolsUsed: "Figma, Miro"
-coverPlaceholder: "./images/sanctuary-cover.png"
+cover: "./images/sanctuary-cover.png"
 order: 2
 ---
 
@@ -65,7 +65,6 @@ The project had a few interconnected problems:
 - Audit surfaced **major usability issues with existing screens** *(e.g. Incomplete flows, unclear screen sequences, inconsistent components)* which made them unsuitable as a foundation, and for usability testing
 - We negotiated with the client for a scope change which they were agreeable to, and the **focus** of this project **shifted** from designing the new wellness feature and design system creation, to a **complete app redesign**, **rebrand** and a **style guide** for the client’s development team.
 </aside>
-
 
 ## Approach
 
@@ -163,7 +162,7 @@ Established, Friendly, Authoritative, Bright, Approachable
 
 The logo combines two hearts, one representing wellbeing and the other a GPS arrow, to convey the message *'We are the way to your wellbeing’.*
 
-![alt text](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlkaHBjaWI3eWZvaXZjeTBpc3kwZGUwbzBibm5wdmtwazVqZXNjZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TeBAgCPYwhOpnKTcgl/giphy.gif)
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlkaHBjaWI3eWZvaXZjeTBpc3kwZGUwbzBibm5wdmtwazVqZXNjZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TeBAgCPYwhOpnKTcgl/giphy.gif" alt="Sanctuary Logo with Animation" style="width: 100%;" />
 
 ![Image showing Logos for Sanctuary](./images/sanctuary-logosketches-2.png)
 
