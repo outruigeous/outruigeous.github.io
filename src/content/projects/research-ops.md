@@ -3,7 +3,7 @@ title: "Setting up Research Ops @ SearchSG"
 tags: ["UX Research", "Research Ops", "Design Ops"]
 role: "UX Researcher"
 timeline: "March – June 2023"
-tools used: "Confluence, Figjam, Figma, Google Workspace, Jira, Miro, Notion, Slack, Trello"
+toolsUsed: "Confluence, Figjam, Figma, Google Workspace, Jira, Miro, Notion, Slack, Trello"
 coverPlaceholder: "Add cover image here"
 order: 4
 ---
@@ -105,7 +105,7 @@ I created a **centralized repository** for managing research assets on Confluenc
 
 # Impact
 
-![Before/after diagram of a 5-step research ops process (Plan, Recruit, Execute, Synthesize, Document & Publish) showing improvements at each stage](/projects/images/ssg-research-ops-approach.png)
+![Before/after diagram of a 5-step research ops process (Plan, Recruit, Execute, Synthesize, Document & Publish) showing improvements at each stage](./images/ssg-research-ops-approach.png)
 
 After the research workflow and repository were set up, we put it to the test for 3 months before I left the team at the end July 2023 for my masters in the US. During that period, I was asked to conduct an A/B test with a government agency evaluating a potential onboarding with SearchSG, and another usability test for AI features. A UX Teammate also used the framework to conduct her own feature research on the government survey platform, Crowdtask.
 

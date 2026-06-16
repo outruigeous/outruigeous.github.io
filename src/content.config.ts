@@ -9,7 +9,7 @@ const projects = defineCollection({
     tags: z.array(z.string()),
     role: z.string(),
     timeline: z.string(),
-    client: z.string(),
+    toolsUsed: z.string(),
     coverPlaceholder: z.string().optional(),
     order: z.number().default(0),
   }),

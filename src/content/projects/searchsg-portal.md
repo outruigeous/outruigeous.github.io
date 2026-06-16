@@ -3,7 +3,7 @@ title: "SearchSG Administrative Portal"
 tags: ["UX Research", "Workshop Facilitation", "UI Design"]
 role: "UX Designer"
 timeline: "2023"
-client: "SearchSG"
+toolsUsed: "SearchSG"
 coverPlaceholder: "Add cover image here"
 order: 3
 ---

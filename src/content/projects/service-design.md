@@ -3,8 +3,8 @@ title: "Blueprinting a Product Delivery Journey through Service Design"
 tags: ["UX Research", "Service Design", "Design Thinking", "Workshop Facilitation"]
 role: "Service Designer"
 timeline: "June 2019 â€“ June 2020"
-tools used: Confluence, JIRA, Adobe CC"
-coverPlaceholder: "/projects/images/cover-service-design.jpeg"
+toolsUsed: Confluence, JIRA, Adobe CC"
+coverPlaceholder: "./images/cover-service-design.jpeg"
 order: 1
 ---
 
@@ -28,7 +28,7 @@ These findings also kicked off a ground-up problem solving initiative known as â
 
 # Challenges
 
-![Diagram showing the relationship between Management, Project Governance Team, Project Teams, and Process Owners](/projects/images/challenges-diagram.png)
+![Diagram showing the relationship between Management, Project Governance Team, Project Teams, and Process Owners](./images/challenges-diagram.png)
 
 - **No end-to-end visualization** of the project delivery journey that the Project Governance Team could use to align expectations of Project Teams and Process Owners with
 - RACI Matrix documented responsibilities of each project team role sequentially, but **not dependencies** or **which Process Owners** they had to liaise with at different points of the delivery journey
@@ -48,7 +48,7 @@ Service Design Blueprinting was chosen because it was the only method that could
 - **Jobs to be done** by project teams
 - **Pain points** experienced by project teams
 
-![Annotated service design blueprint showing Process, User's Actions, Frontstage Contact Person's Actions, Pain Points and Key Problem Areas](/projects/images/blueprint-screenshot.png)
+![Annotated service design blueprint showing Process, User's Actions, Frontstage Contact Person's Actions, Pain Points and Key Problem Areas](./images/blueprint-screenshot.png)
 
 I **adapted** the standard service design blueprint format in two ways:
 

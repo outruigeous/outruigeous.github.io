@@ -3,7 +3,7 @@ title: "Sanctuary, a mental health transportation app"
 tags: ["UX Research", "UI Design", "Workshop Facilitation"]
 role: "UX Designer, UX Researcher"
 timeline: "Nov 2024 – May 2025"
-tools used: "Figma, Miro"
+toolsUsed: "Figma, Miro"
 coverPlaceholder: "Add cover image here"
 order: 2
 ---
@@ -71,7 +71,7 @@ The project had a few interconnected problems:
 
 The design process was structured across four phases:
 
-![Diagram showing our design process for Sanctuary](/projects/images/sanctuary-approach.png)
+![Diagram showing our design process for Sanctuary](./images/sanctuary-approach.png)
 
 ## Research
 
@@ -165,21 +165,21 @@ The logo combines two hearts, one representing wellbeing and the other a GPS arr
 
 <div class="placeholder-block" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 32px; text-align: center; font-size: 13px; color: var(--ink-muted); margin: 16px 0;">Add moving logo  gif here</div>
 
-![Image showing Logos for Sanctuary](/projects/images/sanctuary-logosketches-2.png)
+![Image showing Logos for Sanctuary](./images/sanctuary-logosketches-2.png)
 
 #### Font Selection
 
 Onest was selected for its readability and its balance of warmth and clarity, ensuring information lands quickly and consistently across every screen, particularly for users navigating the app under stress.
 
-![Image showing font selection for Sanctuary](/projects/images/sanctuary-fontselection.png)
+![Image showing font selection for Sanctuary](./images/sanctuary-fontselection.png)
 
 #### Color Palette
 
 The primary palette centres on teal and mint green, chosen to embody the brand's core values of Support, Care, and Dependability. Green evokes calm and steadiness, the visual equivalent of a reassuring, reliable presence. Secondary colors are bright and warm, adding an approachable and uplifting quality that counters the clinical coldness associated with traditional mental health services. Together, they reflect a brand that is grounding without being heavy, and supportive without being sterile.
 
-![Diagram showing color palette consisting of primary, secondary and accent colors for Sanctuary](/projects/images/sanctuary-brandcolors.png)
+![Diagram showing color palette consisting of primary, secondary and accent colors for Sanctuary](./images/sanctuary-brandcolors.png)
 
-![Diagram showing illustrations used in Sanctuary's app](/projects/images/sanctuary-illustrations.png)
+![Diagram showing illustrations used in Sanctuary's app](./images/sanctuary-illustrations.png)
 
 # Final Designs
 
@@ -189,13 +189,13 @@ The primary palette centres on teal and mint green, chosen to embody the brand's
 
 Onboarding screens use **warm, inviting illustrations** and a **reassuring tone of voice** to create a welcoming first impression, encouraging users to create an account while **establishing confidence** that they will be well supported.
 
-![Images of Sanctuary's user onboarding flow](/projects/images/sanctuary-emotionaldesign.png)
+![Images of Sanctuary's user onboarding flow](./images/sanctuary-emotionaldesign.png)
 
 ### Transport
 
 Our research reflected **uncertainty** as one of the lead causes of stress when users go through the process of getting help at a facility. Hence, the transport experience was designed around **removing that uncertainty at every step of the booking process**.
 
-![Images of Sanctuary's Transport Booking flow ](/projects/images/sanctuary-transportexperience.png)
+![Images of Sanctuary's Transport Booking flow ](./images/sanctuary-transportexperience.png)
 
 ### Sending Affirmations, apart from regular text messages
 
@@ -205,7 +205,7 @@ The **Affirmations** feature allows users and their circle to **send pre-written
 
 Whenever the user **indicates in the Mood tracking feature** that they are **feeling upset**, Sanctuary will also **prompt the user to read an affirmation** sent by their circle.
 
-![Images of Sanctuary's Affirmations feature ](/projects/images/sanctuary-affirmations.png)
+![Images of Sanctuary's Affirmations feature ](./images/sanctuary-affirmations.png)
 
 ### Wellness Feature
 
@@ -217,13 +217,13 @@ Whenever the user **indicates in the Mood tracking feature** that they are **fee
 
 We also designed a **flexible component library** to support a wide range of exercise formats, including videos, podcasts, audio, and articles, giving the client the flexibility to expand their content offerings over time.
 
-![Images of Sanctuary's Wellness feature ](/projects/images/sanctuary-wellness.png)
+![Images of Sanctuary's Wellness feature ](./images/sanctuary-wellness.png)
 
 ## Style Guide
 
 As part of our handover, we developed a style guide to ensure visual and interaction consistency across Sanctuary's interface beyond our involvement. It covers color, typography, iconography, spacing, and a component library, giving the client's development team a clear reference to build from and a foundation for any future design work.
 
-![Images of Sanctuary's Style Guide ](/projects/images/sanctuary-styleguide.png)
+![Images of Sanctuary's Style Guide ](./images/sanctuary-styleguide.png)
 
 # 🧠 Reflections
 

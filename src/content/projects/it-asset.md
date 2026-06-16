@@ -3,7 +3,7 @@ title: "IT Asset Management Input/Output Tooling"
 tags: ["UX Research", "UI Design"]
 role: "UX Designer, UX Researcher"
 timeline: "May – Nov 2019"
-tools used: Confluence, JIRA, Sketch"
+toolsUsed: Confluence, JIRA, Sketch"
 coverPlaceholder: "Add cover image here"
 order: 5
 ---
@@ -36,7 +36,7 @@ Over the course of 5 months, I went through a rigorous design process that invol
 
 This is the detailed design process we defined together with the project team:
 
-![Diagram showing the Research, Prioritize, Make process for the project](/projects/images/itasset-approach.png)
+![Diagram showing the Research, Prioritize, Make process for the project](./images/itasset-approach.png)
 
 ## Research
 
@@ -71,7 +71,7 @@ We gathered the following insights on users’ needs and pain points from the re
 
 I then presented our findings from our UX research analysis to stakeholders from the vendor team and project team, and we conducted a **prioritization** exercise using a **Rewards / Efforts Matrix.**
 
-![Value/effort matrix prioritizing design ideas, all rated high reward](/projects/images/itasset-prioritizationmatrix.png)
+![Value/effort matrix prioritizing design ideas, all rated high reward](./images/itasset-prioritizationmatrix.png)
 
 For the **input portal**, as it is an out-of-the-box solution, the pain points of the users were unable to be addressed through UI improvements due to the limitations from the vendor.
 
@@ -93,7 +93,7 @@ Combining the insights gathered from the users in the initial research phase, as
 
 ### Old Output Portal
 
-![Screenshot of the old IT Asset Management output portal interface](/projects/images/itasset-oldoutputportal.png)
+![Screenshot of the old IT Asset Management output portal interface](./images/itasset-oldoutputportal.png)
 
 ### New Output Portal
 
@@ -101,31 +101,31 @@ Combining the insights gathered from the users in the initial research phase, as
 
 Apart from the global search, users are now able to search by different asset categories. Asset categories are **color coded**, and a **short description** of that category is added below to give users more context to help them make a more informed navigation choice.
 
-![New Output Portal homepage with search bar and four color coded asset category cards: Application, Software Installation, Technology, Server.](/projects/images/itasset-infocategory-1.png)
+![New Output Portal homepage with search bar and four color coded asset category cards: Application, Software Installation, Technology, Server.](./images/itasset-infocategory-1.png)
 
 #### 2. Standardized Naming Conventions and Terminologies
 
 An introduction to all the terminologies used in the portal is provided on the portal’s home page. Examples are given as well to guide the user in their search process.
 
-![Section named How the Output Portal Works that defines the terms Application, Installation, Technology, and Server with examples.](/projects/images/itasset-terminologies.png)
+![Section named How the Output Portal Works that defines the terms Application, Installation, Technology, and Server with examples.](./images/itasset-terminologies.png)
 
 #### 3. Clearer information structure
 
 There is now more explanation on the output portal’s homepage to inform users how this. portal can be used, and the different types of asset categories that are available and how they are structured. This section will be especially helpful for future newcomers who have yet to learn how certain terminologies are used in the organization.
 
-![Entity relationship diagram showing dependencies between Parent Application, Application Version, Installation, Technology, and Server.](/projects/images/itasset-infostructure.png)
+![Entity relationship diagram showing dependencies between Parent Application, Application Version, Installation, Technology, and Server.](./images/itasset-infostructure.png)
 
 #### 4. Other tools to help users find information
 
 **Color codes** for different asset types are shown on all the screens as a legend, to help users identify the asset category faster and easier. This **color segmentation** is **crucial** as **some applications and technologies have the same names**, and users could not tell them apart at first glance in the old portal.
 
-![List of Technologies table with Name column highlighted and a color coded legend for asset types](/projects/images/itasset-legend.png)
+![List of Technologies table with Name column highlighted and a color coded legend for asset types](./images/itasset-legend.png)
 
 Whenever an asset is named within a portal’s page, its **asset category’s color code will always appear next to its name** for the users to easily identify whether that is the name of an application, software installation, technology or server. The examples below are taken from a page describing the specifications of an application.
 
-![Application detail page with tabs and asset name shown next to its category color dot](/projects/images/itasset-legend-2.png)
+![Application detail page with tabs and asset name shown next to its category color dot](./images/itasset-legend-2.png)
 
-![Application detail page showing related Technology, Software Installations, and Servers lists, each color coded by category](/projects/images/itasset-legend-3.png)
+![Application detail page showing related Technology, Software Installations, and Servers lists, each color coded by category](./images/itasset-legend-3.png)
 
 # Impact
 
