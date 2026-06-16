@@ -4,11 +4,11 @@ tags: ["UX Research", "UI Design", "Workshop Facilitation"]
 role: "UX Designer, UX Researcher"
 timeline: "Nov 2024 – May 2025"
 toolsUsed: "Figma, Miro"
-coverPlaceholder: "Add cover image here"
+coverPlaceholder: "./images/sanctuary-cover.png"
 order: 2
 ---
 
-# Overview
+## Overview
 
 When mental health crises occur, existing intervention protocols like the Baker Act allow for involuntary emergency detention and examination. While these protocols aim to safeguard people during triage, they often fail to preserve dignity and can exacerbate the very crisis they are meant to address.
 
@@ -19,7 +19,7 @@ Sanctuary* (*name changed due to client’s NDA)* reimagines mental health suppo
 - **Chat and Call Function:** Allowing users to stay connected and share their personal updates with trusted contacts who are either their family or friends
 
 
-# Outcomes
+## Outcomes
 
 - A **complete redesign** of all three feature areas: transport booking, communication, and wellness
 - A **new brand identity**: logo, color palette, illustration style, and typography
@@ -31,13 +31,14 @@ Sanctuary* (*name changed due to client’s NDA)* reimagines mental health suppo
 
 </aside>
 
-# Challenges
+
+## Challenges
 
 The project had a few interconnected problems:
 
 <aside>
 
-#### Missing Foundations:
+#### **Missing Foundations**
 
 - **Limited user** and **competitor insights** beyond client-provided background information
 - **No brand identity** existed to guide the visual design
@@ -59,27 +60,26 @@ The project had a few interconnected problems:
 
 <aside>
 
-#### Existing Screen Designs:
+#### **Existing Screen Designs:**
 
 - Audit surfaced **major usability issues with existing screens** *(e.g. Incomplete flows, unclear screen sequences, inconsistent components)* which made them unsuitable as a foundation, and for usability testing
 - We negotiated with the client for a scope change which they were agreeable to, and the **focus** of this project **shifted** from designing the new wellness feature and design system creation, to a **complete app redesign**, **rebrand** and a **style guide** for the client’s development team.
 </aside>
 
-<div class="placeholder-block" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 32px; text-align: center; font-size: 13px; color: var(--ink-muted); margin: 16px 0;">Add image, diagram, or research artefact here</div>
 
-# Approach
+## Approach
 
 The design process was structured across four phases:
 
 ![Diagram showing our design process for Sanctuary](./images/sanctuary-approach.png)
 
-## Research
+### Research
 
-### User Research
+#### User Research
 
 I segmented the research into two groups: users at high risk of a mental health crisis, and a broader low-risk audience, reflecting the client's two distinct feature goals. I conducted interviews with high-risk participants recruited by the client under NDA, and a combination of surveys and interviews with the low-risk group.
 
-### Insights from Users:
+##### Insights from Users:
 
 <aside>
 
@@ -109,7 +109,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 - **Customizable Reminders:** While reminders can be helpful, they can also cause unwanted annoyance and stress towards users when too frequent or delivered in a pushy tone. Users wanted control over when and how often they receive these reminders.
 </aside>
 
-### Competitor Research
+#### Competitor Research
 
 <aside>
 
@@ -129,9 +129,9 @@ I segmented the research into two groups: users at high risk of a mental health 
 - **Transport is purely logistical:** Most non-emergency transport services focus on getting the user from point A to B, leaving the passenger’s emotional wellbeing and distress management unaddressed during the journey
 </aside>
 
-## Brand Design
+### Brand Design
 
-### Branding Workshop Findings
+#### Branding Workshop Findings
 
 <aside>
 
@@ -157,23 +157,23 @@ Established, Friendly, Authoritative, Bright, Approachable
 
 </aside>
 
-### Translating Brand Values to Visual Design
+#### Translating Brand Values to Visual Design
 
-#### Logo Sketches
+##### Logo Sketches
 
 The logo combines two hearts, one representing wellbeing and the other a GPS arrow, to convey the message *'We are the way to your wellbeing’.*
 
-<div class="placeholder-block" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 32px; text-align: center; font-size: 13px; color: var(--ink-muted); margin: 16px 0;">Add moving logo  gif here</div>
+![alt text](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlkaHBjaWI3eWZvaXZjeTBpc3kwZGUwbzBibm5wdmtwazVqZXNjZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TeBAgCPYwhOpnKTcgl/giphy.gif)
 
 ![Image showing Logos for Sanctuary](./images/sanctuary-logosketches-2.png)
 
-#### Font Selection
+##### Font Selection
 
 Onest was selected for its readability and its balance of warmth and clarity, ensuring information lands quickly and consistently across every screen, particularly for users navigating the app under stress.
 
 ![Image showing font selection for Sanctuary](./images/sanctuary-fontselection.png)
 
-#### Color Palette
+##### Color Palette
 
 The primary palette centres on teal and mint green, chosen to embody the brand's core values of Support, Care, and Dependability. Green evokes calm and steadiness, the visual equivalent of a reassuring, reliable presence. Secondary colors are bright and warm, adding an approachable and uplifting quality that counters the clinical coldness associated with traditional mental health services. Together, they reflect a brand that is grounding without being heavy, and supportive without being sterile.
 
@@ -181,23 +181,26 @@ The primary palette centres on teal and mint green, chosen to embody the brand's
 
 ![Diagram showing illustrations used in Sanctuary's app](./images/sanctuary-illustrations.png)
 
-# Final Designs
 
-## App Design
+## Final Designs
 
-### Emotional Design
+### App Design
+
+#### Emotional Design
 
 Onboarding screens use **warm, inviting illustrations** and a **reassuring tone of voice** to create a welcoming first impression, encouraging users to create an account while **establishing confidence** that they will be well supported.
 
 ![Images of Sanctuary's user onboarding flow](./images/sanctuary-emotionaldesign.png)
 
-### Transport
+
+#### Transport
 
 Our research reflected **uncertainty** as one of the lead causes of stress when users go through the process of getting help at a facility. Hence, the transport experience was designed around **removing that uncertainty at every step of the booking process**.
 
 ![Images of Sanctuary's Transport Booking flow ](./images/sanctuary-transportexperience.png)
 
-### Sending Affirmations, apart from regular text messages
+
+#### Sending Affirmations, apart from regular text messages
 
 While designing the messaging feature, we recognized that users **did not always have the capacity** to initiate or sustain a conversation when they were struggling. At the same time, they **wanted to feel supported** by their loved ones **without burdening them** with the details of what they were going through. Sanctuary's communication feature needed to offer something that resolved this dilemma **without requiring users to initiate a conversation** at all.
 
@@ -207,7 +210,8 @@ Whenever the user **indicates in the Mood tracking feature** that they are **fee
 
 ![Images of Sanctuary's Affirmations feature ](./images/sanctuary-affirmations.png)
 
-### Wellness Feature
+
+#### Wellness Feature
 
 **Mood tracking** adds a layer of personalisation, linking the user's emotional state to relevant exercise suggestions and affirmation prompts, making the app more intuitive with each use.
 
@@ -219,13 +223,15 @@ We also designed a **flexible component library** to support a wide range of exe
 
 ![Images of Sanctuary's Wellness feature ](./images/sanctuary-wellness.png)
 
-## Style Guide
+
+#### Style Guide
 
 As part of our handover, we developed a style guide to ensure visual and interaction consistency across Sanctuary's interface beyond our involvement. It covers color, typography, iconography, spacing, and a component library, giving the client's development team a clear reference to build from and a foundation for any future design work.
 
 ![Images of Sanctuary's Style Guide ](./images/sanctuary-styleguide.png)
 
-# 🧠 Reflections
+
+## Reflections
 
 Most of my design work has been focused on measuring success by efficiency and task completion. Sanctuary was the first project where success meant something different, where success looks like designing an experience that makes users feel supported and safe. Hearing directly from users about what they go through during a mental health crisis made me aware of the real impact my designs could have on them. It pushed me to be far more deliberate about designing responsibly and ethically, knowing that a poorly executed solution could do more harm than good. I wanted my design decisions to convey the support, care and compassion that they need most in times of crisis through the application.
 

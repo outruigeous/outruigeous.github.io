@@ -8,18 +8,20 @@ coverPlaceholder: "Add cover image here"
 order: 4
 ---
 
-# Overview
+## Overview
 
 **SearchSG** is the Singapore government’s Search-as-a-service technology stack. It is built for all Singaporeans to find any government content efficiently and effectively, and for government agencies to track and improve their website’s search experiences through meaningful search insights provided. 
 
 As the **sole UX researcher** at SearchSG, I identified significant **gaps in our research processes, rigor** and **documentation**, then **implemented comprehensive solutions** that **transformed** how our team **conducts user research**.
 
-# Outcomes
+
+## Outcomes
 
 - **Increased research frequency** **from bi-annual to quarterly** studies, with smaller feature-specific surveys using the government’s survey platform, Crowdtask. Contributing factors include resolving participant recruitment bottleneck, standardization of research process and tighter scoping of research objectives
 - Improved **findability** of past research insights through **establishing a centralized research repository** on Confluence
 
-# Challenges
+
+## Challenges
 
 Within the first 8 months of conducting research activities in SearchSG, I collected all the pain points I faced while going through the research process, and feedback from what other stakeholders (e.g. the rest of the UX team, product team) felt about the state of research activities.
 
@@ -55,7 +57,8 @@ Within the first 8 months of conducting research activities in SearchSG, I colle
 - UX team will just tell me to locate these insights most of the time, adding on to more tasks to do on my plate
 </aside>
 
-# Goals
+
+## Goals
 
 I envisioned the future state of research operations in SearchSG to encompass these three areas, and used them as my north star when building my approach:
 
@@ -63,7 +66,8 @@ I envisioned the future state of research operations in SearchSG to encompass th
 - Increase frequency of research studies
 - Make research insights and documentation easier to locate
 
-# 🛠️ Approach
+
+## Approach
 
 <aside>
 ❗
@@ -103,7 +107,8 @@ I created a **centralized repository** for managing research assets on Confluenc
 - Made it easier to reference past insights and build on existing knowledge
 - **Reduced duplication of effort** across team members and projects
 
-# Impact
+
+## Impact
 
 ![Before/after diagram of a 5-step research ops process (Plan, Recruit, Execute, Synthesize, Document & Publish) showing improvements at each stage](./images/ssg-research-ops-approach.png)
 
@@ -121,7 +126,8 @@ As the sole UX Researcher, I could also dedicate more time to larger research st
 
 The research workflow and repository is **still being used** in SearchSG today, as of April 2026.
 
-# Reflections
+
+## Reflections
 
 Setting up Research Ops in SearchSG was my last “gift” to the team as it served as not only a knowledge transfer to prepare for my departure, but also I wanted it to be a “gift that keeps on giving” that would benefit the team for years to come. Basically, a workflow that empowers my teammates who are all new to UX Research and would like to learn it, and a repository to store and share the fruits of our labor on the search-related research we have done so far.
 

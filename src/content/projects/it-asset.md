@@ -8,24 +8,24 @@ coverPlaceholder: "Add cover image here"
 order: 5
 ---
 
-# Overview
+## Overview
 
 The client, a leading European bank, purchased a vendor tool to replace its internal IT asset management portal. The vendor tool is a **two part solution** that includes an **input portal** *(for information input on the assets only available for specific members in the organization)*, and an **output portal** *(a website for viewing the list of assets which is accessible by the whole organization)*.
 
 I was the **lead UX Designer** and **Researcher** for this project, and I was initially tasked by management to **evaluate** the vendor tool for any **usability issues** and resolve these issues with the vendor. However due to limitations on the vendor’s end, no changes could be made on the web application and only the web portal was fully customizable. Hence, I **pivoted** to doing **research** and **design** for only the **web portal** in the second part of this project.
 
-# Outcomes
+## Outcomes
 
 - **Output Portal** received **positive feedback** from **new joiners** as it made it **easy** for them to catch up on application dependencies during **onboarding**
 - The situation with us not being able to redesign the web application to improve its UX prompted conversations between the UX team and management about **involving UX evaluation earlier in procurement decisions**
 
-# Challenges
+## Challenges
 
 - The **vendor tool was already procured** before I started evaluating its usability. Thus, even though critical usability issues were discovered, the **vendor was did not want to make any improvements** to their tool as we had no contractual leverage. The vendor also had no obligation to make those changes without an extra charge.
 - The vendor was **not receptive** to having their product evaluated. **Managing** their **defensive reaction** towards the usability test results while **maintaining** a **positive working relationship** with the vendor and project team throughout the process was one of the hardest challenges I navigated in this project.
 - **Getting budget approved for UX Research** was a constant negotiation as it was the first time where the project team and the vendor had worked with UX Designers and I had to provide a lot of justification why doing UX Research is important
 
-# 🛠️ Approach
+## Approach
 
 Over the course of 5 months, I went through a rigorous design process that involves:
 
@@ -38,7 +38,7 @@ This is the detailed design process we defined together with the project team:
 
 ![Diagram showing the Research, Prioritize, Make process for the project](./images/itasset-approach.png)
 
-## Research
+### Research
 
 In order to have a better understanding of our users’ needs and goals, I gathered quantitative and qualitative data and feedback from the users via the following channels:
 
@@ -67,7 +67,7 @@ We gathered the following insights on users’ needs and pain points from the re
 - **Search Friction:** Both the old and new platform took too many clicks to get users to what they wanted to find
 </aside>
 
-## Sharing UX Research Analysis with stakeholders, and prioritization exercise
+### Sharing UX Research Analysis with stakeholders, and prioritization exercise
 
 I then presented our findings from our UX research analysis to stakeholders from the vendor team and project team, and we conducted a **prioritization** exercise using a **Rewards / Efforts Matrix.**
 
@@ -79,7 +79,7 @@ For the **output portal**, users' needs were made known to the project team. Fea
 
 A **card sorting** exercise was also done with subject matter experts to identify an **information architecture** for the Web Portal, and to also **ensure** that the **terminologies** used in the Output Portal are **commonly known**.
 
-# Final UI Design
+## Final UI Design
 
 Combining the insights gathered from the users in the initial research phase, as well as the prioritised features that we have identified from the value proposition canvas, I kept the following points in mind while designing:
 
@@ -127,11 +127,11 @@ Whenever an asset is named within a portal’s page, its **asset category’s co
 
 ![Application detail page showing related Technology, Software Installations, and Servers lists, each color coded by category](./images/itasset-legend-3.png)
 
-# Impact
+## Impact
 
 After the output portal was launched, I received **positive feedback** from coworkers who are **new joiners** of the organization. My coworkers mentioned that the **explanations of the various terminologies** and **information structure diagrams** on the portal’s homepage **helped them greatly with their onboarding process**, and got them up to speed with the understanding they needed to have of the applications they would be working with.
 
-# Reflections
+## Reflections
 
 This was one of the biggest projects I have handled, and made me grow and mature not only as a UX Designer, but also as a working professional. It was very challenging to not only work on a tight budget and timeline, but also with a project team who was not used to placing user experience as one of their main priorities.
 

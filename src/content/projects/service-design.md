@@ -8,13 +8,13 @@ coverPlaceholder: "./images/cover-service-design.jpeg"
 order: 1
 ---
 
-# Overview
+## Overview
 
 Historically, there has been a constant stream of complaints on the ground about the **long** and **painful project delivery journey** in the IT department of a financial services organization, where **stringent compliance requirements** and **legacy systems** made every delivery checkpoint difficult for project teams to clear. There was also **no official process defined** and documented for project teams to follow, other than a RACI matrix to map out roles and responsibilities for tasks.
 
 Seizing the opportunity of an ongoing IT Transformation initiative, I investigated the current delivery journey by conducting **12 role-specific Service Design Blueprinting workshops** with developers, business analysts, project managers, scrum masters, tech leads and testers from the **Singapore and Chennai offices**, to **improve the project teams' experience of delivering a project**.
 
-# Outcomes
+## Outcomes
 
 I merged the role-specific blueprints to form the organization’s **first official delivery journey map**, which greatly helped the project governance team and management to **visualize the end-to-end journey** across all six project team roles, and the supporting teams *(e.g. Security, Compliance, Strategy & Architecture)* that owned different parts of the process. It also allowed them to **pinpoint exactly where pain points and bottlenecks occurred** in the process, and which teams were involved at those points.
 
@@ -26,7 +26,7 @@ From there, I also utilized the delivery journey map to:
 
 These findings also kicked off a ground-up problem solving initiative known as “Change Angels”, which will be covered in a later section.
 
-# Challenges
+## Challenges
 
 ![Diagram showing the relationship between Management, Project Governance Team, Project Teams, and Process Owners](./images/challenges-diagram.png)
 
@@ -35,7 +35,7 @@ These findings also kicked off a ground-up problem solving initiative known as �
 - Management was receiving complaints from both Project Teams and Process Owner, but **no way to verify either accounts** and **identify specifically where the process breakdowns were actually happening**
 - **Informal workarounds had accumulated** over time to the point where there was **no consistent delivery process followed** across teams
 
-# Approach
+## Approach
 
 ## Adapting the blueprint to our organization's context
 
@@ -88,7 +88,7 @@ The blueprint was then evaluated from three key areas:
   </div>
 </div>
 
-# Impact
+## Impact
 
 Besides what we sought out to identify in the synthesis process, the blueprint also surfaced findings that we were not expecting to discover:
 
@@ -118,7 +118,7 @@ Besides what we sought out to identify in the synthesis process, the blueprint a
   </div>
 </div>
 
-# Next steps
+## Next steps
 
 ## Prioritization with managers
 
