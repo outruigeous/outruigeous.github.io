@@ -2,31 +2,31 @@
 title: "Blueprinting a Product Delivery Journey through Service Design"
 tags: ["UX Research", "Service Design", "Design Thinking", "Workshop Facilitation"]
 role: "Service Designer"
-timeline: "2019 - 2020"
-client: "[Organisation]"
+timeline: "June 2019 – June 2020"
+tools used: Confluence, JIRA, Adobe CC"
 coverPlaceholder: "/projects/images/cover-service-design.jpeg"
 order: 1
 ---
 
-## Overview
+# Overview
 
 Historically, there has been a constant stream of complaints on the ground about the **long** and **painful project delivery journey** in the IT department of a financial services organization, where **stringent compliance requirements** and **legacy systems** made every delivery checkpoint difficult for project teams to clear. There was also **no official process defined** and documented for project teams to follow, other than a RACI matrix to map out roles and responsibilities for tasks.
 
 Seizing the opportunity of an ongoing IT Transformation initiative, I investigated the current delivery journey by conducting **12 role-specific Service Design Blueprinting workshops** with developers, business analysts, project managers, scrum masters, tech leads and testers from the **Singapore and Chennai offices**, to **improve the project teams' experience of delivering a project**.
 
-## Outcomes
+# Outcomes
 
-I merged the role-specific blueprints to form the organization's **first official delivery journey map**, which greatly helped the project governance team and management to **visualize the end-to-end journey** across all six project team roles, and the supporting teams *(e.g. Security, Compliance, Strategy & Architecture)* that owned different parts of the process. It also allowed them to **pinpoint exactly where pain points and bottlenecks occurred** in the process, and which teams were involved at those points.
+I merged the role-specific blueprints to form the organization’s **first official delivery journey map**, which greatly helped the project governance team and management to **visualize the end-to-end journey** across all six project team roles, and the supporting teams *(e.g. Security, Compliance, Strategy & Architecture)* that owned different parts of the process. It also allowed them to **pinpoint exactly where pain points and bottlenecks occurred** in the process, and which teams were involved at those points.
 
 From there, I also utilized the delivery journey map to:
 
-- Identify gaps between the roles and responsibilities documented on the RACI matrix, and what was being done on the ground
-- Guide the project governance team to **update our official process documentation** and **remove obsolete tasks** on the RACI matrix — both of which were actioned
+- Identify **gaps** between the roles and responsibilities ****documented on the RACI matrix, and what was being done on the ground
+- Guide the project governance team to **update our official process documentation** and **remove obsolete tasks** on the RACI matrix
 - Surface **pain points** that project teams were experiencing in the delivery journey to management, where we evaluated and prioritized these pain points together
 
-These findings also kicked off a ground-up problem solving initiative known as "Change Angels", which will be covered in a later section.
+These findings also kicked off a ground-up problem solving initiative known as “Change Angels”, which will be covered in a later section.
 
-## Challenges
+# Challenges
 
 ![Diagram showing the relationship between Management, Project Governance Team, Project Teams, and Process Owners](/projects/images/challenges-diagram.png)
 
@@ -35,9 +35,9 @@ These findings also kicked off a ground-up problem solving initiative known as "
 - Management was receiving complaints from both Project Teams and Process Owner, but **no way to verify either accounts** and **identify specifically where the process breakdowns were actually happening**
 - **Informal workarounds had accumulated** over time to the point where there was **no consistent delivery process followed** across teams
 
-## Approach
+# Approach
 
-### Adapting the blueprint to our organization's context
+## Adapting the blueprint to our organization's context
 
 A mixed method study consisting of surveys, focus group discussions, contextual inquiry and service design blueprinting was initially proposed to management. After considering the budget and timeline allocated for this study, I decided to proceed with a **Service Design Blueprinting** Workshop done in the form of a focus group discussion.
 
@@ -52,17 +52,17 @@ Service Design Blueprinting was chosen because it was the only method that could
 
 I **adapted** the standard service design blueprint format in two ways:
 
-- I **pre-populated the User's Actions row** [Green color] with each role's **responsibilities taken from the RACI matrix** instead of getting the participants to list it down. Participants could remove tasks they no longer did, reorder them, or add tasks that weren't in the RACI at all.
-- I expanded the Frontstage Actors section [Blue color] to include all 21 process owners, so participants could map exactly which **owners** they **interact with** at each step, and the nature and duration of those interactions *(e.g. meetings, tasks)*
+- I **pre-populated the User’s Actions row** [Green color] with each role’s **responsibilities taken from the RACI matrix** instead of getting the participants to list it down. Participants could remove tasks they no longer did, reorder them, or add tasks that weren't in the RACI at all.
+- I expanded the Frontstage Actors section [Blue color] to include all 21 process owners, so participants could map exactly which **owners** they **interact with** at each step, and the **nature** and **duration** of those interactions *(e.g. meetings, tasks)*
 - Small pink post-its are used to capture **pain points** tied to specific tasks or interactions
 
-### Executing the workshops
+## Executing the workshops
 
 The blueprinting workshops were first piloted in the **Singapore and Chennai offices** across 7 sessions for each of the roles in the project teams: Developers, Technical Leads, Scrum Masters *(for Agile Projects)*, Project Managers *(for Waterfall Projects)*, Business Analysts, Testers, Division Heads
 
-**As the management saw immense value in these blueprinting workshops from the Singapore office pilot's findings**, I was then sent to the Chennai office to continue with conducting 6 more blueprinting sessions as there were many project team members based there too.
+As the **management saw immense value in these blueprinting workshops** from the Singapore office pilot's findings, I was then sent to the Chennai office to continue with conducting 6 more blueprinting sessions as there were many project team members based there too.
 
-### Synthesis
+## Synthesis
 
 The blueprint was then evaluated from three key areas:
 
@@ -88,7 +88,7 @@ The blueprint was then evaluated from three key areas:
   </div>
 </div>
 
-## Impact
+# Impact
 
 Besides what we sought out to identify in the synthesis process, the blueprint also surfaced findings that we were not expecting to discover:
 
@@ -118,15 +118,15 @@ Besides what we sought out to identify in the synthesis process, the blueprint a
   </div>
 </div>
 
-## Next steps
+# Next steps
 
-### Prioritization with managers
+## Prioritization with managers
 
 As the blueprinting workshops surfaced a large number of pain points *(293 of them)*, I held a **prioritization session with management** and the project governance team where we sorted pain points based on its level of impact *(on the delivery journey and organization)* and level of difficulty *(to resolve it)*.
 
 **Pain points** that emerged as high impact and low to mid level of difficulty to resolve were shortlisted to be **transformed into problem statements** for the organization's new **Change Angels** initiative, while the other pain points were stored in the Project Governance team's backlog to be tackled in the future.
 
-### Change Angels
+## Change Angels
 
 Change Angels is a **ground-up initiative** that involves volunteers from various departments **collaborating cross-functionally to solve company wide issues** using the design thinking process. I was involved in this initiative as part of the organizing team, and I also facilitated one of the volunteer teams' weekly meetings.
 
