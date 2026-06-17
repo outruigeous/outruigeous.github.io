@@ -4,7 +4,7 @@ tags: ["UX Research", "UI Design"]
 role: "UX Designer, UX Researcher"
 timeline: "May – Nov 2019"
 toolsUsed: Confluence, JIRA, Sketch"
-coverPlaceholder: "Add cover image here"
+cover: "./images/itasset-cover.png"
 order: 5
 ---
 

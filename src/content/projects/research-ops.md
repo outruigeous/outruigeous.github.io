@@ -4,7 +4,7 @@ tags: ["UX Research", "Research Ops", "Design Ops"]
 role: "UX Researcher"
 timeline: "March – June 2023"
 toolsUsed: "Confluence, Figjam, Figma, Google Workspace, Jira, Miro, Notion, Slack, Trello"
-coverPlaceholder: "Add cover image here"
+cover: "./images/research-ops-cover.png"
 order: 4
 ---
 

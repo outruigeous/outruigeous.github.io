@@ -1,10 +1,10 @@
 ---
 title: "SearchSG Administrative Portal"
 tags: ["UX Research", "Workshop Facilitation", "UI Design"]
-role: "UX Designer"
-timeline: "2023"
+role: "UX Researcher"
+timeline: "June - Nov 2022"
 toolsUsed: "SearchSG"
-coverPlaceholder: "Add cover image here"
+cover: "./images/admin-portal-cover.png"
 order: 3
 ---
 
@@ -39,7 +39,7 @@ Thus, the administrative portal had to be designed not only for agencies to make
 
 ## Approach
 
-![image.png](SearchSG%20Administrative%20Portal/image.png)
+![Process flowchart for SearchSG admin portal: User Interviews, Synthesis, Ideation Workshop, Prioritization, Design.](./images/admin-portal-approach.png)
 
 Before building SearchSG’s administrative portal, we wanted to understand the pain points agency website owners faced in managing search tools and work closely with them to craft the ideal experience for them. We conducted user interviews and held an ideation workshop with representatives from various government agencies’ web teams before prioritizing and landing on the list of features to include in the first version of the administrative portal.  
 
@@ -73,9 +73,13 @@ How might we enable agencies to **view search insights** that are **meaningful**
 
 ### Ideation Workshop
 
-![_MG_8159.jpg](SearchSG%20Administrative%20Portal/_MG_8159.jpg)
+<div class="image-pair">
 
-![_MG_8212.jpg](SearchSG%20Administrative%20Portal/_MG_8212.jpg)
+![Photo of me as a facilitator presenting an analogous inspiration case study (Dyson vacuum) during the ideation workshop.](./images/admin-portal-workshop-1.jpg)
+
+![Photo of me facilitating a storyboarding exercise during the ideation workshop](./images/admin-portal-workshop-2.jpg)
+
+</div>
 
 I designed and facilitated a half day workshop with 21 participants from 3 agencies who have had past experiences managing their search experience. The artifacts I created from the synthesis phase was also shared during this workshop to keep participants informed of the difficulties they face in their current experience of managing their search experience, as well as 
 
