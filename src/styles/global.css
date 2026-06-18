@@ -2,9 +2,10 @@
 
 @theme {
   --color-cream: #FFFCF4;
-  --color-ink: #1E1E1C;
+  --color-ink: #2A2A2A;
   --color-ink-muted: #6B6B68;
   --color-vermillion: #FF6B4A;
+  --color-dustybrown: #816B6B;
   --color-border-custom: #EDE8DC;
   --color-card-bg: #F5F0E8;
   --color-callout-bg: #F7F0E3;
@@ -29,12 +30,18 @@
 body {
   background-color: var(--color-cream);
   color: var(--color-ink);
+  font-size: 16px;
+}
+
+/* Reusable text-size utility, independent of element/tag */
+.text-body-sm {
+  font-size: 14px;
 }
 
 /* Sitewide heading scale — the single source of truth for h1-h5 font styling.
    Page-specific spacing (margin) stays with each page's layout markup. */
 h1 {
-  font-size: 1.875rem; /* 30px */
+  font-size: 30px;
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.15;
@@ -42,44 +49,45 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem; /* 20px */
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
   line-height: 1.4;
   color: var(--color-ink);
 }
 
 h3 {
-  font-size: 1rem; /* 16px */
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.4;
   color: var(--color-ink);
 }
 
 h4 {
-  font-size: 0.875rem; /* 14px */
+  font-size: 18px;
   font-weight: 600;
+  letter-spacing: 1px;
   line-height: 1.4;
   color: var(--color-ink);
 }
 
 h5 {
-  font-size: 0.75rem; /* 12px */
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
   color: var(--color-ink);
 }
 
 @media (min-width: 640px) {
-  h1 { font-size: 2.25rem; } /* 36px */
+  h1 { font-size: 36px; }
 }
 
 @media (min-width: 768px) {
-  h1 { font-size: 3rem; } /* 48px */
+  h1 { font-size: 48px; }
 }
 
 /* Hero headline — used once, on the homepage intro */
 .hero-title {
-  font-size: 2.25rem; /* 36px */
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.1;
@@ -87,15 +95,19 @@ h5 {
 }
 
 @media (min-width: 640px) {
-  .hero-title { font-size: 3rem; } /* 48px */
+  .hero-title { font-size: 48px; }
 }
 
 @media (min-width: 768px) {
-  .hero-title { font-size: 3.75rem; } /* 60px */
+  .hero-title { font-size: 60px; }
 }
 
 /* Long-form case study content (rendered markdown inside ProjectLayout) */
 .prose h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
@@ -107,9 +119,27 @@ h5 {
   margin-bottom: 0.5rem;
 }
 
+.prose h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--color-vermillion);
+  margin-top: 1.75rem;
+  margin-bottom: 0.825rem;
+}
+
+.prose h5 {
+  font-size: 16px;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .prose p {
   margin-bottom: 1rem;
-  max-width: 680px;
+}
+
+.prose img {
+  width: 100%;
+  height: auto;
 }
 
 .prose ul {
@@ -123,14 +153,15 @@ h5 {
   padding-left: 1.25rem;
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
-  max-width: 680px;
 }
 
 .prose li::before {
-  content: "—";
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--color-vermillion);
+  font-weight: 700;
+  font-size: 1.3em;
 }
 
 /* Notion-style <aside> callouts */
@@ -140,6 +171,20 @@ h5 {
   padding: 20px;
   margin: 20px 0;
 }
+
+.prose aside h4 {
+  font-size: 14.4px;
+  color: var(--color-dustybrown);
+}
+
+.prose aside ul { 
+  font-size: 14px;
+}
+
+.prose aside p {
+  font-size: 14px;
+}
+
 .prose aside > :first-child {
   margin-top: 0;
 }
@@ -147,45 +192,30 @@ h5 {
   margin-bottom: 0;
 }
 
-/* Extra styling for callouts and placeholders in markdown */
-.prose .callout-grid {
+.prose aside li::before {
+  content: "→";
+  font-weight: 400;
+  font-size: 1em;
+}
+
+/* Grid wrapper for arranging multiple <aside> callouts side by side */
+.prose .aside-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: 1fr;
   gap: 12px;
   margin: 20px 0;
 }
-.prose .callout {
-  background: var(--color-card-bg);
-  border: 1px solid var(--color-border-custom);
-  border-radius: 12px;
-  padding: 20px;
-}
-.prose .callout h4 {
-  font-size: 11px;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-.prose .callout ul {
-  list-style: none;
-  padding: 0;
+.prose .aside-grid aside {
   margin: 0;
 }
-.prose .callout ul li {
-  font-size: 13px;
-  color: var(--color-ink-muted);
-  line-height: 1.7;
-  padding: 4px 0 4px 16px;
-  position: relative;
-  max-width: none;
+
+@media (min-width: 768px) {
+  .prose .aside-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 }
-.prose .callout ul li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  color: var(--color-vermillion);
-  font-size: 12px;
-}
+
+/* Extra styling for placeholders in markdown */
 .prose .image-pair {
   display: grid;
   grid-template-columns: 1fr;

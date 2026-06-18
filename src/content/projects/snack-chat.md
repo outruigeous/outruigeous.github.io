@@ -26,7 +26,8 @@ Because Singaporeans seem to be in real lack of passion.
 Our first task in the design thinking process is to empathise with our target group, which is students. We conducted interviews with different students from different courses around NTU about how they find their time in school and we asked them about their future dreams. We had three different levels of questions and we started with the first level that consisted of easier questions just to make the persons that were interviewed more comfortable. These were our questions:
 
 <aside>
-💬 ***LEVEL 1***
+
+***LEVEL 1***
 
 *Describe your day at school*
 
@@ -60,11 +61,11 @@ Our first task in the design thinking process is to empathise with our target gr
 
 #### Stage 2: Define – Definition of problems around passion
 
-> *”Passion is something I spend a lot of time on… I spend a lot of time playing computer games… But… I don’t think that is my passion?”*
-> 
-> 
-> *– A NTU student studying Material Sciences*
-> 
+<aside>
+*”Passion is something I spend a lot of time on… I spend a lot of time playing computer games… But… I don’t think that is my passion?”*
+*– A NTU student studying Material Sciences*
+
+</aside>
 
 We gained interesting answers and insights from the interviews about passion. Initially, the interviews were a big challenge for us because of the fact that **most of them were not able to define their passion**. The most usual reactions we got as soon as we mentioned the word ”passion” was *”UHHH”*. However, the interviewees became more and more comfortable the more we spoke about their hobbies and passions.
 

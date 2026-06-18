@@ -20,7 +20,7 @@ I merged the role-specific blueprints to form the organizationâ€™s **first offic
 
 From there, I also utilized the delivery journey map to:
 
-- Identify **gaps** between the roles and responsibilities ****documented on the RACI matrix, and what was being done on the ground
+- Identify **gaps** between the roles and responsibilities documented on the RACI matrix, and what was being done on the ground
 - Guide the project governance team to **update our official process documentation** and **remove obsolete tasks** on the RACI matrix
 - Surface **pain points** that project teams were experiencing in the delivery journey to management, where we evaluated and prioritized these pain points together
 
@@ -37,7 +37,7 @@ These findings also kicked off a ground-up problem solving initiative known as â
 
 ## Approach
 
-## Adapting the blueprint to our organization's context
+### Adapting the blueprint to our organization's context
 
 A mixed method study consisting of surveys, focus group discussions, contextual inquiry and service design blueprinting was initially proposed to management. After considering the budget and timeline allocated for this study, I decided to proceed with a **Service Design Blueprinting** Workshop done in the form of a focus group discussion.
 
@@ -56,66 +56,66 @@ I **adapted** the standard service design blueprint format in two ways:
 - I expanded the Frontstage Actors section [Blue color] to include all 21 process owners, so participants could map exactly which **owners** they **interact with** at each step, and the **nature** and **duration** of those interactions *(e.g. meetings, tasks)*
 - Small pink post-its are used to capture **pain points** tied to specific tasks or interactions
 
-## Executing the workshops
+### Executing the workshops
 
 The blueprinting workshops were first piloted in the **Singapore and Chennai offices** across 7 sessions for each of the roles in the project teams: Developers, Technical Leads, Scrum Masters *(for Agile Projects)*, Project Managers *(for Waterfall Projects)*, Business Analysts, Testers, Division Heads
 
 As the **management saw immense value in these blueprinting workshops** from the Singapore office pilot's findings, I was then sent to the Chennai office to continue with conducting 6 more blueprinting sessions as there were many project team members based there too.
 
-## Synthesis
+### Synthesis
 
 The blueprint was then evaluated from three key areas:
 
-<div class="callout-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 20px 0;">
-  <div class="callout" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
-    <h4 style="font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Process</h4>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">I identified any <strong>inconsistencies</strong>, <strong>obsolete tasks</strong>, and <strong>steps</strong> being done in a <strong>different order</strong> from what was documented in the RACI</li>
+<div class="aside-grid">
+  <aside>
+    <h4>Process</h4>
+    <ul>
+      <li>I identified any <strong>inconsistencies</strong>, <strong>obsolete tasks</strong>, and <strong>steps</strong> being done in a <strong>different order</strong> from what was documented in the RACI</li>
     </ul>
-  </div>
-  <div class="callout" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
-    <h4 style="font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Workload</h4>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">I documented the <strong>full scope of responsibilities</strong> carried by <strong>each role</strong>, including <strong>work not captured in the RACI</strong></li>
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">I identified if there were any <strong>capacity issues</strong>, and where in the process was that most likely to occur, as that has been a recurring complaint to management</li>
+  </aside>
+  <aside>
+    <h4>Workload</h4>
+    <ul>
+      <li>I documented the <strong>full scope of responsibilities</strong> carried by <strong>each role</strong>, including <strong>work not captured in the RACI</strong></li>
+      <li>I identified if there were any <strong>capacity issues</strong>, and where in the process was that most likely to occur, as that has been a recurring complaint to management</li>
     </ul>
-  </div>
-  <div class="callout" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
-    <h4 style="font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Interactions</h4>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">I analysed the <strong>nature</strong> of the <strong>interactions</strong> between project teams and process owners <em>(type of interaction, what was expected from each party, length of interaction, pain points if any)</em></li>
+  </aside>
+  <aside>
+    <h4>Interactions</h4>
+    <ul>
+      <li>I analysed the <strong>nature</strong> of the <strong>interactions</strong> between project teams and process owners <em>(type of interaction, what was expected from each party, length of interaction, pain points if any)</em></li>
     </ul>
-  </div>
+  </aside>
 </div>
 
 ## Impact
 
 Besides what we sought out to identify in the synthesis process, the blueprint also surfaced findings that we were not expecting to discover:
 
-<div class="callout-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 20px 0;">
-  <div class="callout" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
-    <h4 style="font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Process</h4>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">Many <strong>tasks were happening simultaneously across roles</strong> within the <strong>same project phase</strong>, which was not reflected in the RACI</li>
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">Led to team members taking on responsibilities that weren't formally theirs, <strong>increased workload</strong>, and <strong>bottlenecks</strong> in the process</li>
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">Some tasks were being <strong>executed in a different sequence</strong> from what was documented, suggesting process changes had been made over time without the RACI being updated</li>
+<div class="aside-grid">
+  <aside>
+    <h4>Process</h4>
+    <ul>
+      <li>Many <strong>tasks were happening simultaneously across roles</strong> within the <strong>same project phase</strong>, which was not reflected in the RACI</li>
+      <li>Led to team members taking on responsibilities that weren't formally theirs, <strong>increased workload</strong>, and <strong>bottlenecks</strong> in the process</li>
+      <li>Some tasks were being <strong>executed in a different sequence</strong> from what was documented, suggesting process changes had been made over time without the RACI being updated</li>
     </ul>
-  </div>
-  <div class="callout" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
-    <h4 style="font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Workload</h4>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">Project teams were <strong>simultaneously managing multiple project milestones across different phases</strong>, each with its own process owner requirements, while also maintaining BAU responsibilities</li>
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">Process Owner teams were also experiencing <strong>bandwidth issues</strong> as they were very lean, with as few as <strong>two to five people</strong> responsible for validating submissions from all active project teams in the organisation</li>
+  </aside>
+  <aside>
+    <h4>Workload</h4>
+    <ul>
+      <li>Project teams were <strong>simultaneously managing multiple project milestones across different phases</strong>, each with its own process owner requirements, while also maintaining BAU responsibilities</li>
+      <li>Process Owner teams were also experiencing <strong>bandwidth issues</strong> as they were very lean, with as few as <strong>two to five people</strong> responsible for validating submissions from all active project teams in the organisation</li>
     </ul>
-  </div>
-  <div class="callout" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 20px;">
-    <h4 style="font-size: 11px; font-weight: 600; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em;">Interactions</h4>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;"><strong>Turnaround times</strong> from process owners were <strong>highly inconsistent</strong>, ranging from days to as long as four months</li>
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">Once project teams handed off deliverables to process owners, there was <strong>no visibility into progress, nor Service Level Agreements</strong> governing how quickly process owners were expected to resolve blockers, making it impossible to anticipate delays or follow up effectively</li>
-      <li style="font-size: 13px; color: var(--ink-muted); line-height: 1.7; padding: 4px 0 4px 16px; position: relative;">Process owners were also <strong>slow to respond to requests</strong>, with some taking more than a month to get back to project teams</li>
+  </aside>
+  <aside>
+    <h4>Interactions</h4>
+    <ul>
+      <li><strong>Turnaround times</strong> from process owners were <strong>highly inconsistent</strong>, ranging from days to as long as four months</li>
+      <li>Once project teams handed off deliverables to process owners, there was <strong>no visibility into progress, nor Service Level Agreements</strong> governing how quickly process owners were expected to resolve blockers, making it impossible to anticipate delays or follow up effectively</li>
+      <li>Process owners were also <strong>slow to respond to requests</strong>, with some taking more than a month to get back to project teams</li>
     </ul>
-  </div>
+  </aside>
 </div>
 
 ## Next steps

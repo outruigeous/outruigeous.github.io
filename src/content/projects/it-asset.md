@@ -8,7 +8,7 @@ cover: "./images/itasset-cover.png"
 order: 5
 ---
 
-## Overview
+## Overview
 
 The client, a leading European bank, purchased a vendor tool to replace its internal IT asset management portal. The vendor tool is a **two part solution** that includes an **input portal** *(for information input on the assets only available for specific members in the organization)*, and an **output portal** *(a website for viewing the list of assets which is accessible by the whole organization)*.
 
@@ -25,7 +25,7 @@ I was the **lead UX Designer** and **Researcher** for this project, and I was in
 - The vendor was **not receptive** to having their product evaluated. **Managing** their **defensive reaction** towards the usability test results while **maintaining** a **positive working relationship** with the vendor and project team throughout the process was one of the hardest challenges I navigated in this project.
 - **Getting budget approved for UX Research** was a constant negotiation as it was the first time where the project team and the vendor had worked with UX Designers and I had to provide a lot of justification why doing UX Research is important
 
-## Approach
+## Approach
 
 Over the course of 5 months, I went through a rigorous design process that involves:
 
@@ -49,7 +49,7 @@ In order to have a better understanding of our users’ needs and goals, I gathe
 We gathered the following insights on users’ needs and pain points from the research done:
 
 <aside>
-✅ **Users' needs**
+<h4>Users' needs</h4>
 
 - Having a **central repository** of application-related information
 - **Improve ease of finding information** through:
@@ -59,7 +59,7 @@ We gathered the following insights on users’ needs and pain points from the re
 </aside>
 
 <aside>
-❌ **Users' Pain Points**
+<h4>Users' Pain Points</h4>
 
 - **Human Dependency:** For getting access to information, and to locate information within the organization
 - **Confusion with terminology used:** There is a lack of common understanding of certain terminologies in the organization. (e.g. Everyone has a different understanding of what a “technology” means)
@@ -97,7 +97,7 @@ Combining the insights gathered from the users in the initial research phase, as
 
 ### New Output Portal
 
-#### 1. Ability to **search by different categories** of information
+#### 1. Ability to search by different categories of information
 
 Apart from the global search, users are now able to search by different asset categories. Asset categories are **color coded**, and a **short description** of that category is added below to give users more context to help them make a more informed navigation choice.
 
@@ -131,13 +131,13 @@ Whenever an asset is named within a portal’s page, its **asset category’s co
 
 After the output portal was launched, I received **positive feedback** from coworkers who are **new joiners** of the organization. My coworkers mentioned that the **explanations of the various terminologies** and **information structure diagrams** on the portal’s homepage **helped them greatly with their onboarding process**, and got them up to speed with the understanding they needed to have of the applications they would be working with.
 
-## Reflections
+## Reflections
 
 This was one of the biggest projects I have handled, and made me grow and mature not only as a UX Designer, but also as a working professional. It was very challenging to not only work on a tight budget and timeline, but also with a project team who was not used to placing user experience as one of their main priorities.
 
 **Stakeholder management** was also not an easy task as the project team and vendor team had no prior exposure to user experience design. I faced a lot of pushback and friction at the beginning as the vendor did not feel good having us evaluate their solution. I managed to overcome the frustrations by **displaying empathy to my project team** whenever there was friction. I always made sure to **listen to my teammates’ concerns first before voicing mine**, and then we would work towards **finding a middle ground** that would serve both of our needs as much as possible. It took a while to earn their trust, but eventually my **teammates reciprocated with empathy** as well. That **drastically improved our working relationship**, and this is where I learnt the importance of having empathy for not only our users, but for our co-workers too.
 
-**What I could’ve done better**
+#### What I could’ve done better
 
 I would have liked to **further segment the user groups** for the output portal as I wanted to test the assumption that **different roles had different use cases** for it. However, it was a **challenge** to convince the project team to do that segmentation as the **priority** for this project was the **input portal** as its users were managers that had higher expectations for this tool. Additionally, there was a **tight timeline** and **budget** set by the management. Thus, we had to move on to gather our users’ needs and goals generically without dissecting the different user groups for the output portal.
 

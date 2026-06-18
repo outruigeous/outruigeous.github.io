@@ -3,7 +3,7 @@ title: "Setting up Research Ops @ SearchSG"
 tags: ["UX Research", "Research Ops", "Design Ops"]
 role: "UX Researcher"
 timeline: "March – June 2023"
-toolsUsed: "Confluence, Figjam, Figma, Google Workspace, Jira, Miro, Notion, Slack, Trello"
+toolsUsed: "Confluence, Figma, Google Workspace"
 cover: "./images/research-ops-cover.png"
 order: 4
 ---
@@ -15,19 +15,19 @@ order: 4
 As the **sole UX researcher** at SearchSG, I identified significant **gaps in our research processes, rigor** and **documentation**, then **implemented comprehensive solutions** that **transformed** how our team **conducts user research**.
 
 
-## Outcomes
+## Outcomes
 
 - **Increased research frequency** **from bi-annual to quarterly** studies, with smaller feature-specific surveys using the government’s survey platform, Crowdtask. Contributing factors include resolving participant recruitment bottleneck, standardization of research process and tighter scoping of research objectives
 - Improved **findability** of past research insights through **establishing a centralized research repository** on Confluence
 
 
-## Challenges
+## Challenges
 
 Within the first 8 months of conducting research activities in SearchSG, I collected all the pain points I faced while going through the research process, and feedback from what other stakeholders (e.g. the rest of the UX team, product team) felt about the state of research activities.
 
 <aside>
 
- **Research Process:**
+ #### Research Process:
 
 - No standardized workflow
 - Participant recruitment took at least 2 weeks, with no retained participant pool
@@ -36,7 +36,7 @@ Within the first 8 months of conducting research activities in SearchSG, I colle
 
 <aside>
 
- **UX Team:**
+ #### UX Team:
 
 - Research felt daunting and tiring with an ambitious scope
 - Other team members had no structured way to run studies and relied heavily on me, the sole UX Researcher
@@ -44,21 +44,21 @@ Within the first 8 months of conducting research activities in SearchSG, I colle
 
 <aside>
 
- **Project Manager:**
+ #### Project Manager:
 
 - Had no visibility on what the research process looked like. There was no standards defined for how long research studies will take, and when insights would be ready.
 </aside>
 
 <aside>
 
- **Research Documentation:**
+ #### Research Documentation:
 
 - Insights were documented in decks, so the UX team has to look through multiple decks to locate the insight they want
 - UX team will just tell me to locate these insights most of the time, adding on to more tasks to do on my plate
 </aside>
 
 
-## Goals
+## Goals
 
 I envisioned the future state of research operations in SearchSG to encompass these three areas, and used them as my north star when building my approach:
 
@@ -67,7 +67,7 @@ I envisioned the future state of research operations in SearchSG to encompass th
 - Make research insights and documentation easier to locate
 
 
-## Approach
+## Approach
 
 <aside>
 ❗
@@ -108,7 +108,7 @@ I created a **centralized repository** for managing research assets on Confluenc
 - **Reduced duplication of effort** across team members and projects
 
 
-## Impact
+## Impact
 
 ![Before/after diagram of a 5-step research ops process (Plan, Recruit, Execute, Synthesize, Document & Publish) showing improvements at each stage](./images/ssg-research-ops-approach.png)
 
@@ -127,7 +127,7 @@ As the sole UX Researcher, I could also dedicate more time to larger research st
 The research workflow and repository is **still being used** in SearchSG today, as of April 2026.
 
 
-## Reflections
+## Reflections
 
 Setting up Research Ops in SearchSG was my last “gift” to the team as it served as not only a knowledge transfer to prepare for my departure, but also I wanted it to be a “gift that keeps on giving” that would benefit the team for years to come. Basically, a workflow that empowers my teammates who are all new to UX Research and would like to learn it, and a repository to store and share the fruits of our labor on the search-related research we have done so far.
 

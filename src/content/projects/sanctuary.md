@@ -8,15 +8,15 @@ cover: "./images/sanctuary-cover.png"
 order: 2
 ---
 
-## Overview
+## Overview
 
 When mental health crises occur, existing intervention protocols like the Baker Act allow for involuntary emergency detention and examination. While these protocols aim to safeguard people during triage, they often fail to preserve dignity and can exacerbate the very crisis they are meant to address.
 
-Sanctuary* (*name changed due to client’s NDA)* reimagines mental health support as continuous, rather than fragmented. This is done through its feature offerings which takes care of its users’ wellbeing from their day-to-day lives, to critical moments when they need professional help.
+**Sanctuary*** *(name changed due to client’s NDA)* reimagines mental health support as continuous, rather than fragmented. This is done through its feature offerings which takes care of its users’ wellbeing from their day-to-day lives, to critical moments when they need professional help.
 
-- **Safe and Dignified Transportation Experience:** Booking of private transport service to mental health facilities with drivers trained with trauma-informed care
-- **Mental Wellness:** Grounding exercises for users to build resilience daily and manage escalation during difficult moments
-- **Chat and Call Function:** Allowing users to stay connected and share their personal updates with trusted contacts who are either their family or friends
+* **Safe and Dignified Transportation Experience:** Booking of private transport service to mental health facilities with drivers trained with trauma-informed care
+* **Mental Wellness:** Grounding exercises for users to build resilience daily and manage escalation during difficult moments
+* **Chat and Call Function:** Allowing users to stay connected and share their personal updates with trusted contacts who are either their family or friends
 
 
 ## Outcomes
@@ -26,8 +26,7 @@ Sanctuary* (*name changed due to client’s NDA)* reimagines mental health suppo
 - A **style guide** delivered to the client's development team as a handover asset
 
 <aside>
-❗
-**Note:** Sanctuary is currently pre-launch and in active crowdfunding. Design deliverables are complete but the product has not yet been built.
+<p class="text-body-sm">❗<b>Note:</b> Sanctuary is currently pre-launch and in active crowdfunding. Design deliverables are complete but the product has not yet been built.</p>
 
 </aside>
 
@@ -38,7 +37,7 @@ The project had a few interconnected problems:
 
 <aside>
 
-#### **Missing Foundations**
+#### Missing Foundations
 
 - **Limited user** and **competitor insights** beyond client-provided background information
 - **No brand identity** existed to guide the visual design
@@ -46,21 +45,16 @@ The project had a few interconnected problems:
 
 <aside>
 
-#### **Design Challenges:**
+#### Design Challenges:
 
 - Clients wanted Sanctuary to serve **two distinct user groups**: Those at **high risk of a mental health crisis** *(served by the transport feature)*, and a **broad audience** who are interested in managing their daily mental wellness *(served by the grounding exercises)*. These user groups have different needs and different contexts of app usage, and the **product has to meet both**.
 - The **transport booking screens** had to complement a **service process** that the client had **not fully defined** yet, and formalizing that process was out of our scope.
 </aside>
 
-#### **Design Challenges:**
-
-- Clients wanted Sanctuary to serve **two distinct user groups**: Those at **high risk of a mental health crisis** *(served by the transport feature)*, and a **broad audience** who are interested in managing their daily mental wellness *(served by the grounding exercises)*. These user groups have different needs and different contexts of app usage, and the **product has to meet both**.
-- The **transport booking screens** had to complement a **service process** that the client had **not fully defined** yet, and formalizing that process was out of our scope.
-</aside>
 
 <aside>
 
-#### **Existing Screen Designs:**
+#### Existing Screen Designs:
 
 - Audit surfaced **major usability issues with existing screens** *(e.g. Incomplete flows, unclear screen sequences, inconsistent components)* which made them unsuitable as a foundation, and for usability testing
 - We negotiated with the client for a scope change which they were agreeable to, and the **focus** of this project **shifted** from designing the new wellness feature and design system creation, to a **complete app redesign**, **rebrand** and a **style guide** for the client’s development team.
@@ -82,7 +76,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 
 <aside>
 
-**Transportation:**
+#### Transportation:
 
 - **Emotional and Physical Vulnerability:** Users facing a mental health crisis often experience intense emotional distress, isolation, and physical discomfort, making them less receptive to traditional emergency protocols
 - **Need for Privacy and Dignity:** There is a strong preference for discreet, reliable transport that ensures safety without involving law enforcement or exposing users to stigma
@@ -91,7 +85,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 
 <aside>
 
-**Communication:**
+#### Communication:
 
 - **Mode of Communication:** Users prefer to initiate conversations about their mental health status in person or through voice/video calls, instead of via text messages
 - **Communication Sensitivity:** Users prefer to have control over what they share, who they share it with, and when they share, to avoid causing themselves and their loved ones unnecessary stress
@@ -102,7 +96,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 
 <aside>
 
-**Grounding Exercises:**
+#### Grounding Exercises:
 
 - **Need for Variety:** Preferred grounding exercises vary according to how users are feeling at the moment, which includes meditation, breathwork, soundscapes, etc.
 - **Customizable Reminders:** While reminders can be helpful, they can also cause unwanted annoyance and stress towards users when too frequent or delivered in a pushy tone. Users wanted control over when and how often they receive these reminders.
@@ -112,7 +106,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 
 <aside>
 
-**Challenges** Sanctuary will face:
+#### Challenges Sanctuary will face:
 
 - **Competitors with established brand recognition:** Availability of non-emergency transportation services through well-known brands like Uber and Lyft, making them feel more credible compared to an emerging brand like Sanctuary.
 - **Competitors’ offerings of mental wellness activities:** Apps like Headspace and Calm offer an extensive library of wellness resources, including guided meditations, breathwork, soundscapes, and sleep aids, that Sanctuary would need to match to compete for user engagement.
@@ -120,7 +114,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 
 <aside>
 
-**Gaps** Sanctuary can fill:
+#### Gaps Sanctuary can fill:
 
 - **Therapy Access:** Apps like BetterHelp and TalkSpace connect users with licensed therapists for virtual sessions. Sanctuary could build towards enabling the app to function as a shared treatment tools between users and their therapists (future opportunity as therapists aren’t part of the targeted user groups yet)
 - **Mood Tracking & Journaling:** Apps like Moodfit and Happify use emotion logs to surface mood trends over time, a potential pattern Sanctuary could adopt to help users track emotional progress across the app's three features.
@@ -134,7 +128,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 
 <aside>
 
-**Brand Values**
+#### Brand Values
 
 Support, Care, Dependability
 
@@ -142,7 +136,7 @@ Support, Care, Dependability
 
 <aside>
 
-**Tone of Voice**
+#### Tone of Voice
 
 Caring, Empowering, Reassuring
 
@@ -150,7 +144,7 @@ Caring, Empowering, Reassuring
 
 <aside>
 
-**Brand Positioning**
+####  Brand Positioning
 
 Established, Friendly, Authoritative, Bright, Approachable
 
@@ -230,7 +224,7 @@ As part of our handover, we developed a style guide to ensure visual and interac
 ![Images of Sanctuary's Style Guide ](./images/sanctuary-styleguide.png)
 
 
-## Reflections
+## Reflections
 
 Most of my design work has been focused on measuring success by efficiency and task completion. Sanctuary was the first project where success meant something different, where success looks like designing an experience that makes users feel supported and safe. Hearing directly from users about what they go through during a mental health crisis made me aware of the real impact my designs could have on them. It pushed me to be far more deliberate about designing responsibly and ethically, knowing that a poorly executed solution could do more harm than good. I wanted my design decisions to convey the support, care and compassion that they need most in times of crisis through the application.
 

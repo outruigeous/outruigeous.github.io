@@ -37,7 +37,7 @@ We also noticed **most agencies were new to the idea of managing and improving t
 
 Thus, the administrative portal had to be designed not only for agencies to make basic configurations to their search tool, but also to guide agencies on how to meaningfully utilize the search insights provided to them to improve their site’s search experience.
 
-## Approach
+## Approach
 
 ![Process flowchart for SearchSG admin portal: User Interviews, Synthesis, Ideation Workshop, Prioritization, Design.](./images/admin-portal-approach.png)
 
@@ -89,10 +89,8 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 
 <aside>
 💡
-
-#### Generate
-
-**Crazy 8** and dot voting to encourage volume of ideas and divergence
+<h4>Generate</h4>
+<p class="text-body-sm"><b>Crazy 8</b> and dot voting to encourage volume of ideas and divergence</p>
 
 </aside>
 
@@ -139,7 +137,7 @@ As of May 8 2026, 308 agencies have onboarded to SearchSG and are also using the
 
 Through the various engagement sessions we had with agency users (interviews and ideation workshop), we also got to promote the importance of search maturity on government websites. With the number of agencies onboarded since 2023 (10) to now (308), it is a testament to SearchSG’s efforts that more agencies are viewing their site search’s experience more seriously.
 
-## Reflections
+## Reflections
 
 Joining a project halfway through was a huge challenge, as I had to play catch up to get up to speed with my understanding of the interview insights, while I lacked the context behind the verbatims as I was not physically present at the interview sessions. I had to rely heavily on the recordings available which were not always clear. However, I pulled through with a lot of help and guidance from my UX Lead who provided me with context and insights that I could not derive through the recordings and interview transcriptions.
 
