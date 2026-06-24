@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-cream: #FFFCF4;
   --color-ink: #252525;
   --color-ink-muted: #6B6B68;
