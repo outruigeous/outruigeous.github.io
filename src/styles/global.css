@@ -5,7 +5,7 @@
   --color-ink: #252525;
   --color-ink-muted: #6B6B68;
   --color-vermillion: #FF6B4A;
-  --color-forestgreen: #074A3C;
+  --color-forestgreen: #0B6F5A;
   --color-border-custom: #EDE8DC;
   --color-card-bg: #F5F0E8;
   --color-callout-bg: #F7F0E3;
@@ -83,6 +83,7 @@ h1 {
   font-family: "National Park Patched", "National Park", sans-serif;
   font-size: 30px;
   font-weight: 600;
+  letter-spacing: -0.025em;
   line-height: 1.15;
   color: var(--color-ink);
 }
@@ -115,7 +116,7 @@ h4 {
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.05rem;
   line-height: 1.4;
   color: var(--color-ink);
 }
@@ -173,7 +174,7 @@ h5 {
 
 /* Long-form case study content (rendered markdown inside ProjectLayout) */
 .prose h2 {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -188,18 +189,22 @@ h5 {
   font-weight: 600;
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
+  color: var(--color-forestgreen);
 }
 
 .prose h4 {
   font-size: 22px;
+  font-weight: 400;
   color: var(--color-vermillion);
   margin-top: 1.75rem;
   margin-bottom: 0.825rem;
 }
 
 .prose h5 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
 }
@@ -213,23 +218,25 @@ h5 {
   height: auto;
 }
 
+.prose img.png-bg {
+  background-color: #FAF7F3;
+  border-radius: 10px;
+}
+
 .prose ul {
-  list-style: none;
-  padding-left: 0;
+  list-style: disc;
+  padding-left: 1.25rem;
   margin-bottom: 1rem;
 }
 
 .prose li {
-  position: relative;
-  padding-left: 1.25rem;
+  padding-left: 0.5rem;
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
 }
 
-.prose li::before {
+.prose li::marker {
   content: "•";
-  position: absolute;
-  left: 0;
   color: var(--color-vermillion);
   font-weight: 700;
   font-size: 1.3em;
@@ -244,7 +251,8 @@ h5 {
 }
 
 .prose aside h4 {
-  font-size: 14.4px;
+  font-size: 16px;
+  font-weight: 600;
   color: var(--color-forestgreen);
 }
 
@@ -263,7 +271,7 @@ h5 {
   margin-bottom: 0;
 }
 
-.prose aside li::before {
+.prose aside li::marker {
   content: "→";
   font-weight: 400;
   font-size: 1em;
@@ -284,6 +292,11 @@ h5 {
   .prose .aside-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
+}
+
+/* Fixed 3-column variant — unlike .aside-grid, stays 3 columns at every viewport width */
+.prose .aside-grid.aside-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* Extra styling for placeholders in markdown */

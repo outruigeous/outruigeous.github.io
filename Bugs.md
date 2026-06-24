@@ -3,7 +3,7 @@ Things to fix
 General
 - [x] Change from - to bullet points
 - [ ] Design a disclaimer callout
-- [ ] Consider a different font for h2/h3, maybe something longer and taller
+- [x] Consider a different font for h2/h3, maybe something longer and taller
 - [ ] Fallback font families
 
 Home/Index.astro
@@ -18,7 +18,7 @@ Service Design
 
 Sanctuary
 - [x] ## Overview is not showing its H2 css styling on the dev server
-- [ ] Insert images for Mood Tracker
+- [x] Insert images for Mood Tracker
 
 Admin portal
 - [ ] HMW Statements callout

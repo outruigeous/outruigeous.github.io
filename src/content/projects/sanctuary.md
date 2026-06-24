@@ -126,6 +126,8 @@ I segmented the research into two groups: users at high risk of a mental health 
 
 #### Branding Workshop Findings
 
+<div class="aside-grid aside-grid-3">
+
 <aside>
 
 #### Brand Values
@@ -150,13 +152,15 @@ Established, Friendly, Authoritative, Bright, Approachable
 
 </aside>
 
+</div>
+
 #### Translating Brand Values to Visual Design
 
 ##### Logo Sketches
 
 The logo combines two hearts, one representing wellbeing and the other a GPS arrow, to convey the message *'We are the way to your wellbeing’.*
 
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHlkaHBjaWI3eWZvaXZjeTBpc3kwZGUwbzBibm5wdmtwazVqZXNjZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TeBAgCPYwhOpnKTcgl/giphy.gif" alt="Sanctuary Logo with Animation" style="width: 100%;" />
+<video src="/videos/sanctuary-logo.mp4" autoplay muted loop playsinline style="width: 100%; border-radius: 10px;"></video>
 
 ![Image showing Logos for Sanctuary](./images/sanctuary-logosketches-2.png)
 
@@ -208,9 +212,8 @@ Whenever the user **indicates in the Mood tracking feature** that they are **fee
 
 **Mood tracking** adds a layer of personalisation, linking the user's emotional state to relevant exercise suggestions and affirmation prompts, making the app more intuitive with each use.
 
-<div class="placeholder-block" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 32px; text-align: center; font-size: 13px; color: var(--ink-muted); margin: 16px 0;">Add screenshots here</div>
+<video src="/videos/wellness-screens.mp4" autoplay muted loop playsinline style="width: 100%; border-radius: 10px;"></video>
 
-<div class="placeholder-block" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 32px; text-align: center; font-size: 13px; color: var(--ink-muted); margin: 16px 0;">Add screenshots here</div>
 
 We also designed a **flexible component library** to support a wide range of exercise formats, including videos, podcasts, audio, and articles, giving the client the flexibility to expand their content offerings over time.
 
