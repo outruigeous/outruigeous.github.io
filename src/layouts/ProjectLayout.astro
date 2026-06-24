@@ -13,9 +13,10 @@ interface Props {
     cover?: ImageMetadata;
     coverPlaceholder?: string;
   };
+  slug?: string;
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, slug } = Astro.props;
 
 const getTagClass = (tag: string) => {
   const normalized = tag.toLowerCase().trim();
@@ -42,7 +43,7 @@ const getTagClass = (tag: string) => {
         ))}
       </div>
       
-      <h1 class="mb-7">
+      <h1 class:list={['mb-7', { 'h1-bold-override': slug === 'sanctuary' }]}>
         {frontmatter.title}
       </h1>
 

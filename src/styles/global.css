@@ -2,10 +2,10 @@
 
 @theme {
   --color-cream: #FFFCF4;
-  --color-ink: #2A2A2A;
+  --color-ink: #252525;
   --color-ink-muted: #6B6B68;
   --color-vermillion: #FF6B4A;
-  --color-dustybrown: #816B6B;
+  --color-forestgreen: #074A3C;
   --color-border-custom: #EDE8DC;
   --color-card-bg: #F5F0E8;
   --color-callout-bg: #F7F0E3;
@@ -24,6 +24,45 @@
   --color-pill-teal-text: #0F4F3C;
 
   --font-sans: "Google Sans Flex", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-heading: "National Park", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* National Park, but with Nunito's comma glyph swapped in via unicode-range.
+   Base face must come first, override face last — Chrome prioritizes the
+   later-declared face for codepoints covered by overlapping unicode-ranges. */
+@font-face {
+  font-family: "National Park Patched";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/nationalpark/v4/GftQ7vJOtg4NO-gmoY4nmcqP-VY9vs1ixcqgHfKhaKXLfIc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "National Park Patched";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  unicode-range: U+002C;
+  src: url("https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmdTQ3jw.woff2") format("woff2");
+}
+
+/* Weight 700 — used by .hero-title */
+@font-face {
+  font-family: "National Park Patched";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/nationalpark/v4/GftQ7vJOtg4NO-gmoY4nmcqP-VY9vs1ixcqgHfKYaKXLfIc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "National Park Patched";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+002C;
+  src: url("https://fonts.gstatic.com/s/nunito/v32/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmdTQ3jw.woff2") format("woff2");
 }
 
 /* Custom Notion-like button and link styling */
@@ -41,14 +80,23 @@ body {
 /* Sitewide heading scale — the single source of truth for h1-h5 font styling.
    Page-specific spacing (margin) stays with each page's layout markup. */
 h1 {
+  font-family: "National Park Patched", "National Park", sans-serif;
   font-size: 30px;
   font-weight: 600;
-  letter-spacing: -0.025em;
   line-height: 1.15;
   color: var(--color-ink);
 }
 
+@media (min-width: 640px) {
+  h1 { font-size: 36px; }
+}
+
+@media (min-width: 768px) {
+  h1 { font-size: 48px; }
+}
+
 h2 {
+  font-family: "National Park Patched", "National Park", sans-serif;
   font-size: 25px;
   font-weight: 600;
   line-height: 1.4;
@@ -56,6 +104,7 @@ h2 {
 }
 
 h3 {
+  font-family: "National Park Patched", "National Park", sans-serif;
   font-size: 22px;
   font-weight: 600;
   line-height: 1.4;
@@ -63,6 +112,7 @@ h3 {
 }
 
 h4 {
+  font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -75,6 +125,10 @@ h5 {
   font-weight: 600;
   line-height: 1.4;
   color: var(--color-ink);
+}
+
+.h1-bold-override {
+  font-weight: 700;
 }
 
 .caption {
@@ -97,16 +151,11 @@ h5 {
   letter-spacing: 0.02em;
 }
 
-@media (min-width: 640px) {
-  h1 { font-size: 36px; }
-}
 
-@media (min-width: 768px) {
-  h1 { font-size: 48px; }
-}
 
 /* Hero headline — used once, on the homepage intro */
 .hero-title {
+  font-family: "National Park Patched", "National Park", sans-serif;
   font-size: 36px;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -124,31 +173,33 @@ h5 {
 
 /* Long-form case study content (rendered markdown inside ProjectLayout) */
 .prose h2 {
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  /* 
+  letter-spacing: 2px;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--color-border-custom);
+  border-bottom: 1px solid var(--color-border-custom); */
 }
 
 .prose h3 {
+  font-size: 28px;
+  font-weight: 600;
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
 }
 
 .prose h4 {
-  font-size: 16px;
-  text-transform: uppercase;
+  font-size: 22px;
   color: var(--color-vermillion);
   margin-top: 1.75rem;
   margin-bottom: 0.825rem;
 }
 
 .prose h5 {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
 }
@@ -194,7 +245,7 @@ h5 {
 
 .prose aside h4 {
   font-size: 14.4px;
-  color: var(--color-dustybrown);
+  color: var(--color-forestgreen);
 }
 
 .prose aside ul { 

@@ -4,10 +4,11 @@ General
 - [x] Change from - to bullet points
 - [ ] Design a disclaimer callout
 - [ ] Consider a different font for h2/h3, maybe something longer and taller
+- [ ] Fallback font families
 
 Home/Index.astro
 - [x] “Projects” title increase size
-- [ ] Buttons now look a little too big, check if its using any of the css classes
+- [x] Buttons now look a little too big, check if its using any of the css classes
 - [x] Remove my process -> I dont think I need that anymore
 - [x] Might want to consider increasing size of filter tags
 - [x] Add resume button
