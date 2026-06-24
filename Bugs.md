@@ -8,9 +8,9 @@ General
 Home/Index.astro
 - [x] “Projects” title increase size
 - [ ] Buttons now look a little too big, check if its using any of the css classes
-- [ ] Remove my process -> I dont think I need that anymore
-- [ ] Might want to consider increasing size of filter tags
-- [ ] Add resume button
+- [x] Remove my process -> I dont think I need that anymore
+- [x] Might want to consider increasing size of filter tags
+- [x] Add resume button
 
 Service Design
 - [x] Impact section -> process / workload / interactions [styling]

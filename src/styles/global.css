@@ -79,8 +79,22 @@ h5 {
 
 .caption {
   font-size: 12px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.03em;
   font-weight: 400;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: 0.02em;
 }
 
 @media (min-width: 640px) {

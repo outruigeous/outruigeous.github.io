@@ -86,7 +86,7 @@
           {/if}
           
           <div class="p-5 flex-grow flex flex-col justify-between">
-            <p class="text-[14px] sm:text-sm font-medium text-ink leading-snug mb-4 group-hover:text-vermillion transition-colors duration-150">
+            <p class="card-title text-ink mb-4 group-hover:text-vermillion transition-colors duration-150">
               {project.data.title}
             </p>
             <div class="flex flex-wrap gap-1 mt-auto">
