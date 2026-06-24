@@ -1,6 +1,6 @@
 ---
 title: "Setting up Research Ops @ SearchSG"
-tags: ["UX Research", "Research Ops", "Design Ops"]
+tags: ["UX Research", "Research Ops"]
 role: "UX Researcher"
 timeline: "March – June 2023"
 toolsUsed: "Confluence, Figma, Google Workspace"

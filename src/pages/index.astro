@@ -27,7 +27,7 @@ const sortedProjects = await Promise.all(
   <section class="py-16 sm:py-20 border-b border-border-custom">
    <!-- <p class="text-xs sm:text-sm tracking-widest uppercase text-ink-muted mb-3.5">Hola Amingos!</p> -->
     <h1 class="hero-title mb-3">
-      Hello there! I am <span class="text-vermillion">Mingz,</span>
+      Hello there! I am <span class="text-vermillion">Mingz</span>,
     </h1>
     <p class="text-base sm:text-lg md:text-xl text-ink-muted mb-8 leading-relaxed">
       and I'm a human-centered, energetic and creative problem solver.
@@ -47,7 +47,7 @@ const sortedProjects = await Promise.all(
 
   <!-- Projects Section -->
   <section class="py-14 sm:py-16 pb-24">
-    <p class="text-[11px] tracking-widest uppercase text-ink-muted mb-6 font-semibold">Projects</p>
+    <h2 class="mb-6">Projects</h2>
     <ProjectFilter client:load projects={sortedProjects} />
   </section>
 </Layout>

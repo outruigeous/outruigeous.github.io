@@ -44,7 +44,7 @@
     {#each allTags as tag}
       <button
         onclick={() => selectedTag = tag}
-        class="px-3 py-1 rounded-full text-[11px] font-medium transition-all duration-150 border cursor-pointer
+        class="px-3 py-1 rounded-full caption transition-all duration-150 border cursor-pointer
           {selectedTag === tag
             ? 'bg-ink border-ink text-cream shadow-sm'
             : 'bg-card-bg/30 border-border-custom text-ink-muted hover:border-ink hover:text-ink'}"
@@ -91,7 +91,7 @@
             </p>
             <div class="flex flex-wrap gap-1 mt-auto">
               {#each project.data.tags as tag}
-                <span class="rounded-full px-2.5 py-0.5 text-[10px] font-medium whitespace-nowrap {getTagClass(tag)}">
+                <span class="rounded-full px-2.5 py-0.5 caption whitespace-nowrap {getTagClass(tag)}">
                   {tag}
                 </span>
               {/each}
