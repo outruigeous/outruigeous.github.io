@@ -27,7 +27,7 @@ When mental health crises occur, existing intervention protocols like the Baker 
 - A **style guide** delivered to the client's development team as a handover asset
 
 <aside>
-<p class="text-body-sm">❗<b>Note:</b> Sanctuary is currently pre-launch and in active crowdfunding. Design deliverables are complete but the product has not yet been built.</p>
+<p class="text-body-sm"><b>Note:</b> Sanctuary is currently pre-launch and in active crowdfunding. Design deliverables are complete but the product has not yet been built.</p>
 
 </aside>
 

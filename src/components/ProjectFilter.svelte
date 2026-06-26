@@ -31,7 +31,7 @@
     if (normalized.includes('design thinking')) return 'bg-pill-blue-bg text-pill-blue-text';
     if (normalized.includes('ui design') || normalized.includes('visual')) return 'bg-pill-green-bg text-pill-green-text';
     if (normalized.includes('workshop') || normalized.includes('facilitation')) return 'bg-pill-purple-bg text-pill-purple-text';
-    if (normalized.includes('research ops')) return 'bg-pill-teal-bg text-pill-teal-text';
+    if (normalized.includes('research ops')) return 'bg-pill-pink-bg text-pill-pink-text';
     if (normalized.includes('design ops')) return 'bg-pill-blue-bg text-pill-blue-text';
     if (normalized.includes('pink') || normalized.includes('start')) return 'bg-pill-pink-bg text-pill-pink-text';
     return 'bg-pill-peach-bg text-pill-peach-text';

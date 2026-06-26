@@ -3,7 +3,7 @@
 @theme {
   --color-cream: #FFFCF4;
   --color-ink: #252525;
-  --color-ink-muted: #6B6B68;
+  --color-ink-muted: #4A4A4A;
   --color-vermillion: #FF6B4A;
   --color-forestgreen: #0B6F5A;
   --color-border-custom: #EDE8DC;
@@ -12,16 +12,16 @@
 
   --color-pill-green-bg: #C8E8C0;
   --color-pill-green-text: #2A5C22;
-  --color-pill-pink-bg: #F5C0CF;
-  --color-pill-pink-text: #7A1F38;
-  --color-pill-blue-bg: #B8DFFE;
+  --color-pill-pink-bg: #FFD1C7;
+  --color-pill-pink-text: #6B2D1F;
+  --color-pill-blue-bg: #CAE4FF;
   --color-pill-blue-text: #0C447C;
   --color-pill-peach-bg: #FFD4A0;
   --color-pill-peach-text: #7A3D00;
   --color-pill-purple-bg: #E0C8F8;
   --color-pill-purple-text: #4A1F7A;
-  --color-pill-teal-bg: #A8E8D8;
-  --color-pill-teal-text: #0F4F3C;
+  --color-pill-teal-bg: #B3E8DE;
+  --color-pill-teal-text: #08533F;
 
   --font-sans: "Google Sans Flex", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-heading: "National Park", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -185,7 +185,7 @@ h5 {
 }
 
 .prose h3 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 600;
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
@@ -193,7 +193,7 @@ h5 {
 }
 
 .prose h4 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 400;
   color: var(--color-vermillion);
   margin-top: 1.75rem;
@@ -201,9 +201,9 @@ h5 {
 }
 
 .prose h5 {
-  font-size: 16px;
+  font-size: 17px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04rem;
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
@@ -255,9 +255,10 @@ h5 {
 }
 
 .prose aside h4 {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--color-forestgreen);
+  font-family: "National Park Patched", "National Park", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-ink);
 }
 
 .prose aside ul { 
