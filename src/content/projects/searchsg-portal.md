@@ -1,6 +1,6 @@
 ---
 title: "SearchSG Administrative Portal"
-tags: ["UX Research", "Workshop Facilitation", "UI Design"]
+tags: ["UX Research", "Visual Design", "UI Design"]
 role: "UX Researcher"
 timeline: "June - Nov 2022"
 team: "10 members; 4 UX, 1 PM, 5 Devs"

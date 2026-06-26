@@ -1,6 +1,6 @@
 ---
 title: "Snack Chat, where it all started"
-tags: ["Design Thinking"]
+tags: ["Design Thinking", "Visual Design"]
 role: "UX Designer"
 timeline: "2021"
 team: "3 members"
@@ -65,9 +65,10 @@ Our first task in the design thinking process is to empathise with our target gr
 #### Stage 2: Define – Definition of problems around passion
 
 <aside>
-”Passion is something I spend a lot of time on… I spend a lot of time playing computer games… But… I don’t think that is my passion?”
-<br>
-– A NTU student studying Material Sciences
+
+<i>”Passion is something I spend a lot of time on… I spend a lot of time playing computer games… But… I don’t think that is my passion?”</i>
+
+A NTU student studying Material Sciences
 
 </aside>
 

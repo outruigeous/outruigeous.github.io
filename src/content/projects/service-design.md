@@ -1,6 +1,6 @@
 ---
 title: "Blueprinting a Product Delivery Journey through Service Design"
-tags: ["UX Research", "Service Design", "Design Thinking", "Workshop Facilitation"]
+tags: ["UX Research", "Service Design", "Design Thinking"]
 role: "Service Designer"
 timeline: "June 2019 – June 2020"
 team: "3 members; 1 UXD, 2 Division Heads"

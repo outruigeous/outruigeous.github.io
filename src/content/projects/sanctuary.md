@@ -1,6 +1,6 @@
 ---
 title: "Sanctuary, a mental health transportation app"
-tags: ["UX Research", "UI Design", "Workshop Facilitation"]
+tags: ["UX Research", "Visual Design", "UI Design"]
 role: "UX Designer, UX Researcher"
 timeline: "Nov 2024 – May 2025"
 team: "5 members"
