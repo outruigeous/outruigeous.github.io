@@ -27,6 +27,7 @@ When mental health crises occur, existing intervention protocols like the Baker 
 - A **style guide** delivered to the client's development team as a handover asset
 
 <aside>
+<iconify-icon icon="tabler:alert-circle"></iconify-icon>
 <p class="text-body-sm"><b>Note:</b> Sanctuary is currently pre-launch and in active crowdfunding. Design deliverables are complete but the product has not yet been built.</p>
 
 </aside>
@@ -37,6 +38,7 @@ When mental health crises occur, existing intervention protocols like the Baker 
 The project had a few interconnected problems:
 
 <aside>
+<iconify-icon icon="tabler:blocks"></iconify-icon>
 
 #### Missing Foundations
 
@@ -45,6 +47,7 @@ The project had a few interconnected problems:
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:pointer-question"></iconify-icon>
 
 #### Design Challenges:
 
@@ -54,6 +57,7 @@ The project had a few interconnected problems:
 
 
 <aside>
+<iconify-icon icon="tabler:device-mobile-question"></iconify-icon>
 
 #### Existing Screen Designs:
 
@@ -76,6 +80,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 ##### Insights from Users:
 
 <aside>
+<iconify-icon icon="tabler:car"></iconify-icon>
 
 #### Transportation:
 
@@ -85,6 +90,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:message-heart"></iconify-icon>
 
 #### Communication:
 
@@ -96,6 +102,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:leaf"></iconify-icon>
 
 #### Grounding Exercises:
 
@@ -106,6 +113,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 #### Competitor Research
 
 <aside>
+<iconify-icon icon="tabler:alert-triangle"></iconify-icon>
 
 #### Challenges Sanctuary will face:
 
@@ -114,6 +122,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:target-arrow"></iconify-icon>
 
 #### Gaps Sanctuary can fill:
 
@@ -130,6 +139,7 @@ I segmented the research into two groups: users at high risk of a mental health 
 <div class="aside-grid aside-grid-3">
 
 <aside>
+<iconify-icon icon="tabler:heart"></iconify-icon>
 
 #### Brand Values
 
@@ -138,6 +148,7 @@ Support, Care, Dependability
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:speakerphone"></iconify-icon>
 
 #### Tone of Voice
 
@@ -146,6 +157,7 @@ Caring, Empowering, Reassuring
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:map-pin"></iconify-icon>
 
 ####  Brand Positioning
 

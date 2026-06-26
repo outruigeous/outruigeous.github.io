@@ -69,12 +69,14 @@ The blueprint was then evaluated from three key areas:
 
 <div class="aside-grid">
   <aside>
+    <iconify-icon icon="tabler:route"></iconify-icon>
     <h4>Process</h4>
     <ul>
       <li>I identified any <strong>inconsistencies</strong>, <strong>obsolete tasks</strong>, and <strong>steps</strong> being done in a <strong>different order</strong> from what was documented in the RACI</li>
     </ul>
   </aside>
   <aside>
+    <iconify-icon icon="tabler:briefcase"></iconify-icon>
     <h4>Workload</h4>
     <ul>
       <li>I documented the <strong>full scope of responsibilities</strong> carried by <strong>each role</strong>, including <strong>work not captured in the RACI</strong></li>
@@ -82,6 +84,7 @@ The blueprint was then evaluated from three key areas:
     </ul>
   </aside>
   <aside>
+    <iconify-icon icon="tabler:connection"></iconify-icon>
     <h4>Interactions</h4>
     <ul>
       <li>I analysed the <strong>nature</strong> of the <strong>interactions</strong> between project teams and process owners <em>(type of interaction, what was expected from each party, length of interaction, pain points if any)</em></li>
@@ -95,6 +98,7 @@ Besides what we sought out to identify in the synthesis process, the blueprint a
 
 <div class="aside-grid">
   <aside>
+    <iconify-icon icon="tabler:route"></iconify-icon>
     <h4>Process</h4>
     <ul>
       <li>Many <strong>tasks were happening simultaneously across roles</strong> within the <strong>same project phase</strong>, which was not reflected in the RACI</li>
@@ -103,6 +107,7 @@ Besides what we sought out to identify in the synthesis process, the blueprint a
     </ul>
   </aside>
   <aside>
+    <iconify-icon icon="tabler:briefcase"></iconify-icon>
     <h4>Workload</h4>
     <ul>
       <li>Project teams were <strong>simultaneously managing multiple project milestones across different phases</strong>, each with its own process owner requirements, while also maintaining BAU responsibilities</li>
@@ -110,6 +115,7 @@ Besides what we sought out to identify in the synthesis process, the blueprint a
     </ul>
   </aside>
   <aside>
+    <iconify-icon icon="tabler:connection"></iconify-icon>
     <h4>Interactions</h4>
     <ul>
       <li><strong>Turnaround times</strong> from process owners were <strong>highly inconsistent</strong>, ranging from days to as long as four months</li>

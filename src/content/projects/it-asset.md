@@ -11,7 +11,7 @@ order: 5
 
 ## Overview
 
-The client, a leading European bank, purchased a vendor tool to replace its internal IT asset management portal. The vendor tool is a **two part solution** that includes an **input portal** *(for information input on the assets only available for specific members in the organization)*, and an **output portal** *(a website for viewing the list of assets which is accessible by the whole organization)*.
+The client, a leading European bank, purchased a **vendor tool** to replace its internal IT asset management portal. The vendor tool is a **two part solution** that includes an **input portal** *(for information input on the assets only available for specific members in the organization)*, and an **output portal** *(a website for viewing the list of assets which is accessible by the whole organization)*.
 
 I was the **lead UX Designer** and **Researcher** for this project, and I was initially tasked by management to **evaluate** the vendor tool for any **usability issues** and resolve these issues with the vendor. However due to limitations on the vendor’s end, no changes could be made on the web application and only the web portal was fully customizable. Hence, I **pivoted** to doing **research** and **design** for only the **web portal** in the second part of this project.
 
@@ -43,13 +43,14 @@ This is the detailed design process we defined together with the project team:
 
 In order to have a better understanding of our users’ needs and goals, I gathered quantitative and qualitative data and feedback from the users via the following channels:
 
-1. **Feedback** for the **decommissioned asset management portal** documented by the previous project team
-2. Conducting **Usability Tests** on the vendor’s solution for the input portal
-3. Conducting U**ser Interviews** to gather user expectations for the output portal
+- **Feedback** for the **decommissioned asset management portal** documented by the previous project team
+- Conducting **Usability Tests** on the vendor’s solution for the input portal
+- Conducting **User Interviews** to gather user expectations for the output portal
 
 We gathered the following insights on users’ needs and pain points from the research done:
 
 <aside>
+<iconify-icon icon="tabler:list-check"></iconify-icon>
 <h4>Users' needs</h4>
 
 - Having a **central repository** of application-related information
@@ -60,6 +61,7 @@ We gathered the following insights on users’ needs and pain points from the re
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:mood-sad"></iconify-icon>
 <h4>Users' Pain Points</h4>
 
 - **Human Dependency:** For getting access to information, and to locate information within the organization
@@ -85,7 +87,8 @@ A **card sorting** exercise was also done with subject matter experts to identif
 Combining the insights gathered from the users in the initial research phase, as well as the prioritised features that we have identified from the value proposition canvas, I kept the following points in mind while designing:
 
 <aside>
-✅ **Points to be addressed through designs:**
+<iconify-icon icon="tabler:clipboard-check"></iconify-icon>
+<h4>Points to be addressed through designs:</h4>
 
 - Ability to search by different categories of information
 - Standardize naming conventions and terminologies

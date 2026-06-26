@@ -26,5 +26,7 @@ Sanctuary
 Admin portal
 - [x] HMW Statements callout
 - [x] Ideation workshop photos are supposed to be still side by side in the tablet breakpoint
-- [ ] Brainstorming Activities Callout
-- [ ] Callout in "prioritization and design" needs to be fixed
+- [ ] Brainstorming Activities Callout needs to be in 3 columns not stacked
+- [ ] Finalise icon loaded in wrong position
+- [x] Callout in "prioritization and design" needs to be fixed
+- [ ] Callout without h4 header with icon needs to be side by side with paragraph text, not above

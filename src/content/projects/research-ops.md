@@ -27,6 +27,7 @@ As the **sole UX researcher** at SearchSG, I identified significant **gaps in ou
 Within the first 8 months of conducting research activities in SearchSG, I collected all the pain points I faced while going through the research process, and feedback from what other stakeholders (e.g. the rest of the UX team, product team) felt about the state of research activities.
 
 <aside>
+<iconify-icon icon="tabler:route"></iconify-icon>
 
  #### Research Process:
 
@@ -36,6 +37,7 @@ Within the first 8 months of conducting research activities in SearchSG, I colle
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:users-group"></iconify-icon>
 
  #### UX Team:
 
@@ -44,6 +46,7 @@ Within the first 8 months of conducting research activities in SearchSG, I colle
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:briefcase"></iconify-icon>
 
  #### Project Manager:
 
@@ -51,6 +54,7 @@ Within the first 8 months of conducting research activities in SearchSG, I colle
 </aside>
 
 <aside>
+<iconify-icon icon="tabler:stack-2"></iconify-icon>
 
  #### Research Documentation:
 
@@ -71,6 +75,7 @@ I envisioned the future state of research operations in SearchSG to encompass th
 ## Approach
 
 <aside>
+<iconify-icon icon="tabler:lock"></iconify-icon>
 
 Deliverables cannot be publicly displayed due to confidentiality agreements with the client. However, I'd be happy to show and walk through it during interviews.
 

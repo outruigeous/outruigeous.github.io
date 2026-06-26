@@ -52,13 +52,15 @@ As I joined the team after interviews were conducted, I had to rely on recording
 
 I created the following artifacts based on data extracted from the user interviews:
 
-- **Competitor analysis** across the existing search solutions used by agencies, to discover any gaps and opportunities SearchSG could fill
-    - Strengths, Weaknesses of existing search solutions → Based on interview insights with agency representatives
-    - Speed, Search Relevance and Accuracy, Level of Customisation, User Facing Search Features, Admin Facing Search Features, Search Analytics Related Features
-    - Search solution features used by agencies and their pain points w.r.t. those features
-- Two separate **As-Is blueprints** of how agencies manage their search experience, one for agencies using Isomer and the other for agencies using other tools
-    - The decision to create two As-Is blueprints rather than one came from noticing that a large number of agencies were hosting their website on Isomer as it was soon-to-be mandated that all government agencies onboard to Isomer. Also, agencies using Isomer had different pain points, setup processes, and constraints, compared to agencies who are not.
-- **To-be user flow** based on opportunities drawn from competitor analysis and the As-Is blueprints, to chart what an improved search administrative experience could look like
+**Competitor analysis** across the existing search solutions used by agencies, to discover any gaps and opportunities SearchSG could fill
+- Strengths, Weaknesses of existing search solutions → Based on interview insights with agency representatives
+- Speed, Search Relevance and Accuracy, Level of Customisation, User Facing Search Features, Admin Facing Search Features, Search Analytics Related Features
+- Search solution features used by agencies and their pain points w.r.t. those features
+
+Two separate **As-Is blueprints** of how agencies manage their search experience, one for agencies using Isomer and the other for agencies using other tools
+- The decision to create two As-Is blueprints rather than one came from noticing that a large number of agencies were hosting their website on Isomer as it was soon-to-be mandated that all government agencies onboard to Isomer. Also, agencies using Isomer had different pain points, setup processes, and constraints, compared to agencies who are not.
+
+**To-be user flow** based on opportunities drawn from competitor analysis and the As-Is blueprints, to chart what an improved search administrative experience could look like
 
 My UX Lead and I also **condensed the interview insights** into two **How Might We (HMW) statements**, that were later used in our ideation workshop as brainstorming questions:
 
@@ -95,6 +97,7 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 **Brainstorming activities** were split into:
 
 <aside>
+<iconify-icon icon="tabler:bulb"></iconify-icon>
 
 <h4>Generate</h4>
 <p class="text-body-sm"><b>Crazy 8</b> and dot voting to encourage volume of ideas and divergence</p>
@@ -102,7 +105,7 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 </aside>
 
 <aside>
-
+<iconify-icon icon="tabler:search"></iconify-icon>
 
 #### Evaluate
 
@@ -111,6 +114,8 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 </aside>
 
 <aside>
+
+<iconify-icon icon="tabler:circle-check"></iconify-icon>
 
 #### Finalise
 

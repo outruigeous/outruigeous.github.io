@@ -4,7 +4,7 @@ tags: ["Design Thinking"]
 role: "UX Designer"
 timeline: "2021"
 team: "3 members"
-toolsUsed: "Personal Project"
+toolsUsed: "Adobe CC, Google Suite"
 cover: "./images/snack-chat-cover.jpg"
 order: 6
 ---
@@ -19,6 +19,8 @@ The theme for this module's assignment revolves around the needs and pain points
 Because Singaporeans seem to be in real lack of passion.
 
 ## Approach
+
+![Diagram showing timeline for the project with 3 phases](./images/snackchat-timeline.jpeg)
 
 ### Part I
 
@@ -63,8 +65,9 @@ Our first task in the design thinking process is to empathise with our target gr
 #### Stage 2: Define – Definition of problems around passion
 
 <aside>
-*”Passion is something I spend a lot of time on… I spend a lot of time playing computer games… But… I don’t think that is my passion?”*
-*– A NTU student studying Material Sciences*
+”Passion is something I spend a lot of time on… I spend a lot of time playing computer games… But… I don’t think that is my passion?”
+<br>
+– A NTU student studying Material Sciences
 
 </aside>
 
@@ -72,7 +75,7 @@ We gained interesting answers and insights from the interviews about passion. In
 
 One thing that most of the discussions/interviews had in common was most of them ended up in talking about **pressure from society and parents**. This caught our attention, however, during the first round of ideation, we chose to elaborate on the idea of combining passion with finding a job.
 
-### Stage 3 & 4: Ideate and prototype – Dream Catcher (Job/forum portal)
+#### Stage 3 & 4: Ideate and prototype – Dream Catcher (Job/forum portal)
 
 Our most potential idea from the first round of ideations was ‘dream catcher’, a portal that not only helps you find your passion, but also helps to connect other people with the same interests in a forum.
 
@@ -208,23 +211,23 @@ There are 4 steps to a successful outcome.
 
 #### Step #1: Inquiry
 
-> “Cultivate an attitude of discovery and curiosity. Pretend you don’t know anything (you really don’t), and **try to learn as much as possible about your opponent/partner and his point of view**. Pretend you’re entertaining a visitor from another planet, and find out how things look on that planet, how certain events affect the other person, and what the values and priorities are there.”
-> 
+“Cultivate an attitude of discovery and curiosity. Pretend you don’t know anything (you really don’t), and **try to learn as much as possible about your opponent/partner and his point of view**. Pretend you’re entertaining a visitor from another planet, and find out how things look on that planet, how certain events affect the other person, and what the values and priorities are there.”
+
 
 #### Step #2: Acknowledgment
 
-> “Acknowledgment means showing that you’ve heard and understood. Try to understand the other person so well you can make his argument for him. Guess at his hopes and **honor his position**.”
-> 
+“Acknowledgment means showing that you’ve heard and understood. Try to understand the other person so well you can make his argument for him. Guess at his hopes and **honor his position**.”
+ 
 
 #### Step #3: Advocacy
 
-> “When you sense your opponent/partner has expressed all his energy on the topic, it’s your turn. What can you see from your perspective that he’s missed? Help clarify your position without minimizing his. “
-> 
+“When you sense your opponent/partner has expressed all his energy on the topic, it’s your turn. What can you see from your perspective that he’s missed? Help clarify your position without minimizing his. “
+
 
 #### Step #4: Problem-Solving
 
-> “Ask your opponent/partner what he thinks might work. Whatever he says, find something you like and build on it. If the conversation becomes adversarial, go back to inquiry. **Asking for the other’s point of view usually creates safety and encourages him to engage.** “
-> 
+“Ask your opponent/partner what he thinks might work. Whatever he says, find something you like and build on it. If the conversation becomes adversarial, go back to inquiry. **Asking for the other’s point of view usually creates safety and encourages him to engage.** “
+
 
 Taking the learnings from Judy Ringer, we structured the “easy” level questions to be mainly the “getting-to-know-you-better” type of questions, like what Step #1 suggested. And from the way the family members would react to the answers given by each player, we would have achieved Step #2. Family members could derive a better idea of each other through tweaking Step #3 a little bit, by seeing from their own perspective something the other person currently *needs* in his/her life, or is *seeking for* in his/her life, instead of something he/she has missed.
 
