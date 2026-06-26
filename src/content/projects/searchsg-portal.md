@@ -95,14 +95,14 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 **Brainstorming activities** were split into:
 
 <aside>
-💡
+
 <h4>Generate</h4>
 <p class="text-body-sm"><b>Crazy 8</b> and dot voting to encourage volume of ideas and divergence</p>
 
 </aside>
 
 <aside>
-🔍
+
 
 #### Evaluate
 
@@ -111,7 +111,6 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 </aside>
 
 <aside>
-✅
 
 #### Finalise
 
@@ -132,8 +131,6 @@ For the first release, I designed:
 - A permissions matrix covering the different user roles and access levels the portal needed to support
 
 <aside>
-❗
-
 Designs cannot be publicly displayed due to confidentiality agreements with the client. However, I'd be happy to show and walk through it during interviews.
 
 </aside>

@@ -71,7 +71,6 @@ I envisioned the future state of research operations in SearchSG to encompass th
 ## Approach
 
 <aside>
-❗
 
 Deliverables cannot be publicly displayed due to confidentiality agreements with the client. However, I'd be happy to show and walk through it during interviews.
 

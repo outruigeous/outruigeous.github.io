@@ -9,6 +9,7 @@
   --color-border-custom: #EDE8DC;
   --color-card-bg: #F5F0E8;
   --color-callout-bg: #F7F0E3;
+  --color-callout-icon: #AFA188;
 
   --color-pill-green-bg: #C8E8C0;
   --color-pill-green-text: #2A5C22;
@@ -70,6 +71,13 @@ body {
   background-color: var(--color-cream);
   color: var(--color-ink);
   font-size: 16px;
+}
+
+/* Reserve icon footprint before iconify-icon upgrades the custom element, to avoid layout shift */
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
 }
 
 /* Reusable text-size utility, independent of element/tag */
@@ -252,20 +260,41 @@ h5 {
   border-radius: 10px;
   padding: 20px;
   margin: 20px 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 8px;
+}
+
+/* Icon sits top-left, beside the header. Optional — asides without an
+   icon just have the header start in column 1 instead. */
+.prose aside iconify-icon {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--color-callout-icon);
 }
 
 .prose aside h4 {
+  grid-column: 2;
+  grid-row: 1;
   font-family: "National Park Patched", "National Park", sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: var(--color-ink);
+  /* Explicit reset rather than relying on :first-child, since the icon
+     (when present) is the literal first child, not the header. */
+  margin-top: 0;
 }
 
-.prose aside ul { 
+.prose aside ul {
+  grid-column: 1 / -1;
   font-size: 14px;
 }
 
 .prose aside p {
+  grid-column: 1 / -1;
   font-size: 14px;
 }
 
