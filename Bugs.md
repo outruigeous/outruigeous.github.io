@@ -5,6 +5,8 @@ General
 - [ ] Design a disclaimer callout
 - [x] Consider a different font for h2/h3, maybe something longer and taller
 - [ ] Fallback font families
+- [ ] Next Back button to navigate around to the next case study without going back to home
+- [ ] Add a section button to skip to all the sections with H2 headers
 
 Home/Index.astro
 - [x] “Projects” title increase size
@@ -19,8 +21,10 @@ Service Design
 Sanctuary
 - [x] ## Overview is not showing its H2 css styling on the dev server
 - [x] Insert images for Mood Tracker
+- [ ] Shift Final Designs section up to right below Outcomes and move Brand Design portion into it
 
 Admin portal
-- [ ] HMW Statements callout
-- [ ] Ideation workshop photos are supposed to be still side by side in the tablet breakpoint
+- [x] HMW Statements callout
+- [x] Ideation workshop photos are supposed to be still side by side in the tablet breakpoint
 - [ ] Brainstorming Activities Callout
+- [ ] Callout in "prioritization and design" needs to be fixed

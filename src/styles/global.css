@@ -213,6 +213,10 @@ h5 {
   margin-bottom: 1rem;
 }
 
+.prose a {
+  text-decoration: underline;
+}
+
 .prose img {
   width: 100%;
   height: auto;
@@ -294,6 +298,11 @@ h5 {
   }
 }
 
+/* Larger HMW statement text — same aside styling otherwise */
+.prose .hmw-grid aside p {
+  font-size: 18px;
+}
+
 /* Fixed 3-column variant — unlike .aside-grid, stays 3 columns at every viewport width */
 .prose .aside-grid.aside-grid-3 {
   grid-template-columns: repeat(3, 1fr);
@@ -302,7 +311,7 @@ h5 {
 /* Extra styling for placeholders in markdown */
 .prose .image-pair {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin: 20px 0;
 }
@@ -313,11 +322,6 @@ h5 {
 .prose .image-pair img {
   margin: 0;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .prose .image-pair {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 .prose .img-placeholder {
   width: 100%;

@@ -9,6 +9,7 @@ interface Props {
     tags: string[];
     role: string;
     timeline: string;
+    team: string;
     toolsUsed: string;
     cover?: ImageMetadata;
     coverPlaceholder?: string;
@@ -25,7 +26,7 @@ const getTagClass = (tag: string) => {
   if (normalized.includes('design thinking')) return 'bg-pill-blue-bg text-pill-blue-text';
   if (normalized.includes('ui design') || normalized.includes('visual')) return 'bg-pill-green-bg text-pill-green-text';
   if (normalized.includes('workshop') || normalized.includes('facilitation')) return 'bg-pill-purple-bg text-pill-purple-text';
-  if (normalized.includes('research ops')) return 'bg-pill-teal-bg text-pill-teal-text';
+  if (normalized.includes('research ops')) return 'bg-pill-pink-bg text-pill-pink-text';
   if (normalized.includes('design ops')) return 'bg-pill-blue-bg text-pill-blue-text';
   if (normalized.includes('pink') || normalized.includes('start')) return 'bg-pill-pink-bg text-pill-pink-text';
   return 'bg-pill-peach-bg text-pill-peach-text'; // fallback
@@ -56,6 +57,10 @@ const getTagClass = (tag: string) => {
           <span class="text-[11px] tracking-wider uppercase text-ink-muted">Timeline</span>
           <span class="text-sm text-ink">{frontmatter.timeline}</span>
         </div>
+         <div class="flex flex-col gap-0.5">
+            <span class="text-[11px] tracking-wider uppercase text-ink-muted">Team</span>
+            <span class="text-sm text-ink">{frontmatter.team}</span>
+          </div>
         <div class="flex flex-col gap-0.5">
           <span class="text-[11px] tracking-wider uppercase text-ink-muted">Tools Used</span>
           <span class="text-sm text-ink">{frontmatter.toolsUsed}</span>

@@ -3,16 +3,17 @@ title: "SearchSG Administrative Portal"
 tags: ["UX Research", "Workshop Facilitation", "UI Design"]
 role: "UX Researcher"
 timeline: "June - Nov 2022"
-toolsUsed: "SearchSG"
+team: "10 members; 4 UX, 1 PM, 5 Devs"
+toolsUsed: "Miro, Google Suite, Figma"
 cover: "./images/admin-portal-cover.png"
 order: 3
 ---
 
 ## Overview
 
-SearchSG is the Singapore government’s search engine that aims to improve the effectiveness and efficiency for finding any government-related information and services. As more government agencies onboarded SearchSG as their website’s search tool, we identified an increasing demand to build an administrative portal to allow automated onboarding, search configuration and the provision of search insights for our potential administrative users, who are the webmasters from the government agencies.
+[SearchSG](https://search.gov.sg) is the Singapore government’s search engine that aims to improve the effectiveness and efficiency for finding any government-related information and services. As more government agencies onboarded SearchSG as their website’s search tool, we identified an increasing demand to build an **administrative portal** to allow **automated onboarding**, **search configuration** and the provision of **search insights** for our potential administrative users, who are the webmasters from the government agencies.
 
-I joined the SearchSG product team as a **UX researcher** when the agency user interviews had been completed but mid-way through the synthesis phase. My work covered the **synthesis of that research**, the **planning and facilitation of an ideation workshop** with agency representatives, a **prioritisation exercise** with the product team, and the **design of the portal's login and access control screens**.
+I joined the SearchSG product team as a **UX researcher** when the agency user interviews had been completed and the team is mid-way through the synthesis phase. My work covered the **synthesis of that research**, the **planning and facilitation of an ideation workshop** with agency representatives, a **prioritisation exercise** with the product team, and the **design of the portal's login and access control screens**.
 
 ## Outcomes
 
@@ -21,7 +22,9 @@ I joined the SearchSG product team as a **UX researcher** when the agency user i
 
 ## Challenges
 
-Before SearchSG existed, most agencies were using Google Custom Search or the existing search bar provided by Isomer *(a Singapore Government website builder tool)* as it were the easiest ways to add search functionality to their sites. A few agencies were using vendor provided CMS tools to power their search experiences. However, there were limitations to the existing search solutions:
+Before SearchSG existed, most agencies were using Google Custom Search or the existing search bar provided by Isomer *(a Singapore Government website builder tool)* as they were the easiest ways to add search functionality to their sites. A few agencies were using vendor provided CMS tools to power their search experiences. 
+
+However, there were **limitations** to the existing search solutions:
 
 - Agencies **could not configure** their search bar
 - Google Custom Search **served advertisements within results** that agencies had no way to remove
@@ -29,7 +32,7 @@ Before SearchSG existed, most agencies were using Google Custom Search or the ex
 - Existing CMS tools used by agencies *(e.g. Lucidworks, Sitecore, Sitefinity)* offered more control in theory but **brought integration problems and vendor dependency**
 - Agencies had **no way to bump up pages** in their search results, especially during specific seasons (e.g. Tax season when there is a spike in tax filing guidance search queries)
 
-We also noticed **most agencies were new to the idea of managing and improving their search experience**.
+We also noticed **most agencies** were **new** to the idea of **managing and improving their search experience**.
 
 - 8 out of 9 agencies interviewed had no KPIs for search
 - 5 out of 9 agencies interviewed had no idea how a well-managed search experience would benefit their website’s user experience
@@ -59,6 +62,8 @@ I created the following artifacts based on data extracted from the user intervie
 
 My UX Lead and I also **condensed the interview insights** into two **How Might We (HMW) statements**, that were later used in our ideation workshop as brainstorming questions:
 
+<div class="aside-grid hmw-grid">
+
 <aside>
 
 How might we **empower** admin users to **configure** search relevance, filters, and the results page **easily**?
@@ -70,6 +75,8 @@ How might we **empower** admin users to **configure** search relevance, filters,
 How might we enable agencies to **view search insights** that are **meaningful**, **actionable**, and **easily understandable**?
 
 </aside>
+
+</div>
 
 ### Ideation Workshop
 

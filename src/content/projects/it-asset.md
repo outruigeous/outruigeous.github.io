@@ -3,6 +3,7 @@ title: "IT Asset Management Input/Output Tooling"
 tags: ["UX Research", "UI Design"]
 role: "UX Designer, UX Researcher"
 timeline: "May – Nov 2019"
+team: "5 members; 1 UXD, 1 Dev, 1 BA, 2 PMs"
 toolsUsed: Confluence, JIRA, Sketch"
 cover: "./images/itasset-cover.png"
 order: 5

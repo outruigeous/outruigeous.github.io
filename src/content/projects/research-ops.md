@@ -3,6 +3,7 @@ title: "Setting up Research Ops @ SearchSG"
 tags: ["UX Research", "Research Ops"]
 role: "UX Researcher"
 timeline: "March – June 2023"
+team: "3 members; 1 UXR, 1 UXD, 1 UX Lead"
 toolsUsed: "Confluence, Figma, Google Workspace"
 cover: "./images/research-ops-cover.png"
 order: 4

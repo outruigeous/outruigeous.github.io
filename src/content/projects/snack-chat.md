@@ -3,6 +3,7 @@ title: "Snack Chat, where it all started"
 tags: ["Design Thinking"]
 role: "UX Designer"
 timeline: "2021"
+team: "3 members"
 toolsUsed: "Personal Project"
 cover: "./images/snack-chat-cover.jpg"
 order: 6
