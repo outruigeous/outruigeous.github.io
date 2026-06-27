@@ -7,11 +7,13 @@ interface Props {
   showBackLink?: boolean;
 }
 
-const { 
-  title, 
-  description = "Mingz — UX Designer & Researcher portfolio", 
-  showBackLink = false 
+const {
+  title,
+  description = "Mingz — UX Designer & Researcher portfolio",
+  showBackLink = false
 } = Astro.props;
+
+const hasSidebar = Astro.slots.has('sidebar');
 ---
 
 <!DOCTYPE html>
@@ -34,16 +36,26 @@ const {
   </script>
 </head>
 <body class="bg-cream text-ink font-sans min-h-screen">
-  <div class="max-w-[860px] mx-auto px-6">
-    {showBackLink && (
-      <a href="/" class="inline-flex items-center gap-1.5 text-sm text-ink-muted hover:text-vermillion transition-colors duration-150 pt-8 group">
-        <span class="transition-transform group-hover:-translate-x-1">←</span> Back to home
-      </a>
-    )}
-    
-    <main>
-      <slot />
-    </main>
+  <div class={hasSidebar ? "max-w-[860px] min-[1100px]:max-w-[1108px] mx-auto px-6" : "max-w-[860px] mx-auto px-6"}>
+    <div class={hasSidebar ? "min-[1100px]:grid min-[1100px]:grid-cols-[200px_1fr] min-[1100px]:gap-12" : ""}>
+      {hasSidebar && (
+        <aside class="hidden min-[1100px]:block">
+          <slot name="sidebar" />
+        </aside>
+      )}
+
+      <div>
+        {showBackLink && !hasSidebar && (
+          <a href="/" class="inline-flex items-center gap-1.5 text-sm text-ink-muted hover:text-vermillion transition-colors duration-150 pt-8 group">
+            <span class="transition-transform group-hover:-translate-x-1">←</span> Back to home
+          </a>
+        )}
+
+        <main>
+          <slot />
+        </main>
+      </div>
+    </div>
 
     <footer class="border-t border-border-custom py-7 text-xs text-ink-muted flex justify-between items-center flex-wrap gap-2 mt-auto">
       <span>Mingz &copy; 2026</span>

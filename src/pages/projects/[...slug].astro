@@ -11,9 +11,10 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { Content, headings } = await render(entry);
+const sections = headings.filter((h) => h.depth === 2);
 ---
 
-<ProjectLayout frontmatter={entry.data} slug={entry.id}>
+<ProjectLayout frontmatter={entry.data} slug={entry.id} headings={sections}>
   <Content />
 </ProjectLayout>

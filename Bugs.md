@@ -2,7 +2,7 @@ Things to fix
 
 General
 - [x] Change from - to bullet points
-- [ ] Design a disclaimer callout
+- [x] Design a disclaimer callout
 - [x] Consider a different font for h2/h3, maybe something longer and taller
 - [ ] Fallback font families
 - [ ] Next Back button to navigate around to the next case study without going back to home. Use icons from Iconify. 
