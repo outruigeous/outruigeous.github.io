@@ -9,11 +9,6 @@
 
   let activeId = $state<string | null>(null);
 
-  // activeId only becomes non-null once the user has scrolled down to (or
-  // past) the first heading, so it doubles as the "has reached the first
-  // h2 yet" signal for revealing the nav.
-  let visible = $derived(activeId !== null);
-
   $effect(() => {
     // Track every currently-intersecting heading, not just the latest
     // batch of entries — IntersectionObserver only reports targets whose
@@ -45,7 +40,25 @@
       if (el) observer.observe(el);
     }
 
-    return () => observer.disconnect();
+    // If the last section is too short to scroll its heading all the way
+    // into the trigger band (nothing left below it to scroll through),
+    // it never registers as intersecting and the previous heading stays
+    // stuck active. Once we've scrolled to the bottom of the page, force
+    // the last heading active regardless of where it actually landed.
+    const checkAtBottom = () => {
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      if (atBottom && headings.length > 0) {
+        activeId = headings[headings.length - 1].slug;
+      }
+    };
+    window.addEventListener('scroll', checkAtBottom, { passive: true });
+    checkAtBottom();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', checkAtBottom);
+    };
   });
 
   const scrollToSection = (slug: string) => {
@@ -53,11 +66,7 @@
   };
 </script>
 
-<nav
-  class="sticky top-20 flex flex-col gap-3 transition-opacity duration-300 {visible
-    ? 'opacity-100'
-    : 'opacity-0 pointer-events-none'}"
->
+<nav class="sticky top-20 flex flex-col gap-3">
   <a
     href="/"
     class="inline-flex items-center gap-1.5 text-callout-icon transition-colors duration-150 group mb-5"

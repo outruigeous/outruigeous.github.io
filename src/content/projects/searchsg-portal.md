@@ -128,7 +128,7 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 
 From this ideation workshop, we could tell that users wanted a **high level of automation** so that the search administration and maintenance process could be fuss-free. They also wanted something similar to Squarespace or Wix where any **customizations they made to the search bar and search results page could be seen live**.
 
-## Prioritization and Design
+## Prioritization & Design
 
 We **assessed** each feature that was planned for the administrative portal against **design and** **development effort, business value, insights** from user interviews and the ideation workshop, then mapped them to release phases before we started on the screen designs.
 

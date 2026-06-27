@@ -78,6 +78,8 @@ One thing that most of the discussions/interviews had in common was most of them
 
 #### Stage 3 & 4: Ideate and prototype – Dream Catcher (Job/forum portal)
 
+![Photos of sticky-note brainstorming boards and wireframe sketches from the Dream Catcher ideation session](./images/snackchat-part1-1.png)
+
 Our most potential idea from the first round of ideations was ‘dream catcher’, a portal that not only helps you find your passion, but also helps to connect other people with the same interests in a forum.
 
 However, the feedback in class made us realize that the idea was neither original nor anything new. We decided to dive back to stage 1 to find more insights of our target group.
@@ -88,23 +90,37 @@ However, the feedback in class made us realize that the idea was neither origina
 
 After an internal discussion, we realized that at any point, the path of following your passion can be stopped or obstructed by parents. Because the finding that **parents play an important role in the decision making** of the student stood out, we decided to focus on the role of parents in following and finding passion. Therefore, we conducted a survey that asks students what role their parents play in their future decisions. We received 106 responses from students in NTU from a variety of courses.
 
-image-fig 1
+<div class="image-pair">
 
-image-fig 2
+![Pie chart showing the demographics of survey participants by school, including ADM, Nanyang Business School and Civil and Environmental Engineering](./images/snackchat-part2-stage1-1.png)
 
-image-fig 3
+![Bar chart showing survey responses to "How passionate are you about the course you're studying?" with most responses rated 3 to 4 out of 5](./images/snackchat-part2-stage1-2.png)
+
+![Bar chart showing survey responses to "To what extent do you think you are following your passion?" skewing toward 6 to 8 out of 10](./images/snackchat-part2-stage1-3.png)
+
+![Pie chart showing 91.5% of survey respondents say their parents approve of the course they are taking](./images/snackchat-part2-stage1-4.png)
+
+</div>
 
 The first questions are about passion and to what extent they think that they are following it. The results from that diagram were surprisingly positive because it said that most of them are following their passions and that they are passionate about the courses they are taking *(Figure 1 & 2).*
 
-image-fig 4
+<div class="image-pair">
 
-image-fig 5
+![Bar chart showing how much influence parents had on respondents' choice of study, skewed toward low influence](./images/snackchat-part2-stage1-5.png)
+
+![Bar chart rating how concerned parents are with their child's education on a scale of 1 to 10, skewed toward highly concerned](./images/snackchat-part2-stage1-6.png)
+
+</div>
 
 This was very different from the interviews that we did initially in the first part of our journey. However, when we continue looking at the survey, we are able to see some confusing, but at the same time interesting turns. For example, 91,5% said that their **parents approve** the courses they are taking *(Figure 3)*, but at the same time, the majority of the **parents were concerned** about their education *(Figure 5)*.
 
-image-fig 6
+<div class="image-pair">
 
-image-fig 7
+![Pie chart showing 51.9% of respondents say their parents don't know what their dreams are](./images/snackchat-part2-stage1-7.png)
+
+![Pie chart showing how frequently respondents talk to their parents about their dreams and goals, with 37.7% saying rarely and 17% saying never](./images/snackchat-part2-stage1-8.png)
+
+</div>
 
 This became clearer to us when we gained more insights about the communication between the students and their parents. It was obvious that there was a lack of communication because of the fact that almost **60% never or rarely spoke about their dreams and goals with their parent** *(Figure 7)*.
 
@@ -114,7 +130,7 @@ Among the reactions, many students indicated that their parents would not unders
 
 #### Stage 2: Define – New problem statement based on passion and parents
 
-image-fig 8
+![Pie chart showing 64.6% of respondents wish they had a chance to discuss their dreams and goals with their parents](./images/snackchat-part2-stage2-1.png)
 
 At the end of the survey, we asked if they wished that they had a chance to discuss the subject with their parents and almost 65% said yes *(Figure 8)* which also made it easier for us to come up with a solution for the problem statement that we propose. Our analysis let us to the following problem statement: parents and children need to find a way to communicate and learn more about each other, preferably without having to bear with the awkwardness of baring their hearts out in person.
 
@@ -124,7 +140,7 @@ Our survey let us to the idea that improving and encouraging communication betwe
 
 #### Stage 4: Prototyping & Feedback
 
-image-fig 9
+![Mobile app screens for "What Lah" and "Ask Lah" showing sign in, sign up and profile flows](./images/snackchat-part2-stage4.png)
 
 The central idea of the app is based on matching children with other parents that have the same interests that they would like to talk about. We named the chat ‘What Lah’, as Singaporean parents and children often say ‘What lah’ when responding to each others questions. The app targets Singaporean youths above 18 and their parents. How it works is simple: parents/children sign up with their IC, they both fill in a personal profile, the algorithm will match parents and children based on their interests, and then the chatting starts. Parents will get insider knowledge of other children and children will get insights of other parents about their issues. In addition, we added a second element to the app: ‘Ask Lah!’, which is a flipcard game that presents questions based on the subject you get from the fortune wheel. This element was developed for families who are ready to talk and play a game together.
 
@@ -135,9 +151,13 @@ After some feedback sessions with the class, we noticed that it is maybe not the
 
 ### Part III
 
-image 
+<div class="image-pair">
 
-image
+![Handwritten mind map exploring ideas like an anonymous forum and Facebook plug-in for parents](./images/snackchat-part3-1.png)
+
+![Handwritten mind map exploring the "Snacks + Questions Game" idea with snack options like crackers, pocky and fortune cookies](./images/snackchat-part3-2.png)
+
+</div>
 
 #### Stage 3 & 4: Ideate and prototype – Snackchat
 
@@ -149,13 +169,17 @@ Before putting in effort to design the packaging for it, we did two rounds of te
 
 ##### 1. Guerilla Testing around campus
 
-image 
+<div class="image-pair">
 
-image
+![Hand holding rolled paper questions over two bags of corn chip snacks used for guerilla testing](./images/snackchat-guerillatest-1.png)
 
-image 
+![Close up of an open snack bag with crisps and rolled paper questions inside](./images/snackchat-guerillatest-2.png)
 
-image
+![Two students laughing while reading question papers pulled from the snack bag during guerilla testing](./images/snackchat-guerillatest-3.png)
+
+![Facilitator presenting guerilla testing feedback to a group taking notes on laptops](./images/snackchat-guerillatest-4.png)
+
+</div>
 
 We went to North Spine to test the idea on groups. We managed to test the idea on a total of 8 groups. Overall, the feedback was very positive. 7/8 groups would feel comfortable to ask the questions to their parents/for their parents to ask them these questions. When we asked the groups if they would buy the snack in the supermarket amongst all other snacks, all groups agreed that they would buy the Snackbag game, especially for a gathering/party and if its tasty and cheap (within $2–$3). 50% of those whom we tested the game on also pointed out it will definitely help the family members to open up to each other.
 
@@ -165,7 +189,7 @@ The feedback in class was also unexpectedly very positive. Many classmates point
 
 ##### 2. Testing with real families
 
-image
+![WhatsApp conversation asking a friend if her family can help test the Snackchat game](./images/snackchat-famtest.png)
 
 We tested the game with 5 families (including mine). 
 
@@ -175,13 +199,17 @@ However, we also got some feedback from my parents about the game. Families that
 
 We then went on to test the game with the remaining 4 families and asked them to answer a survey after playing it.
 
-image
+![Survey responses comparing parents' and children's experiences playing Snackchat with their families](./images/snackchat-famtest-survey.png)
 
 After playing the game, all respondents described a positive feeling (e.g. ‘re-energised, warm, happier, comfortable’. Both students and families enjoyed the game, as it allowed them to discover more about the other.
 
-image
+<div class="image-pair">
 
-image
+![Bar chart showing families rated Snackchat 7 to 9 out of 10 for starting conversations on topics like school, dreams and family](./images/snackchat-famtest-survey-result-1.png)
+
+![Pie chart showing 100% of respondents agree the game helped bring family members closer](./images/snackchat-famtest-survey-result-2.png)
+
+</div>
 
 In terms of Snackchat’s main goal, starting the conversation about various personal topics, it scores and average of 8.
 
@@ -195,13 +223,17 @@ The overall feedback seemed very positive, however there are some improvements t
 
 ## Final Design
 
-image
+![Front of three Snackchat snack bags in green, orange and red](./images/snack-chat-front.png)
 
-image
+![Back of three Snackchat snack bags in green, orange and red, showing the "How to Play" instructions and ingredients label](./images/snackchat-final-back.png)
 
-image
+<div class="image-pair">
 
-image
+![Close up of a rolled paper question tucked inside a ring-shaped cracker](./images/snackchat-final-rolled.png)
+
+![Hand holding an unrolled paper question reading "What is your favorite food?" next to a cracker](./images/snackchat-final-unrolled.png)
+
+</div>
 
 
 ### How we came up with the questions, and gave them varying levels of (answering) difficulty
@@ -236,11 +268,11 @@ Using the learnings from Step #3, family members could choose to take it a step
 
 We also focused our questions to centre them more around the topics of: *School, Work, Dreams, Wellbeing, Family* and our main theme, *Passion*. The questions are structured in a way that the answers for the questions would help the family members playing the game know more about each other’s perspectives on these topics that I listed above.
 
-image
+![List of final Snackchat questions in English and Chinese](./images/snackchat-questions.png)
 
 Final List of questions in English and Chinese
 
-## Conclusion and Reflections
+## Conclusion & Reflections
 
 Through our tests with families, it is confirmed that the game exactly hits the mark in terms of bringing families closer together, fostering conversations and raising important subjects related to passion. The quality of the questions are improved in our final product, as well as the variety of flavours and the format of the questions. The whole journey, from Dreamcatcher, What Lah to Snackchat, lead us to an end product that is simple, delicious, fast and fun. A product that Singaporeans cannot resist because of the fun and quizzical twists.
 

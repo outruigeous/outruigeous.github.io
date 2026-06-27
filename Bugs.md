@@ -6,7 +6,7 @@ General
 - [x] Consider a different font for h2/h3, maybe something longer and taller
 - [ ] Fallback font families
 - [ ] Next Back button to navigate around to the next case study without going back to home. Use icons from Iconify. 
-- [ ] Add a section button to skip to all the sections with H2 and H3 headers
+- [x] Add a section button to skip to all the sections with H2 headers
 - [ ] Playground section to link to my other fun works LOL
 
 Home/Index.astro
@@ -32,7 +32,7 @@ Admin portal
 - [x] Callout without h4 header with icon needs to be side by side with paragraph text, not above
 
 Snack Chat
-- [ ] Add images
+- [x] Add images
 
 About Me
 - [ ] Rethink presenting it as a timeline

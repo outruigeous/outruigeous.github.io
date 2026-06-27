@@ -36,8 +36,8 @@ const hasSidebar = Astro.slots.has('sidebar');
   </script>
 </head>
 <body class="bg-cream text-ink font-sans min-h-screen">
-  <div class={hasSidebar ? "max-w-[860px] min-[1100px]:max-w-[1108px] mx-auto px-6" : "max-w-[860px] mx-auto px-6"}>
-    <div class={hasSidebar ? "min-[1100px]:grid min-[1100px]:grid-cols-[200px_1fr] min-[1100px]:gap-12" : ""}>
+  <div class={hasSidebar ? "max-w-[860px] min-[1100px]:max-w-none min-[1100px]:w-fit mx-auto px-6" : "max-w-[860px] mx-auto px-6"}>
+    <div class={hasSidebar ? "min-[1100px]:grid min-[1100px]:grid-cols-[fit-content(180px)_940px] min-[1100px]:gap-12" : ""}>
       {hasSidebar && (
         <aside class="hidden min-[1100px]:block">
           <slot name="sidebar" />
