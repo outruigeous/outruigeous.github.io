@@ -28,16 +28,14 @@ I was the **lead UX Designer** and **Researcher** for this project, and I was in
 
 ## Approach
 
+![Diagram showing the Research, Prioritize, Make process for the project](./images/itasset-approach.png)
+
 Over the course of 5 months, I went through a rigorous design process that involves:
 
 - Conducting user interviews with members from the primary user groups that will be using
 - Running usability tests on the vendor's product with primary users
 - Stakeholder Management between the design team, vendor team, project team, and the users
 - Designing of the Web Application that enables users to view the list of IT assets used by the organization
-
-This is the detailed design process we defined together with the project team:
-
-![Diagram showing the Research, Prioritize, Make process for the project](./images/itasset-approach.png)
 
 ### Research
 
@@ -54,7 +52,7 @@ We gathered the following insights on users’ needs and pain points from the re
 <h4>Users' needs</h4>
 
 - Having a **central repository** of application-related information
-- **Improve ease of finding information** through:
+- <span style="display: inline-block; padding-bottom: 8px;">**Improve ease of finding information** through:</span>
     - **Simple** and **clear** **presentation** of information
     - Ability to **search by different categories** of information
     - Clearer **naming conventions** that are understood organization-wide
@@ -86,14 +84,28 @@ A **card sorting** exercise was also done with subject matter experts to identif
 
 Combining the insights gathered from the users in the initial research phase, as well as the prioritised features that we have identified from the value proposition canvas, I kept the following points in mind while designing:
 
-<aside>
-<iconify-icon icon="tabler:clipboard-check"></iconify-icon>
-<h4>Points to be addressed through designs:</h4>
+<div class="aside-grid hmw-grid">
 
-- Ability to search by different categories of information
-- Standardize naming conventions and terminologies
-- Clearer information structure
+<aside>
+
+<b>#1:</b> Ability to search by different categories of information
+
 </aside>
+
+<aside>
+
+<b>#2:</b> Standardize naming conventions and terminologies
+
+</aside>
+
+<aside>
+
+<b>#3:</b> Clearer information structure
+
+</aside>
+
+</div>
+
 
 ### Old Output Portal
 

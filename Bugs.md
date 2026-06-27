@@ -22,15 +22,14 @@ Service Design
 Sanctuary
 - [x] ## Overview is not showing its H2 css styling on the dev server
 - [x] Insert images for Mood Tracker
-- [ ] Shift Final Designs section up to right below Outcomes and move Brand Design portion into it
 
 Admin portal
 - [x] HMW Statements callout
 - [x] Ideation workshop photos are supposed to be still side by side in the tablet breakpoint
-- [ ] Brainstorming Activities Callout needs to be in 3 columns not stacked
-- [ ] Finalise icon loaded in wrong position
+- [x] Brainstorming Activities Callout needs to be in 3 columns not stacked
+- [x] Finalise icon loaded in wrong position
 - [x] Callout in "prioritization and design" needs to be fixed
-- [ ] Callout without h4 header with icon needs to be side by side with paragraph text, not above
+- [x] Callout without h4 header with icon needs to be side by side with paragraph text, not above
 
 Snack Chat
 - [ ] Add images

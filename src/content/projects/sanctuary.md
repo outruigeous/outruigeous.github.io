@@ -62,7 +62,7 @@ The project had a few interconnected problems:
 #### Existing Screen Designs:
 
 - Audit surfaced **major usability issues with existing screens** *(e.g. Incomplete flows, unclear screen sequences, inconsistent components)* which made them unsuitable as a foundation, and for usability testing
-- We negotiated with the client for a scope change which they were agreeable to, and the **focus** of this project **shifted** from designing the new wellness feature and design system creation, to a **complete app redesign**, **rebrand** and a **style guide** for the client’s development team.
+- We negotiated with the client for a **scope change** which they were agreeable to, and the **focus** of this project **shifted** from designing the new wellness feature and design system creation, to a **complete app redesign**, **rebrand** and a **style guide** for the client’s development team.
 </aside>
 
 ## Approach

@@ -228,6 +228,15 @@ h5 {
 .prose img {
   width: 100%;
   height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .prose img {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .prose img.png-bg {
@@ -239,6 +248,12 @@ h5 {
   list-style: disc;
   padding-left: 1.25rem;
   margin-bottom: 1rem;
+}
+
+/* Nested lists shouldn't add trailing space below their last item — the
+   parent <li>'s own padding-bottom already separates it from what follows. */
+.prose li ul {
+  margin-bottom: 0;
 }
 
 .prose li {
@@ -254,7 +269,9 @@ h5 {
   font-size: 1.3em;
 }
 
-/* Notion-style <aside> callouts */
+/* Default callout style (Notion-style <aside>). Unclassed <aside> tags get
+   this look; additional callout variants should add their own class, e.g.
+   <aside class="callout-warning">, and only override what differs. */
 .prose aside {
   background: var(--color-callout-bg);
   border-radius: 10px;
@@ -263,6 +280,7 @@ h5 {
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 4px;
+  align-content: start;
 }
 
 /* Icon sits top-left, beside the header. Optional — asides without an
@@ -297,9 +315,21 @@ h5 {
   font-size: 14px;
 }
 
+.prose aside li {
+  padding-right: 8px;
+}
+
 .prose aside p {
   grid-column: 1 / -1;
   font-size: 14px;
+}
+
+/* Headerless icon callouts: keep the icon beside the text (2-column row)
+   instead of stacking it above, since there's no h4 to share the top row with. */
+.prose aside:has(iconify-icon):not(:has(h4)) ul,
+.prose aside:has(iconify-icon):not(:has(h4)) p {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .prose aside > :first-child {

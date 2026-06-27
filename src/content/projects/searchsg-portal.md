@@ -96,6 +96,8 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 
 **Brainstorming activities** were split into:
 
+<div class="aside-grid aside-grid-3">
+
 <aside>
 <iconify-icon icon="tabler:bulb"></iconify-icon>
 
@@ -114,7 +116,6 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 </aside>
 
 <aside>
-
 <iconify-icon icon="tabler:circle-check"></iconify-icon>
 
 #### Finalise
@@ -122,6 +123,8 @@ I structured the workshop in three phases to scaffold the brainstorming activiti
 **Storyboarding** to visualize how the strongest ideas would actually function
 
 </aside>
+
+</div>
 
 From this ideation workshop, we could tell that users wanted a **high level of automation** so that the search administration and maintenance process could be fuss-free. They also wanted something similar to Squarespace or Wix where any **customizations they made to the search bar and search results page could be seen live**.
 
@@ -131,11 +134,13 @@ We **assessed** each feature that was planned for the administrative portal agai
 
 For the first release, I designed:
 
-- Login screens, using government email authentication connected to the existing Whole-of-Government user database
-- Access control screens, modeled after WOGAA’s (Whole of Government Application Analytics) access controls since most agency webmasters already were familiar with their interface
-- A permissions matrix covering the different user roles and access levels the portal needed to support
+- **Login screens**, using government email authentication connected to the existing Whole-of-Government user database
+- **Access control screens**, modeled after WOGAA’s (Whole of Government Application Analytics) access controls since most agency webmasters already were familiar with their interface
+- A **permissions matrix** covering the different user roles and access levels the portal needed to support
 
 <aside>
+<iconify-icon icon="tabler:lock"></iconify-icon>
+
 Designs cannot be publicly displayed due to confidentiality agreements with the client. However, I'd be happy to show and walk through it during interviews.
 
 </aside>
