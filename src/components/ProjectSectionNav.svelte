@@ -69,10 +69,10 @@
 <nav class="sticky top-20 flex flex-col gap-3">
   <a
     href="/"
-    class="inline-flex items-center gap-1.5 text-callout-icon transition-colors duration-150 group mb-5"
+    class="inline-flex items-center gap-1.5 text-cream-accent-dark transition-colors duration-150 group mb-5"
   >
     <span class="transition-transform group-hover:-translate-x-1">←</span>
-    <span class="group-hover:underline">Back to home</span>
+    <span>Back to home</span>
   </a>
 
   {#each headings as heading (heading.slug)}
@@ -86,11 +86,17 @@
           scrollToSection(heading.slug);
         }
       }}
-      class="cursor-pointer transition-colors duration-150 hover:underline {activeId === heading.slug
+      class="group flex items-center gap-1.5 cursor-pointer transition-colors duration-150 {activeId === heading.slug
         ? 'text-vermillion font-bold'
-        : 'text-callout-icon'}"
+        : 'text-cream-accent-dark'}"
     >
-      {activeId === heading.slug ? '• ' : ''}{heading.text}
+      <span
+        aria-hidden="true"
+        class="transition-all duration-150 {activeId === heading.slug
+          ? 'opacity-100 scale-100'
+          : 'opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100'}"
+        >•</span
+      >{heading.text}
     </p>
   {/each}
 </nav>

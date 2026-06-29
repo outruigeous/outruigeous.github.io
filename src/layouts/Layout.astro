@@ -46,8 +46,9 @@ const hasSidebar = Astro.slots.has('sidebar');
 
       <div>
         {showBackLink && !hasSidebar && (
-          <a href="/" class="inline-flex items-center gap-1.5 text-sm text-ink-muted hover:text-vermillion transition-colors duration-150 pt-8 group">
-            <span class="transition-transform group-hover:-translate-x-1">←</span> Back to home
+          <a href="/" class="inline-flex items-center gap-1.5 text-cream-accent-dark transition-colors duration-150 pt-12 group">
+            <span class="transition-transform group-hover:-translate-x-1">←</span>
+            <span>Back to home</span>
           </a>
         )}
 

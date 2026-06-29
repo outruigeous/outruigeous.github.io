@@ -9,7 +9,7 @@
   --color-border-custom: #EDE8DC;
   --color-card-bg: #F5F0E8;
   --color-callout-bg: #F7F0E3;
-  --color-callout-icon: #AFA188;
+  --color-cream-accent-dark: #AFA188;
 
   --color-pill-green-bg: #C8E8C0;
   --color-pill-green-text: #2A5C22;
@@ -180,6 +180,26 @@ h5 {
   .hero-title { font-size: 60px; }
 }
 
+/* Typing/cursor treatment for the hero headline */
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  margin-left: 3px;
+  background-color: var(--color-vermillion);
+  vertical-align: -0.05em;
+  animation: typewriter-blink 1s step-end infinite;
+}
+
+@keyframes typewriter-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-cursor { animation: none; }
+}
+
 /* Long-form case study content (rendered markdown inside ProjectLayout) */
 .prose h2 {
   font-size: 36px;
@@ -264,15 +284,6 @@ h5 {
 .prose img {
   width: 100%;
   height: auto;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-@media (min-width: 768px) {
-  .prose img {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }
 
 .prose img.png-bg {
@@ -331,7 +342,7 @@ h5 {
      to this element's own font-size — width/height above only matter for
      the pre-upgrade placeholder box, not the actual rendered icon. */
   font-size: 1.5em;
-  color: var(--color-callout-icon);
+  color: var(--color-cream-accent-dark);
 }
 
 .prose aside h4 {

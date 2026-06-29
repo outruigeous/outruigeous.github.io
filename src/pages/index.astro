@@ -27,13 +27,14 @@ const sortedProjects = await Promise.all(
   <section class="pt-16 sm:pt-20 pb-16 border-b border-border-custom">
    <!-- <p class="text-xs sm:text-sm tracking-widest uppercase text-ink-muted mb-3.5">Hola Amingos!</p> -->
     <h1 class="hero-title mb-3">
-      Hello there! I am <span class="text-vermillion">Mingz</span>,
+      <span class="sr-only">Hello there! I am Mingz, Mingz means bright.</span>
+      <span id="typewriter-text" aria-hidden="true">Hello there! I am <span class="text-vermillion">Mingz</span>,</span><span class="typewriter-cursor" aria-hidden="true"></span>
     </h1>
     <p class="text-base sm:text-lg md:text-xl text-ink-muted mb-8 leading-relaxed">
-      and I'm a human-centered, energetic and creative problem solver.
+      and I am here to illuminate your path to better user and working experiences.
     </p>
     <p class="text-[14px] sm:text-[16px] text-ink-muted mb-10 leading-loose">
-      Having worked in cross-functional teams in the banking and government-tech spaces for 5 years as a UX Designer and Researcher, the biggest joys in my career come from collaborating with others to detangle and resolve complex problems, empowering the people I work with, and designing thoughtful solutions for causes close to my heart.
+    UX Designer and Researcher with 5 years of experience. Love detangling and resolving complex problems, empowering my team, and designing thoughtful solutions for causes close to my heart.
     </p>
     <div class="flex gap-4 flex-wrap">
       <a href="/about" class="px-6 py-2 rounded-full border-2 border-vermillion text-vermillion button hover:border-transparent hover:bg-vermillion hover:text-cream transition-all duration-150 shadow-sm">
@@ -51,3 +52,64 @@ const sortedProjects = await Promise.all(
     <ProjectFilter client:load projects={sortedProjects} />
   </section>
 </Layout>
+
+<script>
+  const phrases = [
+    'Hello there! I am <span class="text-vermillion">Mingz</span>,',
+    'Mingz means <span class="text-vermillion">bright</span>.',
+  ];
+
+  const el = document.getElementById('typewriter-text');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Plain-text length of each phrase, since typing/deleting counts visible
+  // characters, not markup.
+  function plainText(html: string) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent || '';
+  }
+
+  if (el && !prefersReducedMotion) {
+    const TYPE_SPEED = 55;
+    const DELETE_SPEED = 28;
+    const PAUSE_AFTER_TYPE = 1800;
+    const PAUSE_AFTER_DELETE = 400;
+    const START_DELAY = 700;
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function tick() {
+      if (!el) return;
+      const plain = plainText(phrases[phraseIndex]);
+
+      if (!deleting) {
+        charIndex++;
+        el.textContent = plain.slice(0, charIndex);
+
+        if (charIndex >= plain.length) {
+          el.innerHTML = phrases[phraseIndex]; // swap in the highlighted markup once fully typed
+          deleting = true;
+          setTimeout(tick, PAUSE_AFTER_TYPE);
+          return;
+        }
+        setTimeout(tick, TYPE_SPEED);
+      } else {
+        charIndex--;
+        el.textContent = plain.slice(0, charIndex);
+
+        if (charIndex <= 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(tick, PAUSE_AFTER_DELETE);
+          return;
+        }
+        setTimeout(tick, DELETE_SPEED);
+      }
+    }
+
+    setTimeout(tick, START_DELAY);
+  }
+</script>
