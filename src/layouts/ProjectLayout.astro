@@ -41,7 +41,7 @@ const getTagClass = (tag: string) => {
 };
 ---
 
-<Layout title={`${frontmatter.title} — Mingz`}>
+<Layout title={`${frontmatter.title} — Mingz`} showBackLink={true}>
   <ProjectSectionNav slot="sidebar" client:load headings={headings} />
 
   <article class="py-12">

@@ -18,13 +18,13 @@ I joined the SearchSG product team as a **UX researcher** when the agency user i
 ## Outcomes
 
 - The creation of SearchSG’s Administrative Portal allowed all 308 onboarded agencies, for the first time, to **have direct control over their search configuration** and have **direct access to their search analytics** *(data as of May 2026)*
-- Through the portal, the SearchSG team is also able to have greater visibility over monitoring the number of agencies that onboarded, and the level of usage of various SearchSG features)
+- Through the portal, the SearchSG team is also able to have **greater visibility** over monitoring the number of agencies that onboarded, and the level of usage of various SearchSG features)
 
 ## Challenges
 
 Before SearchSG existed, most agencies were using Google Custom Search or the existing search bar provided by Isomer *(a Singapore Government website builder tool)* as they were the easiest ways to add search functionality to their sites. A few agencies were using vendor provided CMS tools to power their search experiences. 
 
-However, there were **limitations** to the existing search solutions:
+#### Challenge #1: Limitations to the existing search solutions:
 
 - Agencies **could not configure** their search bar
 - Google Custom Search **served advertisements within results** that agencies had no way to remove
@@ -32,13 +32,13 @@ However, there were **limitations** to the existing search solutions:
 - Existing CMS tools used by agencies *(e.g. Lucidworks, Sitecore, Sitefinity)* offered more control in theory but **brought integration problems and vendor dependency**
 - Agencies had **no way to bump up pages** in their search results, especially during specific seasons (e.g. Tax season when there is a spike in tax filing guidance search queries)
 
-We also noticed **most agencies** were **new** to the idea of **managing and improving their search experience**.
+#### Challenge #2: Most agencies were new to the idea of being able to manage and improve their site's search experience.
 
-- 8 out of 9 agencies interviewed had no KPIs for search
-- 5 out of 9 agencies interviewed had no idea how a well-managed search experience would benefit their website’s user experience
+- 8 out of 9 agencies interviewed had **no KPIs** for search
+- 5 out of 9 agencies interviewed had **no idea about the benefits** of a well-managed search experience correlates to their website’s user experience
 - Only 1 out of 9 agencies had conducted research on how citizens used their site’s search function
 
-Thus, the administrative portal had to be designed not only for agencies to make basic configurations to their search tool, but also to guide agencies on how to meaningfully utilize the search insights provided to them to improve their site’s search experience.
+Thus, the administrative portal had to be designed not only for agencies to **make basic configurations** to their search tool, but also to guide agencies on how to **meaningfully utilize search insights** provided to them to **improve their site’s search experience**.
 
 ## Approach
 

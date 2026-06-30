@@ -37,17 +37,23 @@ const hasSidebar = Astro.slots.has('sidebar');
   </script>
 </head>
 <body class="bg-cream text-ink font-sans min-h-screen">
-  <div class={hasSidebar ? "max-w-[860px] min-[1100px]:max-w-none min-[1100px]:w-fit mx-auto px-6" : "max-w-[860px] mx-auto px-6"}>
-    <div class={hasSidebar ? "min-[1100px]:grid min-[1100px]:grid-cols-[fit-content(180px)_940px] min-[1100px]:gap-12" : ""}>
+  <div class={hasSidebar ? "max-w-[860px] min-[1250px]:max-w-none min-[1250px]:w-fit mx-auto px-6" : "max-w-[860px] mx-auto px-6"}>
+    <div class={hasSidebar ? "min-[1250px]:grid min-[1250px]:grid-cols-[fit-content(180px)_940px] min-[1250px]:gap-12" : ""}>
       {hasSidebar && (
-        <aside class="hidden min-[1100px]:block">
+        <aside class="hidden min-[1250px]:block">
           <slot name="sidebar" />
         </aside>
       )}
 
       <div>
-        {showBackLink && !hasSidebar && (
-          <a href="/" class="inline-flex items-center gap-1.5 text-cream-accent-dark transition-colors duration-150 pt-12 group">
+        {showBackLink && (
+          <a
+            href="/"
+            class:list={[
+              "inline-flex items-center gap-1.5 text-cream-accent-dark transition-colors duration-150 pt-12 group",
+              { "min-[1250px]:hidden": hasSidebar }
+            ]}
+          >
             <span class="transition-transform group-hover:-translate-x-1">←</span>
             <span>Back to home</span>
           </a>

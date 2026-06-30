@@ -1,11 +1,13 @@
 <script lang="ts">
+  const GAP = 16; // matches right-4 / the default bottom-4 offset
+  const DESKTOP_BREAKPOINT = 768; // matches Tailwind's md breakpoint used elsewhere
+
   let visible = $state(false);
+  let bottomOffset = $state(GAP);
 
   $effect(() => {
-    const threshold = () => window.innerHeight;
-
     const onScroll = () => {
-      visible = window.scrollY > threshold();
+      visible = window.scrollY > window.innerHeight;
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -13,6 +15,28 @@
 
     return () => {
       window.removeEventListener('scroll', onScroll);
+    };
+  });
+
+  $effect(() => {
+    const footer = document.querySelector('footer');
+
+    // Desktop gets a fixed, constant position docked just above the footer.
+    // Since the button is viewport-fixed, this offset only ever matters once
+    // the page is scrolled to the bottom (where the footer lines up with the
+    // viewport edge) — anywhere else the footer is further down, off-screen,
+    // so there's nothing to overlap. Mobile just keeps the plain corner offset.
+    const updatePosition = () => {
+      const isDesktop = window.innerWidth > DESKTOP_BREAKPOINT;
+      const footerHeight = footer?.getBoundingClientRect().height ?? 0;
+      bottomOffset = isDesktop ? footerHeight + GAP : GAP;
+    };
+
+    window.addEventListener('resize', updatePosition);
+    updatePosition();
+
+    return () => {
+      window.removeEventListener('resize', updatePosition);
     };
   });
 
@@ -26,7 +50,8 @@
   type="button"
   aria-label="Back to top"
   onclick={scrollToTop}
-  class="fixed bottom-4 right-4 z-50 flex flex-col items-center justify-center gap-1 w-[58px] h-[62px] px-1 py-2 rounded-lg bg-cream-accent-light text-vermillion shadow-sm transition-all duration-200 {visible
+  style="bottom: {bottomOffset}px"
+  class="fixed right-4 z-50 flex flex-col items-center justify-center gap-1 w-[58px] h-[62px] px-1 py-2 rounded-lg bg-cream-accent-light text-vermillion shadow-sm transition-[opacity,transform] duration-200 {visible
     ? 'opacity-100 translate-y-0 pointer-events-auto'
     : 'opacity-0 translate-y-2 pointer-events-none'}"
 >
