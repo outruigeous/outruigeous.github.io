@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import BackToTop from '../components/BackToTop.svelte';
 
 interface Props {
   title: string;
@@ -63,5 +64,7 @@ const hasSidebar = Astro.slots.has('sidebar');
       <a href="mailto:mingrui.lee@gmail.com" class="text-vermillion hover:underline">mingrui.lee@gmail.com</a>
     </footer>
   </div>
+
+  <BackToTop client:load />
 </body>
 </html>

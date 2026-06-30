@@ -8,7 +8,7 @@
   --color-forestgreen: #0B6F5A;
   --color-border-custom: #EDE8DC;
   --color-card-bg: #F5F0E8;
-  --color-callout-bg: #F7F0E3;
+  --color-cream-accent-light: #F7F0E3;
   --color-cream-accent-dark: #AFA188;
 
   --color-pill-green-bg: #C8E8C0;
@@ -320,7 +320,7 @@ h5 {
    this look; additional callout variants should add their own class, e.g.
    <aside class="callout-warning">, and only override what differs. */
 .prose aside {
-  background: var(--color-callout-bg);
+  background: var(--color-cream-accent-light);
   border-radius: 10px;
   padding: 20px;
   margin: 20px 0;
