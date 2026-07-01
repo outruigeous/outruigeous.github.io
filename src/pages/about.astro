@@ -2,42 +2,148 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
+<style>
+  .card-brain:hover  { border-color: #FF6B4A; box-shadow: 0 0 0 0.5px #FF6B4A; }
+  .card-bulb:hover   { border-color: #FFD4A0; box-shadow: 0 0 0 0.5px #FFD4A0; }
+  .card-books:hover  { border-color: #0B6F5A; box-shadow: 0 0 0 0.5px #0B6F5A; }
+</style>
+
 <Layout title="About — Mingz" showBackLink={true}>
-  <header class="py-12 border-b border-border-custom">
-    <p class="text-[11px] tracking-wider uppercase text-ink-muted mb-3">About me</p>
-    <h1>
-      "Ming" means <span class="text-vermillion">bright</span>,
-    </h1>
-    <br>
-    <p>and that's exactly what I bring to the table.</p>
+  <header class="pt-12 pb-4">
+    <p class="text-[14px] tracking-wider uppercase text-ink-muted">Who I Am</p>
   </header>
 
-  <section class="py-12 max-w-[640px]">
-    <h3>I'm a designer who is both left and right brained.</h3><br>
+  <section class="pb-12 max-w-[980px]">
 
-    <p class="text-base text-ink-muted mb-6 leading-[1.8]">
-      I was a science student all my life till I did a switch to Fine Arts in college. I enjoy creating solutions that are <b>grounded</b> in <b>research and data</b>, while I inject some of my <b>creative flair</b> into the process and design.
-    </p>
+    <!-- Cards row -->
+    <div class="grid grid-cols-3 gap-4 mb-10 items-start">
 
-     <h3>I'm energetic and hands-on team leader and player.</h3><br>
-    <p class="text-base text-ink-muted mb-6 leading-[1.8]">
-      I worked in the banking and government-tech spaces during my 5 year long career as a UX Designer/Researcher, though most of the time I saw myself as a problem solver. My scope of work involved more than just designing digital products. I redesigned company processes and workflows, led countless design workshops, created design systems, introduced design governance, co-led a design team, and mentored juniors and interns who all became confident designers themselves today! 
-    </p>
+    <!-- Brain card -->
+    <div class="card-brain flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default mt-6">
+      <div class="flex-shrink-0">
+        <svg width="93" height="94" viewBox="0 0 93 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <style>
+            #sparkle-large {
+              transform-box: fill-box;
+              transform-origin: center;
+              animation: sparkle 2.2s ease-in-out infinite;
+            }
+            #sparkle-small {
+              transform-box: fill-box;
+              transform-origin: center;
+              animation: sparkle 2.2s ease-in-out infinite 0.6s;
+            }
+            @keyframes sparkle {
+              0%   { transform: scale(1);    opacity: 1; }
+              20%  { transform: scale(1.35); opacity: 1; }
+              40%  { transform: scale(0.75); opacity: 0.4; }
+              60%  { transform: scale(1.2);  opacity: 0.9; }
+              80%  { transform: scale(0.9);  opacity: 0.6; }
+              100% { transform: scale(1);    opacity: 1; }
+            }
+          </style>
+          <g clip-path="url(#clip0_643_2044)">
+            <path d="M20.9998 64C19.6902 64.002 18.3969 64.2897 17.21 64.843C16.0231 65.3964 14.9713 66.2021 14.128 67.204C13.2846 68.2058 12.6701 69.3796 12.3272 70.6435C11.9843 71.9074 11.9213 73.2308 12.1427 74.5215C12.3641 75.8122 12.8645 77.039 13.609 78.1164C14.3534 79.1937 15.324 80.0957 16.453 80.7592C17.582 81.4227 18.8422 81.8319 20.1457 81.9581C21.4491 82.0843 22.7644 81.9246 23.9998 81.49" stroke="#FF6B4A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.7917 68.8138C10.9964 67.9495 9.4446 66.6517 8.27629 65.0376C7.10799 63.4235 6.36 61.5439 6.09982 59.5685C5.83964 57.593 6.07546 55.5838 6.786 53.7223C7.49654 51.8608 8.65944 50.2055 10.1697 48.9058M10.2597 48.6628C9.27587 47.1905 8.84464 45.4176 9.0424 43.658C9.24016 41.8983 10.0542 40.2654 11.3403 39.0482C12.6264 37.8311 14.3017 37.1082 16.0696 37.0077C17.8374 36.9071 19.5839 37.4353 20.9997 38.4988M21.7137 38.6938C21.2352 37.6769 20.9912 36.5655 21 35.4417C21.0087 34.3178 21.2699 33.2104 21.7642 32.2011C22.2586 31.1918 22.9734 30.3065 23.8559 29.6106C24.7385 28.9147 25.7661 28.4261 26.8628 28.1808C27.9596 27.9355 29.0975 27.9399 30.1923 28.1935C31.2872 28.4471 32.3111 28.9436 33.1882 29.6461C34.0654 30.3487 34.7735 31.2394 35.2602 32.2524C35.7468 33.2655 35.9996 34.3749 35.9997 35.4988V81.9988C35.9997 83.5901 35.3676 85.1162 34.2424 86.2414C33.1172 87.3666 31.591 87.9988 29.9997 87.9988C28.4084 87.9988 26.8823 87.3666 25.7571 86.2414C24.6319 85.1162 23.9997 83.5901 23.9997 81.9988M35.9997 42.9988C35.9997 45.3857 36.948 47.6749 38.6358 49.3627C40.3236 51.0506 42.6128 51.9988 44.9997 51.9988M50.9997 63.9988C52.3093 64.0007 53.6026 64.2884 54.7895 64.8418C55.9764 65.3952 57.0282 66.2009 57.8716 67.2028C58.7149 68.2046 59.3295 69.3784 59.6723 70.6423C60.0152 71.9061 60.0782 73.2296 59.8568 74.5203C59.6354 75.811 59.135 77.0378 58.3905 78.1152C57.6461 79.1925 56.6755 80.0944 55.5465 80.758C54.4175 81.4215 53.1573 81.8306 51.8538 81.9569C50.5504 82.0831 49.2351 81.9233 47.9997 81.4888" stroke="#FF6B4A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M59.208 68.8138C61.0033 67.9495 62.5551 66.6517 63.7234 65.0376C64.8917 63.4235 65.6397 61.5439 65.8999 59.5685C66.1601 57.593 65.9243 55.5838 65.2137 53.7223C64.5032 51.8608 63.3403 50.2055 61.83 48.9058M61.74 48.6628C62.7239 47.1905 63.1551 45.4176 62.9573 43.658C62.7596 41.8983 61.9456 40.2654 60.6595 39.0482C59.3734 37.8311 57.6981 37.1082 55.9302 37.0077C54.1623 36.9071 52.4158 37.4353 51 38.4988M36 35.4988C36.0002 34.3749 36.2529 33.2655 36.7396 32.2524C37.2262 31.2394 37.9343 30.3487 38.8115 29.6461C39.6887 28.9436 40.7125 28.4471 41.8074 28.1935C42.9023 27.9399 44.0401 27.9355 45.1369 28.1808C46.2337 28.4261 47.2613 28.9147 48.1438 29.6106C49.0263 30.3065 49.7412 31.1918 50.2355 32.2011C50.7298 33.2104 50.991 34.3178 50.9998 35.4417C51.0085 36.5655 50.7646 37.6769 50.286 38.6938M48 81.9988C48 83.5901 47.3679 85.1162 46.2426 86.2414C45.1174 87.3666 43.5913 87.9988 42 87.9988C40.4087 87.9988 38.8826 87.3666 37.7574 86.2414C36.6321 85.1162 36 83.5901 36 81.9988" stroke="#FF6B4A" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g clip-path="url(#clip1_643_2044)">
+            <path id="sparkle-large" d="M65 26.25C73.5313 26.25 77.25 22.6608 77.25 14C77.25 22.6608 80.9425 26.25 89.5 26.25C80.9425 26.25 77.25 29.9425 77.25 38.5C77.25 29.9425 73.5313 26.25 65 26.25Z" stroke="#FF6B4A" stroke-width="3" stroke-linejoin="round"/>
+            <path id="sparkle-small" d="M54.5 11.375C59.9845 11.375 62.375 9.0685 62.375 3.5C62.375 9.0685 64.7498 11.375 70.25 11.375C64.7498 11.375 62.375 13.7498 62.375 19.25C62.375 13.7498 59.9845 11.375 54.5 11.375Z" stroke="#FF6B4A" stroke-width="3" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_643_2044">
+              <rect width="72" height="72" fill="white" transform="translate(0 22)"/>
+            </clipPath>
+            <clipPath id="clip1_643_2044">
+              <rect width="42" height="42" fill="white" transform="translate(51)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="flex flex-col gap-2 text-center">
+        <h3 class="text-base font-medium text-ink leading-snug">I'm a designer who is both left and right brained</h3>
+        <p class="text-sm text-ink-muted leading-[1.8]">I was a science student all my life till I did a switch to Fine Arts in college. I enjoy creating solutions that are grounded in research and data, while I inject some of my creative flair into the process and design.</p>
+      </div>
+    </div>
 
-    <h3>I took a 3 year long sidequest to learn more about HCI and UX, and figure out the meaning of being a designer in today's world. </h3><br>
-    <p class="text-base text-ink-muted mb-6 leading-[1.8]">
-      Deciding to take a 3 year long sabbatical from the corporate world to pursue my Masters in Human Computer Interaction (HCI) in the United States was not an easy decision. However, I wanted to take time off to pick up more theoretical knowledge that would back my research practices up. I also wanted to use the time to discover more research interests in the HCI space that includes designing for older adults, designing low-tech solutions and participatory design.
-    </p>
-   <p class="text-base text-ink-muted mb-6 leading-[1.8]">
-      I like exploring the tensions and synergy within human-computer interactions. Especially in today’s AI-driven age, I am especially interested in identifying ethical and thoughtful AI use cases that will be an aid, and not an ailment to humans in both the short and long run.
-    </p>
-    <p class="text-base text-ink-muted mb-6 leading-[1.8]">
-      During this sidequest I also picked up 3d printing, vibe coding, tarot card reading, crocheting, and lots of rave-related crafting. Who says sabbaticals can't be fun!!
-    </p>
+    <!-- Interfaces card -->
+    <div class="card-bulb flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+      <div class="flex-shrink-0">
+        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="clip0_638_1817">
+              <rect width="72" height="72" fill="white"/>
+            </clipPath>
+            <style>
+              .ray { stroke-dasharray: 10; }
+              .ray-ll  { animation: kf-ll  4s ease-in-out infinite; }
+              .ray-l   { animation: kf-l   4s ease-in-out infinite; }
+              .ray-ul  { animation: kf-ul  4s ease-in-out infinite; }
+              .ray-top { animation: kf-top 4s ease-in-out infinite; }
+              .ray-ur  { animation: kf-ur  4s ease-in-out infinite; }
+              .ray-r   { animation: kf-r   4s ease-in-out infinite; }
+              .ray-lr  { animation: kf-lr  4s ease-in-out infinite; }
+              @keyframes kf-ll  { 0%{opacity:0;stroke-dashoffset:10} 7%{opacity:1;stroke-dashoffset:0} 75%{opacity:1;stroke-dashoffset:0} 85%{opacity:0;stroke-dashoffset:0} 100%{opacity:0;stroke-dashoffset:10} }
+              @keyframes kf-l   { 0%{opacity:0;stroke-dashoffset:10} 7%{opacity:0;stroke-dashoffset:10} 14%{opacity:1;stroke-dashoffset:0} 75%{opacity:1;stroke-dashoffset:0} 85%{opacity:0;stroke-dashoffset:0} 100%{opacity:0;stroke-dashoffset:10} }
+              @keyframes kf-ul  { 0%{opacity:0;stroke-dashoffset:10} 14%{opacity:0;stroke-dashoffset:10} 21%{opacity:1;stroke-dashoffset:0} 75%{opacity:1;stroke-dashoffset:0} 85%{opacity:0;stroke-dashoffset:0} 100%{opacity:0;stroke-dashoffset:10} }
+              @keyframes kf-top { 0%{opacity:0;stroke-dashoffset:10} 21%{opacity:0;stroke-dashoffset:10} 28%{opacity:1;stroke-dashoffset:0} 75%{opacity:1;stroke-dashoffset:0} 85%{opacity:0;stroke-dashoffset:0} 100%{opacity:0;stroke-dashoffset:10} }
+              @keyframes kf-ur  { 0%{opacity:0;stroke-dashoffset:10} 28%{opacity:0;stroke-dashoffset:10} 35%{opacity:1;stroke-dashoffset:0} 75%{opacity:1;stroke-dashoffset:0} 85%{opacity:0;stroke-dashoffset:0} 100%{opacity:0;stroke-dashoffset:10} }
+              @keyframes kf-r   { 0%{opacity:0;stroke-dashoffset:10} 35%{opacity:0;stroke-dashoffset:10} 42%{opacity:1;stroke-dashoffset:0} 75%{opacity:1;stroke-dashoffset:0} 85%{opacity:0;stroke-dashoffset:0} 100%{opacity:0;stroke-dashoffset:10} }
+              @keyframes kf-lr  { 0%{opacity:0;stroke-dashoffset:10} 42%{opacity:0;stroke-dashoffset:10} 49%{opacity:1;stroke-dashoffset:0} 75%{opacity:1;stroke-dashoffset:0} 85%{opacity:0;stroke-dashoffset:0} 100%{opacity:0;stroke-dashoffset:10} }
+            </style>
+          </defs>
+          <g clip-path="url(#clip0_638_1817)">
+            <path d="M44.7451 49.6436C46.7521 47.5856 51.3991 44.7506 52.2511 37.6556C52.5914 35.4831 52.4778 33.2636 51.9177 31.1371C51.3575 29.0106 50.3629 27.0231 48.9966 25.3001C47.6302 23.5771 45.9217 22.1558 43.9788 21.1258C42.0359 20.0958 39.9006 19.4795 37.7077 19.3157C35.5148 19.1519 33.3117 19.4442 31.2373 20.1741C29.1629 20.904 27.2622 22.0557 25.6551 23.5567C24.0479 25.0576 22.7691 26.8752 21.8993 28.8949C21.0294 30.9146 20.5874 33.0926 20.6011 35.2916C20.6011 44.1446 25.9651 47.3636 28.2451 49.6436C30.0331 51.4856 29.7571 52.1756 29.7571 55.1456C29.7364 55.52 29.7921 55.8947 29.9209 56.2468C30.0497 56.5989 30.2488 56.9211 30.5063 57.1937C30.7637 57.4662 31.074 57.6835 31.4182 57.8322C31.7623 57.981 32.1332 58.058 32.5081 58.0586H40.4821C40.8573 58.0593 41.2287 57.9832 41.5733 57.8349C41.9179 57.6865 42.2286 57.4692 42.486 57.1963C42.7435 56.9234 42.9423 56.6007 43.0703 56.248C43.1983 55.8953 43.2527 55.5201 43.2301 55.1456C43.0951 52.1186 42.7351 51.7076 44.7451 49.6436Z" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31.875 57.8924V62.4284C31.875 63.6674 32.565 64.6844 33.414 64.6844H39.573C40.428 64.6844 41.115 63.6644 41.115 62.4284V57.8924" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34.155 26.2724C32.3836 26.2732 30.685 26.9775 29.4328 28.2303C28.1805 29.4832 27.477 31.182 27.477 32.9534" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ray ray-ll"  d="M13.215 55.0844L17.091 51.1844" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-l"   d="M14.499 35.8964H9"               stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-ul"  d="M16.215 13.9544L20.091 17.8604"  stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-top" d="M36.495 7.31543V11.7644"         stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-ur"  d="M52.953 17.8604L56.856 13.9574"  stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-r"   d="M58.491 35.8964H63.993"          stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-lr"  d="M55.953 51.1844L59.856 55.0844"  stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="flex flex-col gap-2 text-center">
+        <h3 class="text-base font-medium text-ink leading-snug">I illuminate more than just interfaces</h3>
+        <p class="text-sm text-ink-muted leading-[1.8]">I spent 5 years in the banking and government-tech spaces not just shipping screens, but also redesigning organizational processes, building design governance, and mentoring juniors and interns who all became confident designers themselves today!</p>
+      </div>
+    </div>
 
-    <h3>I also have a life outside of work.</h3><br>
+    <!-- School card -->
+    <div class="card-books flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default mt-6">
+      <div class="flex-shrink-0">
+        <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <style>
+            @keyframes lean {
+              0%   { transform: rotate(0deg); }
+              35%  { transform: rotate(7.83deg); }
+              65%  { transform: rotate(7.83deg); }
+              100% { transform: rotate(0deg); }
+            }
+            .left-book {
+              transform-origin: 34.5px 63px;
+              animation: lean 2.4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+            }
+          </style>
+          <path class="left-book" d="M30 9C31.1934 9 32.3378 9.47362 33.1816 10.3174C34.0256 11.1613 34.5 12.3065 34.5 13.5V58.5C34.4999 59.6933 34.0254 60.8378 33.1816 61.6816C32.3378 62.5254 31.1934 63 30 63H16.5C15.3066 63 14.1622 62.5254 13.3184 61.6816C12.4746 60.8378 12.0001 59.6933 12 58.5V13.5C12 12.3065 12.4744 11.1613 13.3184 10.3174C14.1622 9.47362 15.3066 9 16.5 9H30ZM16.5 54V58.5H30V54H16.5ZM16 49.999H30V21.999H16V49.999ZM16.5 17.999H30V13.5H16.5V17.999Z" fill="#0B6F5A"/>
+          <path d="M55.5 8.99951C56.6934 8.99951 57.8378 9.47411 58.6816 10.3179C59.5256 11.1618 60 12.307 60 13.5005V58.5005C59.9999 59.6938 59.5254 60.8383 58.6816 61.6821C57.8378 62.5259 56.6934 63.0005 55.5 63.0005H42C40.8066 63.0005 39.6622 62.5259 38.8184 61.6821C37.9746 60.8383 37.5001 59.6938 37.5 58.5005V13.5005C37.5 12.307 37.9744 11.1618 38.8184 10.3179C39.6622 9.47411 40.8066 8.99951 42 8.99951H55.5ZM42 54.0005V58.5005H55.5V54.0005H42ZM41.5 49.9995H55.5V28.9995H41.5V49.9995ZM42 25.4995H55.5V20.9995H42V25.4995ZM42 17.4995H55.5V13.5005H42V17.4995Z" fill="#0B6F5A"/>
+        </svg>
+      </div>
+      <div class="flex flex-col gap-2 text-center">
+        <h3 class="text-base font-medium text-ink leading-snug">I want theoretical knowledge to catch up with my practice</h3>
+        <p class="text-sm text-ink-muted leading-[1.8]">I wanted to take time off to pick up more theoretical knowledge that would back my research practices up. I discovered my research interests in the HCI space that includes designing for older adults, designing low-tech solutions for underserved communities, and participatory design.</p>
+      </div>
+    </div>
+
+    </div> <!-- end cards grid -->
+
+    <h3>Work hard, play harder</h3><br>
   <p class="text-base text-ink-muted mb-6 leading-[1.8]">
-      I enjoy crafting, journalling, recipe testing, backpacking, EDM music (mainly techno, dubstep, afrohouse and bass), digital and film photography, and being the vocalist of my band, The Paperbaggers. My hobbies provide me with many opportunities to connect with people from all walks of life, and I love engaging in conversations with them to see different facets and realities of life through their eyes and words.
+      I enjoy crafting, journalling, recipe testing, backpacking, EDM music, digital and film photography, and being the vocalist of my band, The Paperbaggers. My hobbies provide me with many opportunities to connect with people from all walks of life, and I love engaging in conversations with them to see different facets and realities of life through their eyes and words.
     
     <h2 class="mt-10 mb-4">What I bring</h2>
     <p class="text-base text-ink-muted mb-6 leading-[1.8]">

@@ -16,8 +16,8 @@
   // State
   let selectedTag = $state('All');
 
-  // Compute all unique tags
-  const allTags = ['All', ...new Set(projects.flatMap(p => p.data.tags))];
+  // Fixed tag order for filters
+  const allTags = ['All', 'UX Research', 'Service Design', 'UI Design', 'Research Ops', 'Design Thinking', 'Visual Design'];
 
   // Filter projects based on selected tag
   let filteredProjects = $derived(
