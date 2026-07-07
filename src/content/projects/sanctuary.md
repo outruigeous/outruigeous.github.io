@@ -6,7 +6,7 @@ timeline: "Nov 2024 – May 2025"
 team: "5 members"
 toolsUsed: "Figma, Miro"
 cover: "./images/sanctuary-cover.png"
-order: 2
+order: 4
 ---
 
 ## Overview

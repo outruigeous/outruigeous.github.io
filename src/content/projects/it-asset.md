@@ -6,7 +6,7 @@ timeline: "May – Nov 2019"
 team: "5 members; 1 UXD, 1 Dev, 1 BA, 2 PMs"
 toolsUsed: Confluence, JIRA, Sketch"
 cover: "./images/itasset-cover.png"
-order: 5
+order: 2
 ---
 
 ## Overview

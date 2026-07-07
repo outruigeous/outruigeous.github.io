@@ -6,7 +6,7 @@ timeline: "March – June 2023"
 team: "3 members; 1 UXR, 1 UXD, 1 UX Lead"
 toolsUsed: "Confluence, Figma, Google Workspace"
 cover: "./images/research-ops-cover.png"
-order: 4
+order: 5
 ---
 
 ## Overview
