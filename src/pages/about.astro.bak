@@ -151,7 +151,7 @@ import Layout from '../layouts/Layout.astro';
         </svg>
       </div>
       <div class="who-iam-text flex flex-col gap-2 text-center">
-        <h3 class="text-base font-medium text-ink leading-snug">I possess both theory knowledge and practical experience</h3>
+        <h3 class="text-base font-medium text-ink leading-snug">I want theoretical knowledge to catch up with my practice</h3>
         <p class="text-sm text-ink-muted leading-[1.8]">I wanted to take time off to pick up more theoretical knowledge that would back my research practices up. I discovered my research interests in the HCI space that includes designing for older adults, designing low-tech solutions for underserved communities, and participatory design.</p>
       </div>
     </div>
@@ -168,65 +168,65 @@ import Layout from '../layouts/Layout.astro';
       <!-- Communication card -->
       <div class="card-comm flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
         <h3 class="text-sm font-medium text-ink">Communication</h3>
-        <p class="text-sm text-ink-muted leading-[1.8]">Honest communication happens when people feel safe enough to do so. So I work just as hard on creating that space as I do on expressing myself sincerely and clearly. Listening is as important as self-expression, and great collaboration happens when people speak and listen with love and care.</p>
+        <p class="text-sm text-ink-muted leading-[1.8]">Honest communication happens when people feel safe enough to do so. So I work just as hard on creating that space as I do on expressing myself sincerely and clearly. Listening is as important as self-expression, and good collaboration happens when people speak and listen with love and care.</p>
       </div>
 
       <!-- Energy card -->
       <div class="card-energy flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
         <h3 class="text-sm font-medium text-ink">Energy</h3>
-        <p class="text-sm text-ink-muted leading-[1.8]">People often describe me as fun, bubbly, and energising to work with. I believe work can be made uplifting and rewarding for everyone on the team. I love empowering the people around me to grow and glow!</p>
+        <p class="text-sm text-ink-muted leading-[1.8]">People often describe me as fun, bubbly, and energising to work with. I believe work can be made uplifting and rewarding for everyone on the team. I love empowering the people around me to grow and glow.</p>
       </div>
 
       <!-- Footwork card -->
       <div class="card-footwork flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
         <h3 class="text-sm font-medium text-ink">Footwork</h3>
-        <p class="text-sm text-ink-muted leading-[1.8]">Rather than working behind a desk, I prefer to be on the ground connecting withusers and stakeholders to experience their realities. I enjoy leading by getting my hands dirty together with my teammmates, rather than plain directing.</p>
+        <p class="text-sm text-ink-muted leading-[1.8]">Rather than working behind a desk, I prefer to be on the ground speaking to users and stakeholders, seeing their world through their eyes. I enjoy leading by doing rather than directing.</p>
       </div>
 
     </div> <!-- end tenets grid -->
 
     <!-- HOW IT IS LIKE WORKING WITH ME -->
     <header class="pt-8 pb-4">
-      <p class="text-[14px] tracking-wider uppercase text-ink-muted">How it's like working with me</p>
+      <p class="text-[14px] tracking-wider uppercase text-ink-muted">How It Is Like Working With Me</p>
     </header>
 
     <div class="grid grid-cols-1 gap-4 mb-10">
 
       <!-- Khai Liang Koh -->
-      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:shadow-lg cursor-default">
-        <span class="text-5xl leading-none text-vermillion -mb-4">&ldquo;</span>
+      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+        <span class="text-3xl leading-none text-vermillion">&ldquo;</span>
         <p class="text-sm text-ink-muted leading-[1.8]">Working with Ming Rui has been an absolute joy. Over the years that we have worked together, she has grown into someone who naturally reads between the lines and not just the brief. Being a creative and strategic thinker, she is definitely a great person to bounce ideas with. She is the kind of person you hand a compass to, not a well plotted map. She will figure out the route, improve it and get everyone there beautifully and ahead of schedule.</p>
-        <div class="flex flex-col -mt-1">
+        <div class="flex flex-col">
           <span class="text-sm font-medium text-ink">Khai Liang Koh</span>
           <span class="text-sm text-ink-muted">UX Lead @ BNP Paribas Wealth Management</span>
         </div>
       </div>
 
       <!-- Lucille Mercier -->
-      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:shadow-lg cursor-default">
-        <span class="text-5xl leading-none text-vermillion -mb-4">&ldquo;</span>
+      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+        <span class="text-3xl leading-none text-vermillion">&ldquo;</span>
         <p class="text-sm text-ink-muted leading-[1.8]">I had the chance to work with Ming when I was an intern on our UX/UI team at BNP Wealth Management. I was based in Paris while she was in Singapore, and she was my mentor throughout my internship. Even with the distance and time difference, I never felt alone. She was always available and supportive. I learned so much from Ming Rui, not just about UX, but about how to think like a designer. What I appreciated most was her way of mentoring: she never gave me the answers but always asked the right questions to help me build my own thinking and develop the right UX instincts. Her feedback was always thoughtful, constructive, and empowering. On top of being a sunshine person to work with, Ming Rui is a talented UX/UI Designer with a strong user-centered mindset and a natural ability to collaborate and bring out the best in the people around her. I feel lucky to have worked with her and couldn't recommend her more.</p>
-        <div class="flex flex-col -mt-1">
+        <div class="flex flex-col">
           <span class="text-sm font-medium text-ink">Lucille Mercier</span>
           <span class="text-sm text-ink-muted">Lead UX Designer @ NeoXam</span>
         </div>
       </div>
 
       <!-- Yuting Cheong -->
-      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:shadow-lg cursor-default">
-        <span class="text-5xl leading-none text-vermillion -mb-4">&ldquo;</span>
+      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+        <span class="text-3xl leading-none text-vermillion">&ldquo;</span>
         <p class="text-sm text-ink-muted leading-[1.8]">Working with Ming = peak camaraderie!! There are so many memorable moments from our time as teammates - the product features we shipped successfully, and exchanging "good jobs" after a series of tiring UTs - but my favourite will always be our lunch breaks filled with laughters and conversations about life outside of work. I can honestly say that my best takeaway from working with Ming is a meaningful connection that has lasted beyond the workplace :)</p>
-        <div class="flex flex-col -mt-1">
+        <div class="flex flex-col">
           <span class="text-sm font-medium text-ink">Yuting Cheong</span>
           <span class="text-sm text-ink-muted">UX Designer @ Govtech Singapore</span>
         </div>
       </div>
 
       <!-- Alex Leitch -->
-      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:shadow-lg cursor-default">
-        <span class="text-5xl leading-none text-vermillion -mb-4">&ldquo;</span>
-        <p class="text-sm text-ink-muted leading-[1.8]">I hired Ming because her taste, ability at graphic design, and willingness to explain process is unmatched. Ming makes things look good; they can look good and fun, or good and clean, or good and expensive, but you know with her you're getting good work every time. Her individual projects have a high attention to detail, and she is an excellent team manager who is lovely to work with. If I were starting a company that needed a strong visual UI approach, I'd hire her again in a heartbeat.</p>
-        <div class="flex flex-col -mt-1">
+      <div class="flex flex-col gap-4 p-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+        <span class="text-3xl leading-none text-vermillion">&ldquo;</span>
+        <p class="text-sm text-ink-muted leading-[1.8]">I hired Ming Lee because her taste, ability at graphic design, and willingness to explain process is unmatched. Ming makes things look good; they can look good and fun, or good and clean, or good and expensive, but you know with her you're getting good work every time. Her individual projects have a high attention to detail, and she is an excellent team manager who is lovely to work with. If I were starting a company that needed a strong visual UI approach, I'd hire her again in a heartbeat.</p>
+        <div class="flex flex-col">
           <span class="text-sm font-medium text-ink">Alex Leitch</span>
           <span class="text-sm text-ink-muted">Lecturer @ University of Maryland (College Park)</span>
         </div>
