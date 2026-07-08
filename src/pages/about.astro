@@ -4,11 +4,33 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   .card-brain:hover  { border-color: #FF6B4A; box-shadow: 0 0 0 0.5px #FF6B4A; }
-  .card-bulb:hover   { border-color: #FFD4A0; box-shadow: 0 0 0 0.5px #FFD4A0; }
+  .card-bulb:hover   { border-color: #FFBE26; box-shadow: 0 0 0 0.5px #FFBE26; }
   .card-books:hover  { border-color: #0B6F5A; box-shadow: 0 0 0 0.5px #0B6F5A; }
   .card-comm:hover,
   .card-energy:hover,
-  .card-footwork:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+  .card-footwork:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: rotate(-1.5deg) translateY(-2px); }
+
+  .about-hero-portrait {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: auto;
+    z-index: 1;
+  }
+  .about-hero-text {
+    max-width: 600px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+  @media (min-width: 640px) {
+    .hero-title { font-size: 36px; }
+  }
+  @media (min-width: 768px) {
+    .hero-title { font-size: 42px; }
+  }
 
   @media (max-width: 900px) {
     .who-iam-grid {
@@ -22,23 +44,64 @@ import Layout from '../layouts/Layout.astro';
     .who-iam-text {
       text-align: left !important;
     }
+    .about-hero-portrait {
+      position: static;
+      width: 200px;
+      margin: 0 auto 0.75rem;
+      display: block;
+    }
+    .about-hero-text {
+      max-width: none;
+    }
+    .about-hero {
+      padding-top: 1.5rem !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .about-hero { padding-bottom: 32px !important; }
+    .card-comm h3,
+    .card-energy h3,
+    .card-footwork h3 { font-size: 18px; }
+  }
+  @media (max-width: 500px) {
+    .about-hero { padding-bottom: 24px !important; }
+    .who-iam-card svg { width: 32px; height: 32px; }
   }
 </style>
 
 <Layout title="About — Mingz" showBackLink={true}>
-  <header class="pt-12 pb-4">
-    <p class="text-[14px] tracking-wider uppercase text-ink-muted">Who I Am</p>
-  </header>
+  <section class="pb-12 max-w-[980px] relative">
 
-  <section class="pb-12 max-w-[980px]">
+    <img
+      src="/about/about-me-portrait.png"
+      alt="Hand-drawn line portrait of Mingz"
+      class="about-hero-portrait"
+    />
+
+    <!-- Hero -->
+    <div class="about-hero pt-12 pb-16">
+      <div class="about-hero-text">
+        <p class="text-[14px] tracking-wider uppercase text-ink-muted mb-4">Who I Am</p>
+        <h1 class="hero-title mb-6">
+          <span class="sr-only">Mingz means bright.</span>
+          <span aria-hidden="true">Mingz means <span id="about-typewriter-word"></span><span class="typewriter-cursor" aria-hidden="true"></span>.</span>
+        </h1>
+        <p class="text-sm text-ink-muted leading-[1.8] mb-4">
+          The character "明" (Ming) in my name is what I embody. It is made up of the character for "sun" on the left, and "moon" on the right. Put together, it means bright, clear, and intelligent.
+        </p>
+         <p class="text-sm text-ink-muted leading-[1.8]">
+          I don't see myself as just a designer/researcher, but a strategist who is curious, meticulous, and brings the qualities of both the energy from the sun, the steadiness from the moon.
+        </p>
+      </div>
+    </div>
 
     <!-- Cards row -->
     <div class="who-iam-grid grid grid-cols-3 gap-4 mb-10 items-start">
 
     <!-- Brain card -->
-    <div class="card-brain who-iam-card flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default mt-6">
+    <div class="card-brain who-iam-card flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out cursor-default mt-6">
       <div class="flex-shrink-0">
-        <svg width="93" height="94" viewBox="0 0 93 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="72" height="73" viewBox="0 0 93 94" fill="none" xmlns="http://www.w3.org/2000/svg">
           <style>
             #sparkle-large {
               transform-box: fill-box;
@@ -80,12 +143,12 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="who-iam-text flex flex-col gap-2 text-center">
         <h3 class="text-base font-medium text-ink leading-snug">I'm a designer who is both left and right brained</h3>
-        <p class="text-sm text-ink-muted leading-[1.8]">I was a science student all my life till I did a switch to Fine Arts in college. I enjoy creating solutions that are grounded in research and data, while I inject some of my creative flair into the process and design.</p>
+        <p class="text-sm text-ink-muted leading-[1.8]">I was a science student all my life till I did a switch to Fine Arts in college. I enjoy creating solutions that are <b>grounded in research and data</b>, while I inject some of my <b>creative flair</b> into the process and design.</p>
       </div>
     </div>
 
     <!-- Interfaces card -->
-    <div class="card-bulb who-iam-card flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+    <div class="card-bulb who-iam-card flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out cursor-default">
       <div class="flex-shrink-0">
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -111,27 +174,27 @@ import Layout from '../layouts/Layout.astro';
             </style>
           </defs>
           <g clip-path="url(#clip0_638_1817)">
-            <path d="M44.7451 49.6436C46.7521 47.5856 51.3991 44.7506 52.2511 37.6556C52.5914 35.4831 52.4778 33.2636 51.9177 31.1371C51.3575 29.0106 50.3629 27.0231 48.9966 25.3001C47.6302 23.5771 45.9217 22.1558 43.9788 21.1258C42.0359 20.0958 39.9006 19.4795 37.7077 19.3157C35.5148 19.1519 33.3117 19.4442 31.2373 20.1741C29.1629 20.904 27.2622 22.0557 25.6551 23.5567C24.0479 25.0576 22.7691 26.8752 21.8993 28.8949C21.0294 30.9146 20.5874 33.0926 20.6011 35.2916C20.6011 44.1446 25.9651 47.3636 28.2451 49.6436C30.0331 51.4856 29.7571 52.1756 29.7571 55.1456C29.7364 55.52 29.7921 55.8947 29.9209 56.2468C30.0497 56.5989 30.2488 56.9211 30.5063 57.1937C30.7637 57.4662 31.074 57.6835 31.4182 57.8322C31.7623 57.981 32.1332 58.058 32.5081 58.0586H40.4821C40.8573 58.0593 41.2287 57.9832 41.5733 57.8349C41.9179 57.6865 42.2286 57.4692 42.486 57.1963C42.7435 56.9234 42.9423 56.6007 43.0703 56.248C43.1983 55.8953 43.2527 55.5201 43.2301 55.1456C43.0951 52.1186 42.7351 51.7076 44.7451 49.6436Z" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M31.875 57.8924V62.4284C31.875 63.6674 32.565 64.6844 33.414 64.6844H39.573C40.428 64.6844 41.115 63.6644 41.115 62.4284V57.8924" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M34.155 26.2724C32.3836 26.2732 30.685 26.9775 29.4328 28.2303C28.1805 29.4832 27.477 31.182 27.477 32.9534" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path class="ray ray-ll"  d="M13.215 55.0844L17.091 51.1844" stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
-            <path class="ray ray-l"   d="M14.499 35.8964H9"               stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
-            <path class="ray ray-ul"  d="M16.215 13.9544L20.091 17.8604"  stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
-            <path class="ray ray-top" d="M36.495 7.31543V11.7644"         stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
-            <path class="ray ray-ur"  d="M52.953 17.8604L56.856 13.9574"  stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
-            <path class="ray ray-r"   d="M58.491 35.8964H63.993"          stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
-            <path class="ray ray-lr"  d="M55.953 51.1844L59.856 55.0844"  stroke="#FFD4A0" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M44.7451 49.6436C46.7521 47.5856 51.3991 44.7506 52.2511 37.6556C52.5914 35.4831 52.4778 33.2636 51.9177 31.1371C51.3575 29.0106 50.3629 27.0231 48.9966 25.3001C47.6302 23.5771 45.9217 22.1558 43.9788 21.1258C42.0359 20.0958 39.9006 19.4795 37.7077 19.3157C35.5148 19.1519 33.3117 19.4442 31.2373 20.1741C29.1629 20.904 27.2622 22.0557 25.6551 23.5567C24.0479 25.0576 22.7691 26.8752 21.8993 28.8949C21.0294 30.9146 20.5874 33.0926 20.6011 35.2916C20.6011 44.1446 25.9651 47.3636 28.2451 49.6436C30.0331 51.4856 29.7571 52.1756 29.7571 55.1456C29.7364 55.52 29.7921 55.8947 29.9209 56.2468C30.0497 56.5989 30.2488 56.9211 30.5063 57.1937C30.7637 57.4662 31.074 57.6835 31.4182 57.8322C31.7623 57.981 32.1332 58.058 32.5081 58.0586H40.4821C40.8573 58.0593 41.2287 57.9832 41.5733 57.8349C41.9179 57.6865 42.2286 57.4692 42.486 57.1963C42.7435 56.9234 42.9423 56.6007 43.0703 56.248C43.1983 55.8953 43.2527 55.5201 43.2301 55.1456C43.0951 52.1186 42.7351 51.7076 44.7451 49.6436Z" stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31.875 57.8924V62.4284C31.875 63.6674 32.565 64.6844 33.414 64.6844H39.573C40.428 64.6844 41.115 63.6644 41.115 62.4284V57.8924" stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34.155 26.2724C32.3836 26.2732 30.685 26.9775 29.4328 28.2303C28.1805 29.4832 27.477 31.182 27.477 32.9534" stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="ray ray-ll"  d="M13.215 55.0844L17.091 51.1844" stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-l"   d="M14.499 35.8964H9"               stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-ul"  d="M16.215 13.9544L20.091 17.8604"  stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-top" d="M36.495 7.31543V11.7644"         stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-ur"  d="M52.953 17.8604L56.856 13.9574"  stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-r"   d="M58.491 35.8964H63.993"          stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round"/>
+            <path class="ray ray-lr"  d="M55.953 51.1844L59.856 55.0844"  stroke="#FFBE26" stroke-width="4.5" stroke-linecap="round"/>
           </g>
         </svg>
       </div>
       <div class="who-iam-text flex flex-col gap-2 text-center">
         <h3 class="text-base font-medium text-ink leading-snug">I illuminate more than just interfaces</h3>
-        <p class="text-sm text-ink-muted leading-[1.8]">I spent 5 years in the banking and government-tech spaces not just shipping screens, but also redesigning organizational processes, building design governance, and mentoring juniors and interns who all became confident designers themselves today!</p>
+        <p class="text-sm text-ink-muted leading-[1.8]">I spent <b>5 years</b> in the <b>banking and government-tech</b> spaces not just shipping screens, but also <b>redesigning organizational processes</b>, <b>building design governance</b>, and <b>mentoring</b> juniors and interns who all became confident designers themselves today!</p>
       </div>
     </div>
 
     <!-- School card -->
-    <div class="card-books who-iam-card flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default mt-6">
+    <div class="card-books who-iam-card flex flex-col items-center gap-4 pt-6 pb-6 px-6 border border-border-custom rounded-[10px] transition-all duration-200 ease-out cursor-default mt-6">
       <div class="flex-shrink-0">
         <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
           <style>
@@ -152,7 +215,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="who-iam-text flex flex-col gap-2 text-center">
         <h3 class="text-base font-medium text-ink leading-snug">I possess both theory knowledge and practical experience</h3>
-        <p class="text-sm text-ink-muted leading-[1.8]">I wanted to take time off to pick up more theoretical knowledge that would back my research practices up. I discovered my research interests in the HCI space that includes designing for older adults, designing low-tech solutions for underserved communities, and participatory design.</p>
+        <p class="text-sm text-ink-muted leading-[1.8]">My <b>Masters in Human-Computer Interaction</b> moulded me to be <b>ethical</b> in my practice and <b>think critically</b>. I also built upon <b>research interests</b> in inclusive design, designing for older adults, participatory design, and low-tech solutions for underserved communities.</p>
       </div>
     </div>
 
@@ -166,19 +229,19 @@ import Layout from '../layouts/Layout.astro';
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
 
       <!-- Communication card -->
-      <div class="card-comm flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+      <div class="card-comm flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out cursor-default">
         <h3 class="text-sm font-medium text-ink">Communication</h3>
         <p class="text-sm text-ink-muted leading-[1.8]">Honest communication happens when people feel safe enough to do so. So I work just as hard on creating that space as I do on expressing myself sincerely and clearly. Listening is as important as self-expression, and great collaboration happens when people speak and listen with love and care.</p>
       </div>
 
       <!-- Energy card -->
-      <div class="card-energy flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+      <div class="card-energy flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out cursor-default">
         <h3 class="text-sm font-medium text-ink">Energy</h3>
-        <p class="text-sm text-ink-muted leading-[1.8]">People often describe me as fun, bubbly, and energising to work with. I believe work can be made uplifting and rewarding for everyone on the team. I love empowering the people around me to grow and glow!</p>
+        <p class="text-sm text-ink-muted leading-[1.8]">People often describe me as fun, bubbly, and energizing to work with. I believe work can be made uplifting and rewarding for everyone on the team. I love empowering the people around me to grow and glow!</p>
       </div>
 
       <!-- Footwork card -->
-      <div class="card-footwork flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out hover:-translate-y-2 cursor-default">
+      <div class="card-footwork flex flex-col gap-3 p-5 bg-[#F7F0E3] rounded-[10px] transition-all duration-200 ease-out cursor-default">
         <h3 class="text-sm font-medium text-ink">Footwork</h3>
         <p class="text-sm text-ink-muted leading-[1.8]">Rather than working behind a desk, I prefer to be on the ground connecting withusers and stakeholders to experience their realities. I enjoy leading by getting my hands dirty together with my teammmates, rather than plain directing.</p>
       </div>
@@ -242,3 +305,64 @@ import Layout from '../layouts/Layout.astro';
   
   </section>
 </Layout>
+
+<script>
+  const words = ['bright', 'clarity', 'duality', 'intelligence'];
+  const wordColors = {
+    bright: '#FFBE26',       // bulb yellow
+    clarity: '#FFBE26',      // bulb yellow
+    duality: '#FF6B4A',      // vermillion (brain)
+    intelligence: '#0B6F5A', // books green (forestgreen)
+  };
+
+  const el = document.getElementById('about-typewriter-word');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (el && !prefersReducedMotion) {
+    const TYPE_SPEED = 55;
+    const DELETE_SPEED = 28;
+    const PAUSE_AFTER_TYPE = 1800;
+    const PAUSE_AFTER_DELETE = 400;
+    const START_DELAY = 700;
+
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function tick() {
+      if (!el) return;
+      const word = words[wordIndex];
+
+      if (!deleting) {
+        if (charIndex === 0) {
+          el.style.color = wordColors[word] || '';
+        }
+        charIndex++;
+        el.textContent = word.slice(0, charIndex);
+
+        if (charIndex >= word.length) {
+          deleting = true;
+          setTimeout(tick, PAUSE_AFTER_TYPE);
+          return;
+        }
+        setTimeout(tick, TYPE_SPEED);
+      } else {
+        charIndex--;
+        el.textContent = word.slice(0, charIndex);
+
+        if (charIndex <= 0) {
+          deleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(tick, PAUSE_AFTER_DELETE);
+          return;
+        }
+        setTimeout(tick, DELETE_SPEED);
+      }
+    }
+
+    setTimeout(tick, START_DELAY);
+  } else if (el) {
+    el.textContent = words[0];
+    el.style.color = wordColors[words[0]] || '';
+  }
+</script>

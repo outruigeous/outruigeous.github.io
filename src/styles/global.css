@@ -6,6 +6,7 @@
   --color-ink-muted: #4A4A4A;
   --color-vermillion: #FF6B4A;
   --color-forestgreen: #0B6F5A;
+  --color-bulb-yellow: #FFBE26;
   --color-border-custom: #EDE8DC;
   --color-card-bg: #F5F0E8;
   --color-cream-accent-light: #F7F0E3;
@@ -121,7 +122,7 @@ h3 {
 }
 
 h4 {
-  font-family: var(--font-heading);
+  font-family: "National Park Patched", "National Park", sans-serif;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.05rem;
@@ -450,4 +451,10 @@ h5 {
   font-size: 11px;
   color: var(--color-ink-muted);
   margin-top: 4px;
+}
+
+@media (max-width: 767px) {
+  .who-iam-card h3 {
+    font-size: 18px;
+  }
 }
