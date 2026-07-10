@@ -35,6 +35,7 @@ const hasSidebar = Astro.slots.has('sidebar');
     import tablerIcons from '@iconify-json/tabler/icons.json';
     addCollection(tablerIcons);
   </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a0e2c6dd981044f6a72e63010b669bfc"}'></script>
 </head>
 <body class="bg-cream text-ink font-sans min-h-screen">
   <div class={hasSidebar ? "max-w-[980px] min-[1250px]:max-w-none min-[1250px]:w-fit mx-auto px-6" : "max-w-[980px] mx-auto px-6"}>
